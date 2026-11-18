@@ -81,6 +81,21 @@ python CSVMusicos.py 0.001
 
 ---
 
+<!-- syllabus:start -->
+## 📘 Syllabus · official UAH teaching guide
+
+> **Bases de Datos Avanzadas (780020)** · 6 ECTS · 2nd year · 2nd semester · contents from the 2025-26 teaching guide · [official subject page](https://www.uah.es/es/estudios/estudios-oficiales/grados/asignatura/Bases-de-Datos-Avanzadas-780020/)
+
+| Unit | Hours | Topics |
+|---|---|---|
+| Storage planning and indexes | 20 h | Storage devices and record structures · File organisation · Index structures and how they work |
+| Query processing and optimisation | 20 h | Query-processing algorithms and their cost · Statistics-based optimisation · Pipelining and materialisation |
+| Database administration | 12 h | Transactions, concurrency control and recovery · Auditing, monitoring and performance tuning · Security, users and privileges |
+| Distributed and large databases | 4 h | Architecture and types of distribution · Distributed transactions, concurrency and availability |
+<!-- syllabus:end -->
+
+---
+
 <div align="center">
 
 Miguel Hernández López · [GitHub](https://github.com/MiguelHernandezz) · [LinkedIn](https://www.linkedin.com/in/miguel-hernandez-lopez/)
