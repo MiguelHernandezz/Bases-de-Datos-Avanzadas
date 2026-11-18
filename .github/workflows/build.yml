@@ -50,6 +50,8 @@ jobs:
 
       - name: PECL3 · run the transactions script end to end
         run: |
+          # start from a clean server, as the script itself creates MUSICOS
+          dropdb musicos
           createdb pecl3
           psql -d pecl3 -f PECL3-seguridad-transacciones/PECL3.sql > /tmp/pecl3.out 2> /tmp/pecl3.err || true
           cat /tmp/pecl3.err
