@@ -1,0 +1,53 @@
+[DNI] [DNI] 2026-05-17 23:38:16.930 CEST LOG:  iniciando PostgreSQL 17.9 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+[DNI] [DNI] 2026-05-17 23:38:16.932 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+[DNI] [DNI] 2026-05-17 23:38:16.933 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+[DNI] [DNI] 2026-05-17 23:38:17.006 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-05-17 23:36:57 CEST
+[DNI] [DNI] 2026-05-17 23:38:17.161 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+[DNI] [DNI] 2026-05-17 23:38:17.164 CEST LOG:  redo comienza en 0/E000028
+[DNI] [DNI] 2026-05-17 23:38:17.164 CEST LOG:  largo de registro no válido en 0/F000060: se esperaba al menos 24, se obtuvo 0
+[DNI] [DNI] 2026-05-17 23:38:17.164 CEST LOG:  redo listo en 0/F000028 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.00 s
+[DNI] [DNI] 2026-05-17 23:38:17.168 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+[DNI] [DNI] 2026-05-17 23:38:17.178 CEST LOG:  checkpoint completo: escritos 3 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 2 reciclados; write=0.002 s, sync=0.002 s, total=0.012 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=16384 kB, estimación=16384 kB; lsn=0/F000060, lsn de redo=0/F000060
+[DNI] [DNI] 2026-05-17 23:38:17.199 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+[DNI] [DNI] 2026-05-17 23:39:58.872 CEST ::1(53573)ERROR:  permiso denegado a la tabla valorc
+[DNI] [DNI] 2026-05-17 23:39:58.872 CEST ::1(53573)SENTENCIA:  SELECT C FROM ValorC;
+[DNI] [DNI] 2026-05-17 23:39:59.412 CEST ::1(53573)LOG:  sentencia: UPDATE ValorC SET C = 0.6;
+[DNI] [DNI] 2026-05-17 23:39:59.412 CEST ::1(53573)ERROR:  transacciÃ³n abortada, las Ã³rdenes serÃ¡n ignoradas hasta el fin de bloque de transacciÃ³n
+[DNI] [DNI] 2026-05-17 23:39:59.412 CEST ::1(53573)SENTENCIA:  UPDATE ValorC SET C = 0.6;
+[DNI] [DNI] 2026-05-17 23:40:07.185 CEST ::1(53597)ERROR:  permiso denegado a la tabla valorb
+[DNI] [DNI] 2026-05-17 23:40:07.185 CEST ::1(53597)SENTENCIA:  SELECT B FROM ValorB;
+[DNI] [DNI] 2026-05-17 23:40:07.785 CEST ::1(53597)LOG:  sentencia: UPDATE ValorB SET B = 250;
+[DNI] [DNI] 2026-05-17 23:40:07.785 CEST ::1(53597)ERROR:  transacciÃ³n abortada, las Ã³rdenes serÃ¡n ignoradas hasta el fin de bloque de transacciÃ³n
+[DNI] [DNI] 2026-05-17 23:40:07.785 CEST ::1(53597)SENTENCIA:  UPDATE ValorB SET B = 250;
+[DNI] [DNI] 2026-05-17 23:42:07.295 CEST ::1(59197)LOG:  sentencia: GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO musico1, musico2, musico3;
+[DNI] [DNI] 2026-05-17 23:42:45.875 CEST ::1(53573)LOG:  sentencia: UPDATE ValorC SET C = 0.6;
+[DNI] [DNI] 2026-05-17 23:43:01.510 CEST ::1(53597)LOG:  sentencia: UPDATE ValorB SET B = 250;
+[DNI] [DNI] 2026-05-17 23:43:16.407 CEST ::1(53625)LOG:  sentencia: UPDATE ValorA SET A = 750;
+[DNI] [DNI] 2026-05-17 23:43:17.187 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-05-17 23:43:19.493 CEST LOG:  checkpoint completo: escritos 22 búfers (0.1%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=2.257 s, sync=0.022 s, total=2.306 s; archivos sincronizados=17, más largo=0.002 s, promedio=0.002 s; distancia=47 kB, estimación=14750 kB; lsn=0/F00C020, lsn de redo=0/F00BFA8
+[DNI] [DNI] 2026-05-17 23:43:29.805 CEST ::1(53573)LOG:  sentencia: UPDATE ValorA SET A = 140;
+[DNI] [DNI] 2026-05-17 23:43:55.461 CEST ::1(53625)LOG:  sentencia: UPDATE ValorB SET B = 45000;
+[DNI] [DNI] 2026-05-17 23:44:16.376 CEST ::1(53597)LOG:  sentencia: UPDATE ValorC SET C = 190;
+[DNI] [DNI] 2026-05-17 23:44:17.379 CEST ::1(53597)ERROR:  se ha detectado un deadlock
+[DNI] [DNI] 2026-05-17 23:44:17.379 CEST ::1(53597)DETALLE:  El proceso 16760 espera ShareLock en transacciÃ³n 825; bloqueado por proceso 4428.
+	El proceso 4428 espera ShareLock en transacciÃ³n 827; bloqueado por proceso 1848.
+	El proceso 1848 espera ShareLock en transacciÃ³n 826; bloqueado por proceso 16760.
+	Proceso 16760: UPDATE ValorC SET C = 190;
+	Proceso 4428: UPDATE ValorA SET A = 140;
+	Proceso 1848: UPDATE ValorB SET B = 45000;
+[DNI] [DNI] 2026-05-17 23:44:17.379 CEST ::1(53597)HINT:  Vea el registro del servidor para obtener detalles de las consultas.
+[DNI] [DNI] 2026-05-17 23:44:17.379 CEST ::1(53597)CONTEXTO:  mientras se actualizaba la tupla (0,1) en la relaciÃ³n Â«valorcÂ»
+[DNI] [DNI] 2026-05-17 23:44:17.379 CEST ::1(53597)SENTENCIA:  UPDATE ValorC SET C = 190;
+[DNI] [DNI] 2026-05-17 23:45:00.357 CEST ::1(53573)LOG:  sentencia: UPDATE ValorC SET C = -39.4;
+[DNI] [DNI] 2026-05-17 23:45:57.178 CEST ::1(59197)LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-05-17 23:46:42.823 CEST LOG:  se recibió petición de apagado rápido
+[DNI] [DNI] 2026-05-17 23:46:42.825 CEST LOG:  abortando transacciones activas
+[DNI] [DNI] 2026-05-17 23:46:42.826 CEST ::1(53625)FATAL:  terminando la conexiÃ³n debido a una orden del administrador
+[DNI] [DNI] 2026-05-17 23:46:42.826 CEST ::1(53597)FATAL:  terminando la conexiÃ³n debido a una orden del administrador
+[DNI] [DNI] 2026-05-17 23:46:42.826 CEST ::1(53573)FATAL:  terminando la conexiÃ³n debido a una orden del administrador
+[DNI] [DNI] 2026-05-17 23:46:42.838 CEST LOG:  proceso ayudante «logical replication launcher» (PID 19156) terminó con código de salida 1
+[DNI] [DNI] 2026-05-17 23:46:42.843 CEST LOG:  apagando
+[DNI] [DNI] 2026-05-17 23:46:43.000 CEST LOG:  empezando checkpoint: shutdown immediate
+[DNI] [DNI] 2026-05-17 23:46:43.049 CEST LOG:  checkpoint completo: escritos 7 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.003 s, sync=0.008 s, total=0.052 s; archivos sincronizados=7, más largo=0.003 s, promedio=0.002 s; distancia=16336 kB, estimación=16336 kB; lsn=0/10000028, lsn de redo=0/10000028
+[DNI] [DNI] 2026-05-17 23:46:43.112 CEST LOG:  el sistema de bases de datos está apagado

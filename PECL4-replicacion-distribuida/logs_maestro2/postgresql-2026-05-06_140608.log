@@ -1,0 +1,12 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was shut down at 2026-05-06 14:06:08 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  received fast shutdown request
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  aborting any active transactions
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication launcher" (PID 1212) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  shutting down
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: shutdown immediate
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.002 s, total=0.010 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=24/968207B8, redo lsn=24/968207B8
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is shut down

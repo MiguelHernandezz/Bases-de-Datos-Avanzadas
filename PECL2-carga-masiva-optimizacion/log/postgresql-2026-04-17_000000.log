@@ -1,0 +1,3 @@
+[DNI] [DNI] 2026-04-17 00:46:58.422 CEST LOG:  shutting down
+[DNI] [DNI] 2026-04-17 00:46:58.425 CEST LOG:  checkpoint starting: shutdown immediate
+[DNI] [DNI] 2026-04-17 00:46:58.492 CEST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 22 recycled; write=0.008 s, sync=0.005 s, total=0.070 s; sync files=5, longest=0.002 s, average=0.001 s; distance=371972 kB, estimate=458754 kB; lsn=23/B7EB0CF0, redo lsn=23/B7EB0CF0

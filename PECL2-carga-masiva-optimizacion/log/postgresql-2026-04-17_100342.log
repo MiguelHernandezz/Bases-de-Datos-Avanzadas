@@ -1,0 +1,26 @@
+[DNI] [DNI] 2026-04-17 10:03:42.440 CEST LOG:  database system was shut down at 2026-04-17 00:52:01 CEST
+[DNI] [DNI] 2026-04-17 10:08:42.444 CEST LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-04-17 10:08:42.469 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.004 s, total=0.027 s; sync files=2, longest=0.003 s, average=0.002 s; distance=0 kB, estimate=0 kB; lsn=23/B7EB0F98, redo lsn=23/B7EB0F40
+[DNI] [DNI] 2026-04-17 10:28:42.489 CEST LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-04-17 10:33:12.211 CEST LOG:  checkpoint complete: wrote 14553 buffers (88.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 11 removed, 0 recycled; write=269.531 s, sync=0.018 s, total=269.723 s; sync files=11, longest=0.005 s, average=0.002 s; distance=168123 kB, estimate=168123 kB; lsn=23/C22DFD68, redo lsn=23/C22DFCD8
+[DNI] [DNI] 2026-04-17 10:48:42.251 CEST LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-04-17 10:48:42.281 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.031 s; sync files=2, longest=0.002 s, average=0.002 s; distance=14 kB, estimate=151312 kB; lsn=23/C22E35C0, redo lsn=23/C22E3568
+[DNI] [DNI] 2026-04-17 11:31:24.006 CEST LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-04-17 11:31:28.526 CEST LOG:  checkpoint complete: wrote 27 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=2.952 s, sync=1.286 s, total=4.524 s; sync files=27, longest=1.230 s, average=0.048 s; distance=539349 kB, estimate=539349 kB; lsn=23/E7C435B8, redo lsn=23/E3198B78
+[DNI] [DNI] 2026-04-17 11:31:53.717 CEST LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-04-17 11:31:54.017 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=0.003 s, sync=0.001 s, total=0.301 s; sync files=0, longest=0.000 s, average=0.000 s; distance=541880 kB, estimate=541880 kB; lsn=24/43472E0, redo lsn=24/42C6D98
+[DNI] [DNI] 2026-04-17 11:32:20.548 CEST LOG:  checkpoints are occurring too frequently (27 seconds apart)
+[DNI] [DNI] 2026-04-17 11:32:20.548 CEST HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-04-17 11:32:20.549 CEST LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-04-17 11:32:20.751 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=0.003 s, sync=0.001 s, total=0.202 s; sync files=0, longest=0.000 s, average=0.000 s; distance=540084 kB, estimate=541700 kB; lsn=24/25274298, redo lsn=24/25233F80
+[DNI] [DNI] 2026-04-17 11:33:09.158 CEST LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-04-17 11:33:10.715 CEST LOG:  checkpoint complete: wrote 8 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=0.891 s, sync=0.263 s, total=1.565 s; sync files=5, longest=0.235 s, average=0.053 s; distance=542666 kB, estimate=542666 kB; lsn=24/47847048, redo lsn=24/46426940
+[DNI] [DNI] 2026-04-17 11:34:07.539 CEST LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-04-17 11:34:08.785 CEST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=0.428 s, sync=0.481 s, total=1.248 s; sync files=5, longest=0.470 s, average=0.097 s; distance=536825 kB, estimate=542082 kB; lsn=24/67B43470, redo lsn=24/670650C8
+[DNI] [DNI] 2026-04-17 11:35:24.244 CEST LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-04-17 11:35:26.582 CEST LOG:  checkpoint complete: wrote 18 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=1.972 s, sync=0.254 s, total=2.339 s; sync files=13, longest=0.250 s, average=0.020 s; distance=544121 kB, estimate=544121 kB; lsn=24/8A788FE0, redo lsn=24/883C3878
+[DNI] [DNI] 2026-04-17 11:40:24.402 CEST LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-04-17 11:44:54.088 CEST LOG:  checkpoint complete: wrote 2741 buffers (16.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 13 recycled; write=269.616 s, sync=0.011 s, total=269.687 s; sync files=10, longest=0.003 s, average=0.002 s; distance=224257 kB, estimate=512135 kB; lsn=24/95EC3D10, redo lsn=24/95EC3C80
+[DNI] [DNI] 2026-04-17 13:59:24.480 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-04-18 20:48:01.087 CEST LOG:  shutting down

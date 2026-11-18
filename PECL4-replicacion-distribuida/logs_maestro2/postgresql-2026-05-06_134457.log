@@ -1,0 +1,20 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:57.633 CEST LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:57.634 CEST LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:57.634 CEST LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:57.795 CEST LOG:  database system was interrupted; last known up at 2026-05-05 08:43:27 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.774 CEST LOG:  database system was not properly shut down; automatic recovery in progress
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.783 CEST LOG:  redo starts at 24/9681E358
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.784 CEST LOG:  invalid record length at 24/9681E460: expected at least 24, got 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.784 CEST LOG:  redo done at 24/9681E428 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.791 CEST LOG:  checkpoint starting: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.799 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.002 s, total=0.009 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=24/9681E460, redo lsn=24/9681E460
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:58.804 CEST LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:59:58.800 CEST LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:59:58.941 CEST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.112 s, sync=0.005 s, total=0.142 s; sync files=1, longest=0.005 s, average=0.005 s; distance=8 kB, estimate=8 kB; lsn=24/968205A8, redo lsn=24/96820550
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.835 CEST LOG:  received fast shutdown request
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.837 CEST LOG:  aborting any active transactions
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.845 CEST LOG:  background worker "logical replication launcher" (PID 11708) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.847 CEST LOG:  shutting down
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.848 CEST LOG:  checkpoint starting: shutdown immediate
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.854 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.007 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=7 kB; lsn=24/96820658, redo lsn=24/96820658
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:03:41.872 CEST LOG:  database system is shut down

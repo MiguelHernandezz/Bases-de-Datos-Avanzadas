@@ -1,0 +1,33 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:13:26.765 CEST LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:13:26.765 CEST LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:13:26.765 CEST LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:13:26.806 CEST LOG:  database system was shut down at 2026-04-21 09:47:14 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:13:26.813 CEST LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:18:26.815 CEST LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:18:37.939 CEST LOG:  received SIGHUP, reloading configuration files
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:20:18.660 CEST LOG:  checkpoint complete: wrote 1012 buffers (6.2%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=111.768 s, sync=0.067 s, total=111.846 s; sync files=312, longest=0.002 s, average=0.001 s; distance=4766 kB, estimate=4766 kB; lsn=24/96805A90, redo lsn=24/96805A00
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:23:26.671 CEST LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:23:27.667 CEST LOG:  checkpoint complete: wrote 9 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.964 s, sync=0.007 s, total=0.997 s; sync files=3, longest=0.005 s, average=0.003 s; distance=64 kB, estimate=4296 kB; lsn=24/96815D60, redo lsn=24/96815D08
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:24:17.926 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:24:37.415 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:25:16.437 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:25:58.503 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:28:26.683 CEST LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:28:26.816 CEST LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.005 s, total=0.134 s; sync files=1, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=3867 kB; lsn=24/968160A8, redo lsn=24/96816050
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:43:26.839 CEST LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:43:27.295 CEST LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.437 s, sync=0.004 s, total=0.457 s; sync files=2, longest=0.004 s, average=0.002 s; distance=32 kB, estimate=3483 kB; lsn=24/9681E3B0, redo lsn=24/9681E358
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:51:03.806 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:51:03.807 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:51:03.807 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:51:03.808 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:53:23.594 CEST LOG:  background worker "logical replication launcher" (PID 6228) was terminated by exception 0xC000013A
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:53:23.594 CEST HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-05 08:53:23.595 CEST LOG:  terminating any other active server processes

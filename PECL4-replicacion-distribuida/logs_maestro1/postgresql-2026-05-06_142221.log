@@ -1,0 +1,36 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.587 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.587 CEST LOG:  escuchando en la dirección IPv6 «::», port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.587 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.666 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-05-06 14:19:55 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.074 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.077 CEST LOG:  redo comienza en 0/60013B0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.077 CEST LOG:  largo de registro no válido en 0/60013E8: se esperaba al menos 24, se obtuvo 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.077 CEST LOG:  redo listo en 0/60013B0 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.092 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.104 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.003 s, sync=0.002 s, total=0.024 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=0 kB, estimación=0 kB; lsn=0/60013E8, lsn de redo=0/60013E8
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.119 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:25.189 CEST LOG:  empezando checkpoint: force wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:25.199 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.001 s, sync=0.001 s, total=0.010 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=16379 kB, estimación=16379 kB; lsn=0/7000080, lsn de redo=0/7000028
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:25:39.685 CEST FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:25:39.685 CEST DETALLE:  La conexión coincidió con el archivo «C:/Programs/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:26:50.217 CEST FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:26:50.217 CEST DETALLE:  La conexión coincidió con el archivo «C:/Programs/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:27:25.200 CEST LOG:  empezando checkpoint: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:27:25.447 CEST LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.217 s, sync=0.011 s, total=0.248 s; archivos sincronizados=2, más largo=0.011 s, promedio=0.006 s; distancia=16384 kB, estimación=16384 kB; lsn=0/8000288, lsn de redo=0/8000230
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:28:38.344 CEST FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:28:38.344 CEST DETALLE:  La conexión coincidió con el archivo «C:/Programs/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:47.475 CEST LOG:  la decodificaciÃ³n lÃ³gica encontrÃ³ un punto consistente en 0/8000338
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:47.475 CEST DETALLE:  No hay transacciones en ejecuciÃ³n.
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:47.475 CEST SENTENCIA:  SELECT pg_create_logical_replication_slot('sub_musicos', 'pgoutput');
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:28:54.808 CEST FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:28:54.808 CEST DETALLE:  La conexión coincidió con el archivo «C:/Programs/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:29:30.709 CEST FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=127.0.0.1:5432 2026-05-06 14:29:30.709 CEST DETALLE:  La conexión coincidió con el archivo «C:/Programs/data/pg_hba.conf» línea 115: «host    all             all             127.0.0.1/32            scram-sha-256»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:30:24.921 CEST LOG:  sentencia: ALTER SYSTEM SET lc_messages = 'C';
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:24.966 CEST LOG:  se recibió petición de apagado rápido
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:24.967 CEST LOG:  abortando transacciones activas
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:24.974 CEST LOG:  proceso ayudante «logical replication launcher» (PID 35040) terminó con código de salida 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:24.974 CEST LOG:  apagando
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:24.975 CEST LOG:  empezando checkpoint: shutdown immediate
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:24.993 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.001 s, sync=0.001 s, total=0.019 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=0 kB, estimación=14746 kB; lsn=0/8000370, lsn de redo=0/8000370
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:30:25.009 CEST LOG:  el sistema de bases de datos está apagado

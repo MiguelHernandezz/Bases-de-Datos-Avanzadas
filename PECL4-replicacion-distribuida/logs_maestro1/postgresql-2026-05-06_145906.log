@@ -1,0 +1,79 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:06.992 CEST LOG:  starting PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:06.993 CEST LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:06.993 CEST LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.157 CEST LOG:  database system was interrupted; last known up at 2026-05-06 14:55:25 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.608 CEST LOG:  database system was not properly shut down; automatic recovery in progress
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.612 CEST LOG:  redo starts at 0/80018C0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.612 CEST LOG:  invalid record length at 0/8001FB0: expected at least 24, got 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.612 CEST LOG:  redo done at 0/8001F78 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.626 CEST LOG:  checkpoint starting: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.640 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.026 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=1 kB; lsn=0/8001FB0, redo lsn=0/8001FB0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:59:07.658 CEST LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:07.994 CEST LOG:  starting logical decoding for slot "sub_musicos"
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:07.994 CEST DETAIL:  Streaming transactions committing after 0/8001F78, reading WAL from 0/8001F78.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:07.994 CEST STATEMENT:  START_REPLICATION SLOT "sub_musicos" LOGICAL 0/0 (proto_version '4', streaming 'parallel', origin 'any', publication_names '"pub_musicos"')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:07.995 CEST LOG:  logical decoding found consistent point at 0/8001F78
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:07.995 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:07.995 CEST STATEMENT:  START_REPLICATION SLOT "sub_musicos" LOGICAL 0/0 (proto_version '4', streaming 'parallel', origin 'any', publication_names '"pub_musicos"')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:08.185 CEST LOG:  logical decoding found consistent point at 0/8002040
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:08.185 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:08.185 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:13.431 CEST LOG:  logical decoding found consistent point at 0/8002078
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:13.431 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:13.431 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:18.691 CEST LOG:  logical decoding found consistent point at 0/80020B0
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:18.691 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:18.691 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:24.372 CEST LOG:  logical decoding found consistent point at 0/8002120
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:24.372 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:24.372 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:29.670 CEST LOG:  logical decoding found consistent point at 0/8002158
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:29.670 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:29.670 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:34.929 CEST LOG:  logical decoding found consistent point at 0/8002190
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:34.929 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:34.929 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:40.228 CEST LOG:  logical decoding found consistent point at 0/80021C8
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:40.228 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:40.228 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:45.539 CEST LOG:  logical decoding found consistent point at 0/8002200
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:45.539 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:45.539 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:50.731 CEST LOG:  logical decoding found consistent point at 0/8002238
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:50.731 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:50.731 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:53.626 CEST LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:53.626 CEST STATEMENT:  START_REPLICATION SLOT "sub_musicos" LOGICAL 0/0 (proto_version '4', streaming 'parallel', origin 'any', publication_names '"pub_musicos"')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:53.626 CEST LOG:  unexpected EOF on standby connection
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 14:59:53.626 CEST STATEMENT:  START_REPLICATION SLOT "sub_musicos" LOGICAL 0/0 (proto_version '4', streaming 'parallel', origin 'any', publication_names '"pub_musicos"')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.563 CEST LOG:  starting logical decoding for slot "sub_musicos"
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.563 CEST DETAIL:  Streaming transactions committing after 0/8002270, reading WAL from 0/8002238.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.563 CEST STATEMENT:  START_REPLICATION SLOT "sub_musicos" LOGICAL 0/0 (proto_version '4', streaming 'parallel', origin 'any', publication_names '"pub_musicos"')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.564 CEST LOG:  logical decoding found consistent point at 0/8002238
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.564 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.564 CEST STATEMENT:  START_REPLICATION SLOT "sub_musicos" LOGICAL 0/0 (proto_version '4', streaming 'parallel', origin 'any', publication_names '"pub_musicos"')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.712 CEST LOG:  logical decoding found consistent point at 0/8002270
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.712 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:42.712 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:47.963 CEST LOG:  logical decoding found consistent point at 0/80022A8
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:47.963 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:47.963 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:53.240 CEST LOG:  logical decoding found consistent point at 0/80022E0
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:53.240 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:53.240 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:58.451 CEST LOG:  logical decoding found consistent point at 0/8002318
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:58.451 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:00:58.451 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:03.712 CEST LOG:  logical decoding found consistent point at 0/8002350
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:03.712 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:03.712 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:08.991 CEST LOG:  logical decoding found consistent point at 0/8002388
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:08.991 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:08.991 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:14.276 CEST LOG:  logical decoding found consistent point at 0/80023C0
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:14.276 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:14.276 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:19.565 CEST LOG:  logical decoding found consistent point at 0/80023F8
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:19.565 CEST DETAIL:  There are no running transactions.
+DNI1=[DNI] DNI2=[DNI] host=192.168.1.193:5432 2026-05-06 15:01:19.565 CEST STATEMENT:  CREATE_REPLICATION_SLOT "pg_33960_sync_33862_7610899113640666252" LOGICAL pgoutput (SNAPSHOT 'use')

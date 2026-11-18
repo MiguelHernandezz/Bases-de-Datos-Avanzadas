@@ -1,0 +1,21 @@
+[DNI] [DNI] 2026-05-17 21:20:49.633 CEST LOG:  iniciando PostgreSQL 17.9 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+[DNI] [DNI] 2026-05-17 21:20:49.659 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+[DNI] [DNI] 2026-05-17 21:20:49.660 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+[DNI] [DNI] 2026-05-17 21:20:49.937 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-05-15 15:21:10 CEST
+[DNI] [DNI] 2026-05-17 21:20:51.306 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+[DNI] [DNI] 2026-05-17 21:20:51.318 CEST LOG:  redo comienza en 0/A000C80
+[DNI] [DNI] 2026-05-17 21:20:51.318 CEST LOG:  largo de registro no válido en 0/A000D88: se esperaba al menos 24, se obtuvo 0
+[DNI] [DNI] 2026-05-17 21:20:51.318 CEST LOG:  redo listo en 0/A000D50 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.00 s
+[DNI] [DNI] 2026-05-17 21:20:51.335 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+[DNI] [DNI] 2026-05-17 21:20:51.359 CEST LOG:  checkpoint completo: escritos 3 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.005 s, sync=0.005 s, total=0.030 s; archivos sincronizados=2, más largo=0.004 s, promedio=0.003 s; distancia=0 kB, estimación=0 kB; lsn=0/A000D88, lsn de redo=0/A000D88
+[DNI] [DNI] 2026-05-17 21:20:51.588 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+[DNI] [DNI] 2026-05-17 21:25:51.354 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-05-17 21:25:52.295 CEST LOG:  checkpoint completo: escritos 9 búfers (0.1%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.935 s, sync=0.003 s, total=0.941 s; archivos sincronizados=4, más largo=0.002 s, promedio=0.001 s; distancia=24 kB, estimación=24 kB; lsn=0/A006F68, lsn de redo=0/A006F10
+[DNI] [DNI] 2026-05-17 23:27:13.110 CEST LOG:  se recibió petición de apagado rápido
+[DNI] [DNI] 2026-05-17 23:27:13.114 CEST LOG:  abortando transacciones activas
+[DNI] [DNI] 2026-05-17 23:27:13.123 CEST FATAL:  terminando la conexiÃ³n debido a una orden del administrador
+[DNI] [DNI] 2026-05-17 23:27:13.143 CEST LOG:  proceso ayudante «logical replication launcher» (PID 6576) terminó con código de salida 1
+[DNI] [DNI] 2026-05-17 23:27:13.149 CEST LOG:  apagando
+[DNI] [DNI] 2026-05-17 23:27:13.489 CEST LOG:  empezando checkpoint: shutdown immediate
+[DNI] [DNI] 2026-05-17 23:27:13.497 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.001 s, sync=0.001 s, total=0.010 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=16356 kB, estimación=16356 kB; lsn=0/B000028, lsn de redo=0/B000028
+[DNI] [DNI] 2026-05-17 23:27:13.572 CEST LOG:  el sistema de bases de datos está apagado

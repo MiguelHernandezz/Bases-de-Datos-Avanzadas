@@ -1,0 +1,22 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.748 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.749 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.749 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.814 CEST LOG:  el sistema de bases de datos fue apagado en 2026-05-06 14:29:23 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.821 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:29:30.674 CEST LOG:  sentencia: CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:29:30.710 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:29:30.710 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:29:30.710 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:29:30.710 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:30:37.969 CEST LOG:  sentencia: CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:30:38.001 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  password authentication failed for user "postgres"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:30:38.001 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:30:38.001 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:30:38.001 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.149 CEST LOG:  se recibió petición de apagado rápido
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.152 CEST LOG:  abortando transacciones activas
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.158 CEST LOG:  proceso ayudante «logical replication launcher» (PID 35060) terminó con código de salida 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.159 CEST LOG:  apagando
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.160 CEST LOG:  empezando checkpoint: shutdown immediate
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.175 CEST LOG:  checkpoint completo: escritos 6 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.005 s, sync=0.004 s, total=0.017 s; archivos sincronizados=8, más largo=0.001 s, promedio=0.001 s; distancia=4 kB, estimación=4 kB; lsn=0/80024D0, lsn de redo=0/80024D0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.192 CEST LOG:  el sistema de bases de datos está apagado

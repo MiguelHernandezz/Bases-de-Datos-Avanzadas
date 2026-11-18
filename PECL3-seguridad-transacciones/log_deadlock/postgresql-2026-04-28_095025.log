@@ -1,0 +1,235 @@
+[DNI] [DNI] 2026-04-28 09:50:26.012 CEST LOG:  el sistema de bases de datos fue apagado en 2026-04-28 09:50:22 CEST
+[DNI] [DNI] 2026-04-28 09:51:16.009 CEST LOG:  empezando checkpoint: force wait
+[DNI] [DNI] 2026-04-28 09:51:16.009 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:51:16.009 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:51:16.593 CEST LOG:  checkpoint completo: escritos 8 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.558 s, sync=0.012 s, total=0.587 s; archivos sincronizados=4, más largo=0.005 s, promedio=0.003 s; distancia=16383 kB, estimación=16383 kB; lsn=0/40000B8, lsn de redo=0/4000060
+[DNI] [DNI] 2026-04-28 09:51:17.467 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:51:17.467 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:51:17.470 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:51:17.470 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:52:17.467 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:52:17.467 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:53:17.476 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:53:17.476 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:54:17.487 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:54:17.487 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:55:17.503 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:55:17.503 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:55:25.639 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:55:25.639 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:56:16.600 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-04-28 09:56:16.611 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.001 s, sync=0.001 s, total=0.012 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=32768 kB, estimación=32768 kB; lsn=0/60000B8, lsn de redo=0/6000060
+[DNI] [DNI] 2026-04-28 09:56:25.647 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:56:25.647 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:57:25.651 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:57:25.651 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:58:25.662 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:58:25.662 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 09:59:25.673 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 09:59:25.673 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:00:25.675 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:00:25.675 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:01:25.685 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:01:25.685 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:02:25.687 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:02:25.687 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:03:25.687 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:03:25.687 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:04:25.691 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:04:25.691 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:05:25.707 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:05:25.707 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:06:25.720 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:06:25.720 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:07:25.726 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:07:25.726 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:08:25.741 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:08:25.741 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:09:25.744 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:09:25.744 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:10:25.753 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:10:25.753 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:11:25.760 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:11:25.760 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:12:25.771 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:12:25.771 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:13:25.779 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:13:25.779 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:14:25.791 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:14:25.791 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:15:25.808 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:15:25.808 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:16:25.811 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:16:25.811 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:17:25.824 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:17:25.824 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:18:25.837 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:18:25.837 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:19:25.850 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:19:25.850 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:20:25.862 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:20:25.862 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:21:25.866 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:21:25.866 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:22:25.875 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:22:25.875 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:23:25.892 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:23:25.892 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:24:25.897 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:24:25.897 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:25:25.911 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:25:25.911 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:26:25.912 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:26:25.912 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:27:25.929 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:27:25.929 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:28:25.945 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:28:25.945 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:29:25.956 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:29:25.956 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:30:25.957 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:30:25.957 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:31:25.959 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:31:25.959 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:32:25.976 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:32:25.976 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:33:25.979 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:33:25.979 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:34:25.987 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:34:25.987 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:35:26.001 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:35:26.001 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:36:26.010 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:36:26.010 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:37:26.026 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:37:26.026 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:38:26.039 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:38:26.039 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:39:26.051 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:39:26.051 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:40:26.062 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:40:26.062 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:41:26.067 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:41:26.067 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:42:26.075 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:42:26.075 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:43:26.078 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:43:26.078 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:44:26.084 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:44:26.084 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:45:26.096 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:45:26.096 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:46:26.101 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:46:26.101 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:47:26.119 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:47:26.119 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:48:26.128 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:48:26.128 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:49:26.128 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:49:26.128 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:50:26.138 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:50:26.138 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:51:26.140 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:51:26.140 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:52:26.157 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:52:26.157 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:53:26.164 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:53:26.164 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:54:26.183 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:54:26.183 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:55:26.197 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:55:26.197 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:56:26.210 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:56:26.210 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:57:26.214 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:57:26.214 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:58:26.227 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:58:26.227 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 10:59:26.231 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 10:59:26.231 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:00:26.247 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:00:26.247 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:01:26.263 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:01:26.263 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:02:26.265 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:02:26.265 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:03:26.268 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:03:26.268 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:04:26.279 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:04:26.279 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:05:26.293 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:05:26.293 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:06:26.306 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:06:26.306 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:07:26.317 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:07:26.317 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:08:26.322 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:08:26.322 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:09:26.336 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:09:26.336 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:10:26.349 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:10:26.349 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:11:26.357 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:11:26.357 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:12:26.369 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:12:26.369 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:13:26.376 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:13:26.376 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:14:26.377 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:14:26.377 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:15:26.386 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:15:26.386 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:16:26.391 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:16:26.391 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:17:26.394 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:17:26.394 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:18:26.397 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:18:26.397 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:19:26.405 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:19:26.405 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:20:26.415 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:20:26.415 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:21:26.417 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:21:26.417 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:22:26.433 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:22:26.433 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:23:26.437 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:23:26.437 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:24:26.450 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:24:26.450 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:25:26.458 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:25:26.458 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:26:26.467 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:26:26.467 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:27:26.473 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:27:26.473 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:28:26.476 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:28:26.476 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:29:26.478 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:29:26.478 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:30:26.494 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:30:26.494 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:31:26.499 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:31:26.499 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:32:26.510 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:32:26.510 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:33:26.519 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:33:26.519 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:34:26.532 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:34:26.532 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 11:49:44.635 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 11:49:44.635 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:41:23.995 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:41:23.995 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:42:24.005 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:42:24.005 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:43:24.009 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:43:24.009 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:44:24.012 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:44:24.012 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:45:24.019 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:45:24.019 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:46:24.032 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:46:24.032 CEST DETALLE:  archive_command is not set.
+[DNI] [DNI] 2026-04-28 12:47:24.037 CEST WARNING:  «archive_mode» está activado, pero el archivado no está configurado
+[DNI] [DNI] 2026-04-28 12:47:24.037 CEST DETALLE:  archive_command is not set.

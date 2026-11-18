@@ -1,0 +1,121 @@
+[DNI] [DNI] 2026-03-10 08:26:45.886 CET LOG:  database system was shut down at 2026-03-10 08:26:44 CET
+[DNI] [DNI] 2026-03-10 08:31:45.870 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 08:31:46.012 CET LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.105 s, sync=0.014 s, total=0.144 s; sync files=3, longest=0.012 s, average=0.005 s; distance=6 kB, estimate=6 kB; lsn=1D/922E7A40, redo lsn=1D/922E79E8
+[DNI] [DNI] 2026-03-10 09:06:45.053 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 09:08:20.954 CET ERROR:  relation "estudiantes" already exists
+[DNI] [DNI] 2026-03-10 09:08:20.954 CET STATEMENT:  CREATE TABLE estudiantes(
+	    carnet numeric PRIMARY KEY,
+	    nombre text, apellidos text, 
+	    creditos numeric);
+[DNI] [DNI] 2026-03-10 09:08:20.978 CET ERROR:  relation "asignaturas" already exists
+[DNI] [DNI] 2026-03-10 09:08:20.978 CET STATEMENT:  CREATE TABLE asignaturas (
+	    codigo numeric PRIMARY KEY, 
+	    nombre text, 
+	    caracter text, 
+	    creditos numeric);
+[DNI] [DNI] 2026-03-10 09:08:20.990 CET ERROR:  relation "matriculas" already exists
+[DNI] [DNI] 2026-03-10 09:08:20.990 CET STATEMENT:  CREATE TABLE matriculas (
+	    carnet_estu numeric REFERENCES estudiantes(carnet) ON DELETE RESTRICT ON UPDATE RESTRICT, 
+	    codigo_asig numeric REFERENCES asignaturas(codigo) ON DELETE RESTRICT ON UPDATE RESTRICT, 
+	    nota numeric, 
+	    PRIMARY KEY (carnet_estu, codigo_asig));
+[DNI] [DNI] 2026-03-10 09:08:34.050 CET LOG:  checkpoint complete: wrote 997 buffers (6.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=108.651 s, sync=0.328 s, total=108.998 s; sync files=316, longest=0.070 s, average=0.002 s; distance=4766 kB, estimate=4766 kB; lsn=1D/A1B478F8, redo lsn=1D/9278F2C8
+[DNI] [DNI] 2026-03-10 09:11:15.159 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:11:44.141 CET LOG:  checkpoint complete: wrote 5381 buffers (32.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=28.646 s, sync=0.272 s, total=28.982 s; sync files=20, longest=0.188 s, average=0.014 s; distance=536179 kB, estimate=536179 kB; lsn=1D/D10B8870, redo lsn=1D/B332C1D0
+[DNI] [DNI] 2026-03-10 09:11:49.324 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:12:29.492 CET LOG:  checkpoint complete: wrote 2571 buffers (15.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=39.741 s, sync=0.363 s, total=40.168 s; sync files=3, longest=0.296 s, average=0.121 s; distance=538153 kB, estimate=538153 kB; lsn=1D/F1DB1020, redo lsn=1D/D40B6858
+[DNI] [DNI] 2026-03-10 09:12:36.043 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:13:07.638 CET LOG:  checkpoint complete: wrote 2318 buffers (14.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=31.004 s, sync=0.520 s, total=31.595 s; sync files=3, longest=0.485 s, average=0.174 s; distance=540143 kB, estimate=540143 kB; lsn=1E/12DE24D8, redo lsn=1D/F5032458
+[DNI] [DNI] 2026-03-10 09:13:07.755 CET ERROR:  canceling statement due to user request
+[DNI] [DNI] 2026-03-10 09:13:07.755 CET CONTEXT:  COPY matriculas, line 11507001: " 59858,593411,2"
+[DNI] [DNI] 2026-03-10 09:13:07.755 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:15:10.322 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:15:33.499 CET LOG:  checkpoint complete: wrote 3360 buffers (20.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=22.736 s, sync=0.287 s, total=23.178 s; sync files=25, longest=0.128 s, average=0.012 s; distance=544567 kB, estimate=544567 kB; lsn=1E/343787A0, redo lsn=1E/16400138
+[DNI] [DNI] 2026-03-10 09:15:37.350 CET LOG:  checkpoints are occurring too frequently (27 seconds apart)
+[DNI] [DNI] 2026-03-10 09:15:37.350 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-10 09:15:37.351 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:16:10.553 CET LOG:  checkpoint complete: wrote 4993 buffers (30.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=32.570 s, sync=0.548 s, total=33.203 s; sync files=17, longest=0.435 s, average=0.033 s; distance=539364 kB, estimate=544046 kB; lsn=1E/553F2E30, redo lsn=1E/372B9248
+[DNI] [DNI] 2026-03-10 09:16:14.234 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET CONTEXT:  COPY matriculas, line 7998107
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET LOG:  incomplete message from client
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET CONTEXT:  COPY matriculas, line 7998107
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET ERROR:  unexpected EOF on client connection with an open transaction
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET CONTEXT:  COPY matriculas, line 7998107
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET LOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-03-10 09:16:44.685 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:16:44.702 CET FATAL:  terminating connection because protocol synchronization was lost
+[DNI] [DNI] 2026-03-10 09:17:05.171 CET LOG:  checkpoint complete: wrote 2860 buffers (17.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=50.477 s, sync=0.376 s, total=50.938 s; sync files=12, longest=0.259 s, average=0.032 s; distance=538695 kB, estimate=543511 kB; lsn=1E/75F053F8, redo lsn=1E/580CB080
+[DNI] [DNI] 2026-03-10 09:17:13.187 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:19:50.422 CET LOG:  checkpoint complete: wrote 7989 buffers (48.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=156.932 s, sync=0.233 s, total=157.235 s; sync files=5, longest=0.134 s, average=0.047 s; distance=541308 kB, estimate=543291 kB; lsn=1E/9666A678, redo lsn=1E/7916A200
+[DNI] [DNI] 2026-03-10 09:20:46.899 CET ERROR:  canceling autovacuum task
+[DNI] [DNI] 2026-03-10 09:20:46.899 CET CONTEXT:  while vacuuming block 42609 of relation "public.matriculas"
+	automatic vacuum of table "matriculas.public.matriculas"
+[DNI] [DNI] 2026-03-10 09:21:08.294 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:21:35.626 CET LOG:  checkpoint complete: wrote 2966 buffers (18.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=26.999 s, sync=0.259 s, total=27.332 s; sync files=24, longest=0.100 s, average=0.011 s; distance=539327 kB, estimate=542895 kB; lsn=1E/B80E3560, redo lsn=1E/9A01A0E0
+[DNI] [DNI] 2026-03-10 09:21:37.655 CET LOG:  checkpoints are occurring too frequently (29 seconds apart)
+[DNI] [DNI] 2026-03-10 09:21:37.655 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-10 09:21:37.655 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:22:05.738 CET LOG:  checkpoint complete: wrote 5277 buffers (32.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=27.522 s, sync=0.491 s, total=28.083 s; sync files=10, longest=0.274 s, average=0.050 s; distance=540657 kB, estimate=542671 kB; lsn=1E/D8E010A8, redo lsn=1E/BB016680
+[DNI] [DNI] 2026-03-10 09:22:09.230 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:22:32.707 CET LOG:  checkpoint complete: wrote 2456 buffers (15.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=22.972 s, sync=0.435 s, total=23.477 s; sync files=11, longest=0.353 s, average=0.040 s; distance=540723 kB, estimate=542476 kB; lsn=1E/FA048810, redo lsn=1E/DC023358
+[DNI] [DNI] 2026-03-10 09:22:38.219 CET LOG:  checkpoints are occurring too frequently (29 seconds apart)
+[DNI] [DNI] 2026-03-10 09:22:38.219 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-10 09:22:38.219 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:23:12.157 CET LOG:  checkpoint complete: wrote 2434 buffers (14.9%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=33.280 s, sync=0.573 s, total=33.938 s; sync files=11, longest=0.487 s, average=0.052 s; distance=540874 kB, estimate=542316 kB; lsn=1F/1AE2A110, redo lsn=1E/FD055C30
+[DNI] [DNI] 2026-03-10 09:23:19.030 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:23:36.505 CET LOG:  checkpoint complete: wrote 2179 buffers (13.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=17.036 s, sync=0.360 s, total=17.475 s; sync files=3, longest=0.339 s, average=0.120 s; distance=540670 kB, estimate=542151 kB; lsn=1F/3CCBB9F8, redo lsn=1F/1E055478
+[DNI] [DNI] 2026-03-10 09:23:36.998 CET ERROR:  insert or update on table "matriculas" violates foreign key constraint "matriculas_carnet_estu_fkey"
+[DNI] [DNI] 2026-03-10 09:23:36.998 CET DETAIL:  Key (carnet_estu)=(1) is not present in table "estudiantes".
+[DNI] [DNI] 2026-03-10 09:23:36.998 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:24:01.352 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:25:22.409 CET LOG:  checkpoint complete: wrote 6782 buffers (41.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=80.832 s, sync=0.161 s, total=81.057 s; sync files=10, longest=0.086 s, average=0.017 s; distance=541608 kB, estimate=542097 kB; lsn=1F/5CD66FE8, redo lsn=1F/3F13F480
+[DNI] [DNI] 2026-03-10 09:25:31.232 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:25:50.642 CET LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=19.225 s, sync=0.062 s, total=19.410 s; sync files=2, longest=0.057 s, average=0.031 s; distance=540248 kB, estimate=541912 kB; lsn=1F/661CB8C0, redo lsn=1F/600D5868
+[DNI] [DNI] 2026-03-10 09:30:31.861 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 09:34:04.214 CET LOG:  checkpoint complete: wrote 4163 buffers (25.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 19 recycled; write=211.952 s, sync=0.305 s, total=212.353 s; sync files=31, longest=0.094 s, average=0.010 s; distance=311511 kB, estimate=518872 kB; lsn=1F/91111AB8, redo lsn=1F/7310B710
+[DNI] [DNI] 2026-03-10 09:34:06.589 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:34:27.287 CET LOG:  checkpoint complete: wrote 7156 buffers (43.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=20.062 s, sync=0.550 s, total=20.701 s; sync files=14, longest=0.343 s, average=0.040 s; distance=540464 kB, estimate=540464 kB; lsn=1F/B1F80608, redo lsn=1F/940D7930
+[DNI] [DNI] 2026-03-10 09:34:30.727 CET LOG:  checkpoints are occurring too frequently (24 seconds apart)
+[DNI] [DNI] 2026-03-10 09:34:30.727 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-10 09:34:30.727 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:35:10.393 CET LOG:  checkpoint complete: wrote 2847 buffers (17.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=39.232 s, sync=0.364 s, total=39.667 s; sync files=10, longest=0.314 s, average=0.037 s; distance=539985 kB, estimate=540416 kB; lsn=1F/D2D5A268, redo lsn=1F/B502BFA8
+[DNI] [DNI] 2026-03-10 09:35:13.776 CET ERROR:  canceling statement due to user request
+[DNI] [DNI] 2026-03-10 09:35:13.776 CET CONTEXT:  COPY matriculas, line 8603001: " 269059,431874,5"
+[DNI] [DNI] 2026-03-10 09:35:13.776 CET STATEMENT:  COPY  matriculas FROM STDIN WITH (FORMAT csv, HEADER);
+[DNI] [DNI] 2026-03-10 09:36:04.957 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:36:20.691 CET ERROR:  canceling autovacuum task
+[DNI] [DNI] 2026-03-10 09:36:20.691 CET CONTEXT:  while scanning block 14618 of relation "public.matriculas"
+	automatic vacuum of table "matriculas.public.matriculas"
+[DNI] [DNI] 2026-03-10 09:36:51.365 CET LOG:  checkpoint complete: wrote 1663 buffers (10.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=46.123 s, sync=0.196 s, total=46.409 s; sync files=18, longest=0.044 s, average=0.011 s; distance=540664 kB, estimate=540664 kB; lsn=1F/F4286C20, redo lsn=1F/D602A188
+[DNI] [DNI] 2026-03-10 09:36:53.582 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:37:13.063 CET LOG:  checkpoint complete: wrote 8327 buffers (50.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=19.014 s, sync=0.381 s, total=19.485 s; sync files=18, longest=0.180 s, average=0.022 s; distance=542424 kB, estimate=542424 kB; lsn=20/1530ACF8, redo lsn=1F/F71E0420
+[DNI] [DNI] 2026-03-10 09:37:15.823 CET LOG:  checkpoints are occurring too frequently (22 seconds apart)
+[DNI] [DNI] 2026-03-10 09:37:15.823 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-10 09:37:15.823 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:37:43.022 CET LOG:  checkpoint complete: wrote 2898 buffers (17.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=26.726 s, sync=0.408 s, total=27.199 s; sync files=9, longest=0.293 s, average=0.046 s; distance=538871 kB, estimate=542069 kB; lsn=20/35D5B248, redo lsn=20/1801E158
+[DNI] [DNI] 2026-03-10 09:37:49.497 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:38:25.677 CET LOG:  checkpoint complete: wrote 2417 buffers (14.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=35.608 s, sync=0.507 s, total=36.180 s; sync files=4, longest=0.461 s, average=0.127 s; distance=541260 kB, estimate=541988 kB; lsn=20/56E716D8, redo lsn=20/390B14D8
+[DNI] [DNI] 2026-03-10 09:38:32.276 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:38:56.849 CET LOG:  checkpoint complete: wrote 2185 buffers (13.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=24.077 s, sync=0.424 s, total=24.573 s; sync files=3, longest=0.392 s, average=0.142 s; distance=540207 kB, estimate=541810 kB; lsn=20/794053A8, redo lsn=20/5A03D418
+[DNI] [DNI] 2026-03-10 09:38:57.180 CET LOG:  checkpoints are occurring too frequently (25 seconds apart)
+[DNI] [DNI] 2026-03-10 09:38:57.180 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-10 09:38:57.180 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:43:27.148 CET LOG:  checkpoint complete: wrote 2828 buffers (17.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=269.844 s, sync=0.013 s, total=269.968 s; sync files=9, longest=0.005 s, average=0.002 s; distance=544457 kB, estimate=544457 kB; lsn=20/95C699E8, redo lsn=20/7B3EFB48
+[DNI] [DNI] 2026-03-10 09:43:41.405 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-10 09:45:18.637 CET LOG:  checkpoint complete: wrote 894 buffers (5.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=97.142 s, sync=0.020 s, total=97.233 s; sync files=5, longest=0.013 s, average=0.004 s; distance=537717 kB, estimate=543783 kB; lsn=20/B3E9D938, redo lsn=20/9C10D110
+[DNI] [DNI] 2026-03-10 09:53:41.651 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 09:54:02.837 CET LOG:  checkpoint complete: wrote 192 buffers (1.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 23 recycled; write=21.084 s, sync=0.015 s, total=21.187 s; sync files=8, longest=0.004 s, average=0.002 s; distance=390738 kB, estimate=528479 kB; lsn=20/B3EA1B58, redo lsn=20/B3EA1AC8
+[DNI] [DNI] 2026-03-10 10:17:06.922 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 10:21:36.114 CET LOG:  checkpoint complete: wrote 8539 buffers (52.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 10 recycled; write=269.109 s, sync=0.011 s, total=269.192 s; sync files=7, longest=0.008 s, average=0.002 s; distance=154699 kB, estimate=491101 kB; lsn=20/BD5B4B48, redo lsn=20/BD5B4AB8
+[DNI] [DNI] 2026-03-10 10:32:06.140 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 10:32:06.496 CET LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.326 s, sync=0.005 s, total=0.357 s; sync files=2, longest=0.004 s, average=0.003 s; distance=12 kB, estimate=441992 kB; lsn=20/BD5B7C70, redo lsn=20/BD5B7C18
+[DNI] [DNI] 2026-03-10 10:42:06.517 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-10 10:42:06.847 CET LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.316 s, sync=0.004 s, total=0.331 s; sync files=2, longest=0.003 s, average=0.002 s; distance=10 kB, estimate=397794 kB; lsn=20/BD5BA788, redo lsn=20/BD5BA730
+[DNI] [DNI] 2026-03-10 20:05:14.988 CET LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	

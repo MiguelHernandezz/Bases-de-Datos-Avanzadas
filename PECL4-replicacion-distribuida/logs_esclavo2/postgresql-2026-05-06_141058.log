@@ -1,0 +1,14 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was shut down at 2026-05-06 14:10:57 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: immediate force wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.003 s, total=0.012 s; sync files=3, longest=0.002 s, average=0.001 s; distance=2 kB, estimate=2 kB; lsn=24/96821080, redo lsn=24/96821028
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  received fast shutdown request
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  aborting any active transactions
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication launcher" (PID 17640) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  shutting down
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: shutdown immediate
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 1005 buffers (6.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.027 s, sync=0.101 s, total=0.134 s; sync files=311, longest=0.001 s, average=0.001 s; distance=4722 kB, estimate=4722 kB; lsn=24/96CBDAD0, redo lsn=24/96CBDAD0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is shut down

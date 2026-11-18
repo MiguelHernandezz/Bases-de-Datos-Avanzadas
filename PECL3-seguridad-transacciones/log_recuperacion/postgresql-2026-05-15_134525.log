@@ -1,0 +1,44 @@
+[DNI] [DNI] 2026-05-15 13:45:25.559 CEST LOG:  iniciando PostgreSQL 17.9 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+[DNI] [DNI] 2026-05-15 13:45:25.560 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+[DNI] [DNI] 2026-05-15 13:45:25.560 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+[DNI] [DNI] 2026-05-15 13:45:25.590 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-04-28 12:56:21 CEST
+[DNI] [DNI] 2026-05-15 13:45:25.590 CEST LOG:  creando el directorio WAL faltante «pg_wal/archive_status»
+[DNI] [DNI] 2026-05-15 13:45:25.590 CEST LOG:  creando el directorio WAL faltante «pg_wal/summaries»
+[DNI] [DNI] 2026-05-15 13:45:25.721 CEST LOG:  iniciando recuperación de backup con LSN de redo 0/7000028, LSN de checkpoint 0/7000080, en timeline 1
+[DNI] [DNI] 2026-05-15 13:45:25.781 CEST LOG:  se ha restaurado el archivo «000000010000000000000007» desde el área de archivado
+[DNI] [DNI] 2026-05-15 13:45:25.792 CEST LOG:  comenzando proceso de recuperación
+[DNI] [DNI] 2026-05-15 13:45:25.794 CEST LOG:  redo comienza en 0/7000028
+[DNI] [DNI] 2026-05-15 13:45:25.795 CEST LOG:  se completó la recuperación de backup con LSN de redo 0/7000028 y LSN de término 0/7000120
+[DNI] [DNI] 2026-05-15 13:45:25.795 CEST LOG:  el estado de recuperación consistente fue alcanzado en 0/7000120
+[DNI] [DNI] 2026-05-15 13:45:25.795 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones de sólo lectura
+[DNI] [DNI] 2026-05-15 13:45:25.814 CEST LOG:  se ha restaurado el archivo «000000010000000000000008» desde el área de archivado
+[DNI] [DNI] 2026-05-15 13:45:25.847 CEST LOG:  se ha restaurado el archivo «000000010000000000000009» desde el área de archivado
+[DNI] [DNI] 2026-05-15 13:45:25.867 CEST LOG:  redo listo en 0/90001E0 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.07 s
+[DNI] [DNI] 2026-05-15 13:45:25.867 CEST LOG:  última transacción completada al tiempo de registro 2026-05-05 09:20:28.854244+02
+[DNI] [DNI] 2026-05-15 13:45:25.882 CEST LOG:  se ha restaurado el archivo «000000010000000000000009» desde el área de archivado
+[DNI] [DNI] 2026-05-15 13:45:25.901 CEST LOG:  seleccionado nuevo ID de timeline: 2
+[DNI] [DNI] 2026-05-15 13:45:25.941 CEST LOG:  recuperación completa
+[DNI] [DNI] 2026-05-15 13:45:25.942 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+[DNI] [DNI] 2026-05-15 13:45:25.963 CEST LOG:  checkpoint completo: escritos 62 búfers (0.4%); 0 archivos WAL añadidos, 0 eliminados, 3 reciclados; write=0.003 s, sync=0.014 s, total=0.023 s; archivos sincronizados=50, más largo=0.001 s, promedio=0.001 s; distancia=49152 kB, estimación=49152 kB; lsn=0/A000028, lsn de redo=0/A000028
+[DNI] [DNI] 2026-05-15 13:45:25.982 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+[DNI] [DNI] 2026-05-15 14:05:25.968 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-05-15 14:05:26.997 CEST LOG:  checkpoint completo: escritos 9 búfers (0.1%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.993 s, sync=0.014 s, total=1.030 s; archivos sincronizados=7, más largo=0.005 s, promedio=0.002 s; distancia=0 kB, estimación=44236 kB; lsn=0/A0003D8, lsn de redo=0/A0001D8
+[DNI] [DNI] 2026-05-15 14:06:50.428 CEST ERROR:  se ha detectado un deadlock
+[DNI] [DNI] 2026-05-15 14:06:50.428 CEST DETALLE:  El proceso 1616 espera ShareLock en transacciÃ³n 787; bloqueado por proceso 13844.
+	El proceso 13844 espera ShareLock en transacciÃ³n 789; bloqueado por proceso 4184.
+	El proceso 4184 espera ShareLock en transacciÃ³n 788; bloqueado por proceso 1616.
+	Proceso 1616: UPDATE ValorC SET C = 190;
+	Proceso 13844: UPDATE ValorA SET A = 140;
+	Proceso 4184: UPDATE ValorB SET B = 45000;
+[DNI] [DNI] 2026-05-15 14:06:50.428 CEST HINT:  Vea el registro del servidor para obtener detalles de las consultas.
+[DNI] [DNI] 2026-05-15 14:06:50.428 CEST CONTEXTO:  mientras se actualizaba la tupla (0,2) en la relaciÃ³n Â«valorcÂ»
+[DNI] [DNI] 2026-05-15 14:06:50.428 CEST SENTENCIA:  UPDATE ValorC SET C = 190;
+[DNI] [DNI] 2026-05-15 14:10:26.011 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-05-15 14:10:26.570 CEST LOG:  checkpoint completo: escritos 6 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.532 s, sync=0.006 s, total=0.560 s; archivos sincronizados=6, más largo=0.003 s, promedio=0.001 s; distancia=1 kB, estimación=39813 kB; lsn=0/A000780, lsn de redo=0/A000720
+[DNI] [DNI] 2026-05-15 15:21:09.764 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-05-15 15:21:10.338 CEST LOG:  checkpoint completo: escritos 6 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.547 s, sync=0.013 s, total=0.575 s; archivos sincronizados=6, más largo=0.005 s, promedio=0.003 s; distancia=1 kB, estimación=35832 kB; lsn=0/A000CD8, lsn de redo=0/A000C80
+[DNI] [DNI] 2026-05-15 16:07:49.441 CEST LOG:  proceso de servidor (PID 4184) fue terminado por una excepción 0xC000013A
+[DNI] [DNI] 2026-05-15 16:07:49.441 CEST DETALLE:  El proceso que falló estaba ejecutando: COMMIT;
+[DNI] [DNI] 2026-05-15 16:07:49.441 CEST HINT:  Vea el archivo «ntstatus.h» para una descripción del valor hexadecimal.
+[DNI] [DNI] 2026-05-15 16:07:49.442 CEST LOG:  terminando todos los otros procesos de servidor activos
+[DNI] [DNI] 2026-05-15 16:07:49.458 CEST LOG:  todos los procesos fueron terminados; reinicializando

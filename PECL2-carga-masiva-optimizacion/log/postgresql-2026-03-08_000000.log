@@ -1,0 +1,339 @@
+[DNI] [DNI] 2026-03-08 00:00:17.895 CET ERROR:  relation "idx_estid_hash" already exists
+[DNI] [DNI] 2026-03-08 00:00:17.895 CET STATEMENT:  CREATE INDEX idx_estid_hash ON estudiantes2 USING hash(estudiante_id);
+[DNI] [DNI] 2026-03-08 00:00:18.767 CET ERROR:  function hash_metapage(text) does not exist at character 70
+[DNI] [DNI] 2026-03-08 00:00:18.767 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:00:18.767 CET STATEMENT:  SELECT magic, version, ntuples, ffactor, bsize, bmsize, bmcount
+	FROM hash_metapage('idx_estid_hash'::text);
+[DNI] [DNI] 2026-03-08 00:02:09.198 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:02:25.258 CET LOG:  checkpoint complete: wrote 17 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=15.890 s, sync=0.110 s, total=16.061 s; sync files=18, longest=0.105 s, average=0.007 s; distance=539748 kB, estimate=554054 kB; lsn=15/7EA23DE8, redo lsn=15/60108CE0
+[DNI] [DNI] 2026-03-08 00:02:25.615 CET LOG:  checkpoints are occurring too frequently (16 seconds apart)
+[DNI] [DNI] 2026-03-08 00:02:25.615 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:02:25.615 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:02:31.455 CET LOG:  checkpoint complete: wrote 34 buffers (0.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=5.622 s, sync=0.147 s, total=5.840 s; sync files=1, longest=0.147 s, average=0.147 s; distance=539709 kB, estimate=552620 kB; lsn=15/9F7F1E70, redo lsn=15/81018108
+[DNI] [DNI] 2026-03-08 00:02:31.791 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:02:31.791 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:02:31.791 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:02:37.122 CET LOG:  checkpoint complete: wrote 6379 buffers (38.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=5.129 s, sync=0.147 s, total=5.331 s; sync files=1, longest=0.147 s, average=0.147 s; distance=542996 kB, estimate=551657 kB; lsn=15/C0C74648, redo lsn=15/A225D2A0
+[DNI] [DNI] 2026-03-08 00:02:37.453 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:02:37.453 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:02:37.454 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:02:42.591 CET LOG:  checkpoint complete: wrote 6189 buffers (37.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=4.937 s, sync=0.107 s, total=5.138 s; sync files=1, longest=0.106 s, average=0.106 s; distance=542347 kB, estimate=550726 kB; lsn=15/E20066B0, redo lsn=15/C3400088
+[DNI] [DNI] 2026-03-08 00:02:46.626 CET ERROR:  function hash_metapage(regclass) does not exist at character 142
+[DNI] [DNI] 2026-03-08 00:02:46.626 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:02:46.626 CET STATEMENT:  SELECT 
+	    magic, 
+	    version, 
+	    ntuples AS registros_indexados, 
+	    ffactor AS factor_relleno, 
+	    bsize AS tama¤o_bucket_bytes
+	FROM hash_metapage('idx_estid_hash'::regclass);
+[DNI] [DNI] 2026-03-08 00:04:15.479 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:04:20.407 CET LOG:  checkpoint complete: wrote 1627 buffers (9.9%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.821 s, sync=0.054 s, total=4.928 s; sync files=18, longest=0.026 s, average=0.003 s; distance=540681 kB, estimate=549722 kB; lsn=16/23AA748, redo lsn=15/E4402538
+[DNI] [DNI] 2026-03-08 00:04:20.837 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:04:20.837 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:04:20.838 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:04:25.976 CET LOG:  checkpoint complete: wrote 49 buffers (0.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.934 s, sync=0.153 s, total=5.139 s; sync files=1, longest=0.153 s, average=0.153 s; distance=540662 kB, estimate=548816 kB; lsn=16/239EE728, redo lsn=16/54000A0
+[DNI] [DNI] 2026-03-08 00:04:26.327 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:04:26.327 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:04:26.327 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:04:31.475 CET LOG:  checkpoint complete: wrote 6657 buffers (40.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.931 s, sync=0.147 s, total=5.149 s; sync files=1, longest=0.147 s, average=0.147 s; distance=537825 kB, estimate=547717 kB; lsn=16/44E0A8A0, redo lsn=16/261384F8
+[DNI] [DNI] 2026-03-08 00:04:31.781 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:04:31.781 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:04:31.782 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:04:42.351 CET ERROR:  function hash_metap(unknown) does not exist at character 142
+[DNI] [DNI] 2026-03-08 00:04:42.351 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:04:42.351 CET STATEMENT:  SELECT 
+	    magic, 
+	    version, 
+	    ntuples AS registros_indexados, 
+	    ffactor AS factor_relleno, 
+	    bsize AS tama¤o_bucket_bytes
+	FROM hash_metap('idx_estid_hash');
+[DNI] [DNI] 2026-03-08 00:05:16.996 CET LOG:  checkpoint complete: wrote 5201 buffers (31.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=45.132 s, sync=0.035 s, total=45.215 s; sync files=1, longest=0.035 s, average=0.035 s; distance=543520 kB, estimate=547297 kB; lsn=16/6446D0A0, redo lsn=16/474006F0
+[DNI] [DNI] 2026-03-08 00:08:11.805 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:08:16.792 CET LOG:  checkpoint complete: wrote 3476 buffers (21.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.826 s, sync=0.109 s, total=4.988 s; sync files=15, longest=0.105 s, average=0.008 s; distance=540670 kB, estimate=546634 kB; lsn=16/86788A58, redo lsn=16/684001B8
+[DNI] [DNI] 2026-03-08 00:08:17.154 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:08:17.154 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:08:17.154 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:08:22.298 CET LOG:  checkpoint complete: wrote 21 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.947 s, sync=0.143 s, total=5.144 s; sync files=1, longest=0.143 s, average=0.143 s; distance=538000 kB, estimate=545771 kB; lsn=16/A79E0028, redo lsn=16/891642C8
+[DNI] [DNI] 2026-03-08 00:08:22.705 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:08:22.705 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:08:22.706 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:08:27.751 CET LOG:  checkpoint complete: wrote 6222 buffers (38.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.820 s, sync=0.159 s, total=5.047 s; sync files=1, longest=0.159 s, average=0.159 s; distance=543343 kB, estimate=545528 kB; lsn=16/C8994E18, redo lsn=16/AA400120
+[DNI] [DNI] 2026-03-08 00:08:28.095 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:08:28.095 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:08:28.095 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:08:41.885 CET ERROR:  function hash_metap(text) does not exist at character 138
+[DNI] [DNI] 2026-03-08 00:08:41.885 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:08:41.885 CET STATEMENT:  SELECT 
+	    magic, 
+	    version, 
+	    ntuples AS filas_indexadas, 
+	    ffactor AS factor_relleno, 
+	    bsize AS tama¤o_bloque_bytes
+	FROM hash_metap('idx_estid_hash'::text);
+[DNI] [DNI] 2026-03-08 00:10:55.354 CET LOG:  checkpoint complete: wrote 4174 buffers (25.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=147.181 s, sync=0.004 s, total=147.260 s; sync files=1, longest=0.004 s, average=0.004 s; distance=538691 kB, estimate=544844 kB; lsn=16/E6717B18, redo lsn=16/CB210D28
+[DNI] [DNI] 2026-03-08 00:11:14.508 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:11:19.512 CET LOG:  checkpoint complete: wrote 5345 buffers (32.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.825 s, sync=0.125 s, total=5.005 s; sync files=15, longest=0.120 s, average=0.009 s; distance=542652 kB, estimate=544625 kB; lsn=17/AF786B0, redo lsn=16/EC400120
+[DNI] [DNI] 2026-03-08 00:11:19.837 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:11:19.837 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:11:19.837 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:11:24.969 CET LOG:  checkpoint complete: wrote 49 buffers (0.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.937 s, sync=0.147 s, total=5.133 s; sync files=1, longest=0.147 s, average=0.147 s; distance=540674 kB, estimate=544230 kB; lsn=17/2BA42FC0, redo lsn=17/D400C10
+[DNI] [DNI] 2026-03-08 00:11:25.327 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:11:25.327 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:11:25.327 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:11:30.455 CET LOG:  checkpoint complete: wrote 6420 buffers (39.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.934 s, sync=0.130 s, total=5.128 s; sync files=1, longest=0.130 s, average=0.130 s; distance=539375 kB, estimate=543745 kB; lsn=17/4CDA6838, redo lsn=17/2E2BC8C0
+[DNI] [DNI] 2026-03-08 00:11:30.784 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:11:30.784 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:11:30.785 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:12:56.409 CET ERROR:  function public.hash_metap(text) does not exist at character 15
+[DNI] [DNI] 2026-03-08 00:12:56.409 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:12:56.409 CET STATEMENT:  SELECT * FROM public.hash_metap('idx_estid_hash'::text);
+[DNI] [DNI] 2026-03-08 00:14:19.733 CET LOG:  checkpoint complete: wrote 3279 buffers (20.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=168.847 s, sync=0.048 s, total=168.949 s; sync files=15, longest=0.032 s, average=0.004 s; distance=541973 kB, estimate=543567 kB; lsn=17/6DC908C0, redo lsn=17/4F401FC0
+[DNI] [DNI] 2026-03-08 00:14:20.066 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:14:25.082 CET LOG:  checkpoint complete: wrote 7101 buffers (43.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.833 s, sync=0.132 s, total=5.017 s; sync files=2, longest=0.131 s, average=0.066 s; distance=540664 kB, estimate=543277 kB; lsn=17/8EF3C820, redo lsn=17/704002C8
+[DNI] [DNI] 2026-03-08 00:14:25.407 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:14:25.407 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:14:25.408 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:14:30.554 CET LOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.932 s, sync=0.148 s, total=5.147 s; sync files=1, longest=0.148 s, average=0.148 s; distance=540683 kB, estimate=543018 kB; lsn=17/AFE997C0, redo lsn=17/914030B0
+[DNI] [DNI] 2026-03-08 00:14:30.865 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:14:30.865 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:14:30.865 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:14:35.897 CET LOG:  checkpoint complete: wrote 6260 buffers (38.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.820 s, sync=0.150 s, total=5.033 s; sync files=1, longest=0.150 s, average=0.150 s; distance=540660 kB, estimate=542782 kB; lsn=17/D0CEC670, redo lsn=17/B2400208
+[DNI] [DNI] 2026-03-08 00:14:36.212 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:14:36.212 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:14:36.213 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:14:41.523 CET ERROR:  function hash_metapage(bytea) does not exist at character 15
+[DNI] [DNI] 2026-03-08 00:14:41.523 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:14:41.523 CET STATEMENT:  SELECT * FROM hash_metapage(get_raw_page('idx_estid_hash', 0));
+[DNI] [DNI] 2026-03-08 00:16:57.290 CET LOG:  checkpoint complete: wrote 1671 buffers (10.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=141.012 s, sync=0.013 s, total=141.079 s; sync files=16, longest=0.007 s, average=0.001 s; distance=540683 kB, estimate=542572 kB; lsn=17/F14A45D8, redo lsn=17/D3403130
+[DNI] [DNI] 2026-03-08 00:16:57.706 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:17:02.773 CET LOG:  checkpoint complete: wrote 7728 buffers (47.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.848 s, sync=0.143 s, total=5.068 s; sync files=2, longest=0.142 s, average=0.072 s; distance=540660 kB, estimate=542381 kB; lsn=18/12C46858, redo lsn=17/F4400160
+[DNI] [DNI] 2026-03-08 00:17:03.197 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:17:03.197 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:17:03.197 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:17:08.371 CET LOG:  checkpoint complete: wrote 9 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=4.938 s, sync=0.148 s, total=5.174 s; sync files=1, longest=0.148 s, average=0.148 s; distance=540671 kB, estimate=542210 kB; lsn=18/3406CE40, redo lsn=18/15400058
+[DNI] [DNI] 2026-03-08 00:17:08.668 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:17:08.668 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:17:08.669 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:17:13.877 CET LOG:  checkpoint complete: wrote 6502 buffers (39.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=5.015 s, sync=0.129 s, total=5.209 s; sync files=1, longest=0.129 s, average=0.129 s; distance=540671 kB, estimate=542056 kB; lsn=18/54F727A0, redo lsn=18/36400038
+[DNI] [DNI] 2026-03-08 00:17:14.169 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:17:14.169 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:17:14.170 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:17:41.192 CET ERROR:  function hash_metap(regclass) does not exist at character 132
+[DNI] [DNI] 2026-03-08 00:17:41.192 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:17:41.192 CET STATEMENT:  SELECT 
+	    magic, 
+	    version, 
+	    ntuples AS filas_indexadas, 
+	    ffactor AS factor_relleno, 
+	    bsize AS tama¤o_bloque
+	FROM hash_metap('idx_estid_hash'::regclass);
+[DNI] [DNI] 2026-03-08 00:21:44.243 CET LOG:  checkpoint complete: wrote 1101 buffers (6.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=269.915 s, sync=0.112 s, total=270.075 s; sync files=15, longest=0.104 s, average=0.008 s; distance=540672 kB, estimate=541918 kB; lsn=18/6D796BA0, redo lsn=18/574000B0
+[DNI] [DNI] 2026-03-08 00:21:50.896 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:21:55.943 CET LOG:  checkpoint complete: wrote 5676 buffers (34.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.834 s, sync=0.160 s, total=5.047 s; sync files=2, longest=0.160 s, average=0.080 s; distance=540669 kB, estimate=541793 kB; lsn=18/968DA6D0, redo lsn=18/783FF610
+[DNI] [DNI] 2026-03-08 00:21:56.300 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:21:56.300 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:21:56.300 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:22:01.443 CET LOG:  checkpoint complete: wrote 17 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.933 s, sync=0.147 s, total=5.144 s; sync files=1, longest=0.147 s, average=0.147 s; distance=537912 kB, estimate=541405 kB; lsn=18/B7A9DE60, redo lsn=18/9914D840
+[DNI] [DNI] 2026-03-08 00:22:01.802 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 00:22:01.802 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:22:01.802 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:22:06.814 CET LOG:  checkpoint complete: wrote 6462 buffers (39.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=4.823 s, sync=0.127 s, total=5.013 s; sync files=1, longest=0.127 s, average=0.127 s; distance=542464 kB, estimate=542464 kB; lsn=18/D8A045F0, redo lsn=18/BA30D850
+[DNI] [DNI] 2026-03-08 00:22:07.166 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 00:22:07.166 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 00:22:07.166 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 00:22:26.352 CET ERROR:  function hash_metapage(regclass) does not exist at character 136
+[DNI] [DNI] 2026-03-08 00:22:26.352 CET HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+[DNI] [DNI] 2026-03-08 00:22:26.352 CET STATEMENT:  SELECT 
+	    magic, 
+	    version, 
+	    ntuples AS registros_indexados, 
+	    ffactor AS factor_relleno, 
+	    bsize AS tama¤o_bucket
+	FROM hash_metapage('idx_estid_hash'::regclass);
+[DNI] [DNI] 2026-03-08 00:26:37.100 CET LOG:  checkpoint complete: wrote 472 buffers (2.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=269.868 s, sync=0.003 s, total=269.935 s; sync files=1, longest=0.003 s, average=0.003 s; distance=539288 kB, estimate=542146 kB; lsn=18/EF0C9590, redo lsn=18/DB1B3A18
+[DNI] [DNI] 2026-03-08 00:48:13.903 CET ERROR:  syntax error at or near "s2" at character 1
+[DNI] [DNI] 2026-03-08 00:48:13.903 CET STATEMENT:  s2 WHERE estudiante_id > 29999900;
+[DNI] [DNI] 2026-03-08 00:49:50.937 CET ERROR:  syntax error at or near "s2" at character 1
+[DNI] [DNI] 2026-03-08 00:49:50.937 CET STATEMENT:  s2 WHERE estudiante_id > 29999900;
+[DNI] [DNI] 2026-03-08 00:50:35.204 CET ERROR:  syntax error at or near "HERE" at character 1
+[DNI] [DNI] 2026-03-08 00:50:35.204 CET STATEMENT:  HERE estudiante_id = 15432678;
+[DNI] [DNI] 2026-03-08 00:52:07.159 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-08 00:55:45.616 CET ERROR:  syntax error at or near "E" at character 1
+[DNI] [DNI] 2026-03-08 00:55:45.616 CET STATEMENT:  E 
+	SELECT * FROM estudiantes2 WHERE estudiante_id = 15432678;
+[DNI] [DNI] 2026-03-08 00:56:24.504 CET ERROR:  syntax error at or near "E" at character 1
+[DNI] [DNI] 2026-03-08 00:56:24.504 CET STATEMENT:  E 
+	SELECT * FROM estudiantes2 WHERE estudiante_id = 15432678;
+[DNI] [DNI] 2026-03-08 00:56:37.147 CET LOG:  checkpoint complete: wrote 16050 buffers (98.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 20 recycled; write=269.897 s, sync=0.015 s, total=269.988 s; sync files=7, longest=0.006 s, average=0.003 s; distance=326772 kB, estimate=520609 kB; lsn=18/EF0D0D30, redo lsn=18/EF0D0CA0
+[DNI] [DNI] 2026-03-08 01:07:07.160 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-08 01:07:08.462 CET LOG:  checkpoint complete: wrote 11 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 11 recycled; write=1.213 s, sync=0.036 s, total=1.303 s; sync files=18, longest=0.004 s, average=0.002 s; distance=183741 kB, estimate=486922 kB; lsn=18/FA440398, redo lsn=18/FA440340
+[DNI] [DNI] 2026-03-08 01:29:14.914 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 01:29:21.388 CET LOG:  checkpoint complete: wrote 1989 buffers (12.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=6.163 s, sync=0.252 s, total=6.475 s; sync files=17, longest=0.208 s, average=0.015 s; distance=540416 kB, estimate=540416 kB; lsn=19/3A400CE8, redo lsn=19/1B400540
+[DNI] [DNI] 2026-03-08 01:29:21.738 CET LOG:  checkpoints are occurring too frequently (7 seconds apart)
+[DNI] [DNI] 2026-03-08 01:29:21.738 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 01:29:21.738 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 01:29:28.187 CET LOG:  checkpoint complete: wrote 1923 buffers (11.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=6.204 s, sync=0.164 s, total=6.450 s; sync files=2, longest=0.101 s, average=0.082 s; distance=540671 kB, estimate=540671 kB; lsn=19/5B01E5A0, redo lsn=19/3C400150
+[DNI] [DNI] 2026-03-08 01:29:28.566 CET LOG:  checkpoints are occurring too frequently (7 seconds apart)
+[DNI] [DNI] 2026-03-08 01:29:28.566 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 01:29:28.566 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 01:29:34.672 CET LOG:  checkpoint complete: wrote 1905 buffers (11.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=5.932 s, sync=0.112 s, total=6.107 s; sync files=2, longest=0.106 s, average=0.056 s; distance=538290 kB, estimate=540432 kB; lsn=19/7B58A490, redo lsn=19/5D1AC9C8
+[DNI] [DNI] 2026-03-08 01:30:05.158 CET ERROR:  column "nbuckets" does not exist at character 8
+[DNI] [DNI] 2026-03-08 01:30:05.158 CET STATEMENT:  SELECT nbuckets FROM hash_metapage_info(get_raw_page('idx_indice_hash', 0));
+[DNI] [DNI] 2026-03-08 01:32:34.398 CET ERROR:  relation "idx_indice_hash" already exists
+[DNI] [DNI] 2026-03-08 01:32:34.398 CET STATEMENT:  CREATE INDEX idx_indice_hash ON estudiantes2 USING hash(indice);
+[DNI] [DNI] 2026-03-08 01:32:36.313 CET ERROR:  column "nbuckets" does not exist at character 8
+[DNI] [DNI] 2026-03-08 01:32:36.313 CET STATEMENT:  SELECT nbuckets FROM hash_metapage_info(get_raw_page('idx_indice_hash', 0));
+[DNI] [DNI] 2026-03-08 01:34:28.674 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-08 01:37:04.810 CET LOG:  checkpoint complete: wrote 7962 buffers (48.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 31 recycled; write=155.897 s, sync=0.187 s, total=156.136 s; sync files=17, longest=0.181 s, average=0.011 s; distance=511431 kB, estimate=537532 kB; lsn=19/9ADC48B0, redo lsn=19/7C51E740
+[DNI] [DNI] 2026-03-08 01:37:05.239 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 01:37:11.636 CET LOG:  checkpoint complete: wrote 1959 buffers (12.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=6.137 s, sync=0.182 s, total=6.399 s; sync files=3, longest=0.163 s, average=0.061 s; distance=539526 kB, estimate=539526 kB; lsn=19/BC1B14D0, redo lsn=19/9D4000D0
+[DNI] [DNI] 2026-03-08 01:37:11.994 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 01:37:11.994 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 01:37:11.994 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 01:37:18.384 CET LOG:  checkpoint complete: wrote 1916 buffers (11.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=6.169 s, sync=0.161 s, total=6.390 s; sync files=2, longest=0.099 s, average=0.081 s; distance=538852 kB, estimate=539458 kB; lsn=19/DCA34050, redo lsn=19/BE239158
+[DNI] [DNI] 2026-03-08 01:37:18.867 CET LOG:  checkpoints are occurring too frequently (7 seconds apart)
+[DNI] [DNI] 2026-03-08 01:37:18.867 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 01:37:18.867 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 01:37:25.151 CET LOG:  checkpoint complete: wrote 1917 buffers (11.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=6.052 s, sync=0.181 s, total=6.285 s; sync files=2, longest=0.116 s, average=0.091 s; distance=542493 kB, estimate=542493 kB; lsn=19/FDBA02E0, redo lsn=19/DF4005C8
+[DNI] [DNI] 2026-03-08 01:42:18.166 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-08 01:46:48.155 CET LOG:  checkpoint complete: wrote 14647 buffers (89.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 31 recycled; write=269.906 s, sync=0.011 s, total=269.990 s; sync files=6, longest=0.006 s, average=0.002 s; distance=509916 kB, estimate=539235 kB; lsn=19/FE5F7840, redo lsn=19/FE5F77B0
+[DNI] [DNI] 2026-03-08 02:21:08.857 CET LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-03-08 20:19:49.960 CET ERROR:  relation "estudiantes_temp" does not exist
+[DNI] [DNI] 2026-03-08 20:19:49.960 CET STATEMENT:  COPY  estudiantes_temp FROM STDIN DELIMITER ',' CSV HEADER
+[DNI] [DNI] 2026-03-08 20:19:52.157 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-08 20:19:56.284 CET LOG:  checkpoint complete: wrote 37 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.061 s, sync=0.032 s, total=4.129 s; sync files=32, longest=0.005 s, average=0.001 s; distance=125 kB, estimate=485324 kB; lsn=19/FE616D98, redo lsn=19/FE616D40
+[DNI] [DNI] 2026-03-08 20:21:58.885 CET ERROR:  syntax error at or near "/" at character 1
+[DNI] [DNI] 2026-03-08 20:21:58.885 CET STATEMENT:  /copy estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice) 
+	FROM 'C:\Users\migue\Clase\Proyectos\Python\PL1 BASES DE DATOS AVANZADAS\PROGRAMA\datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-03-08 20:22:17.723 CET ERROR:  could not open file "C:\Users\migue\Clase\Proyectos\Python\PL1 BASES DE DATOS AVANZADAS\PROGRAMA\datos_estudiantes.csv" for reading: Permission denied
+[DNI] [DNI] 2026-03-08 20:22:17.723 CET HINT:  COPY FROM instructs the PostgreSQL server process to read a file. You may want a client-side facility such as psql's \copy.
+[DNI] [DNI] 2026-03-08 20:22:17.723 CET STATEMENT:  COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice) 
+	FROM 'C:\Users\migue\Clase\Proyectos\Python\PL1 BASES DE DATOS AVANZADAS\PROGRAMA\datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-03-08 20:23:34.936 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:23:46.140 CET LOG:  checkpoint complete: wrote 67 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.844 s, sync=0.269 s, total=11.205 s; sync files=42, longest=0.176 s, average=0.007 s; distance=537673 kB, estimate=537673 kB; lsn=1A/3DBA9970, redo lsn=1A/1F3293F0
+[DNI] [DNI] 2026-03-08 20:23:47.009 CET LOG:  checkpoints are occurring too frequently (13 seconds apart)
+[DNI] [DNI] 2026-03-08 20:23:47.009 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:23:47.011 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:25:06.211 CET LOG:  checkpoint complete: wrote 28 buffers (0.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=79.031 s, sync=0.103 s, total=79.203 s; sync files=4, longest=0.057 s, average=0.026 s; distance=541547 kB, estimate=541547 kB; lsn=1A/5E033F38, redo lsn=1A/40404258
+[DNI] [DNI] 2026-03-08 20:25:15.960 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:25:35.644 CET LOG:  checkpoint complete: wrote 14 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=19.507 s, sync=0.067 s, total=19.684 s; sync files=5, longest=0.050 s, average=0.014 s; distance=537597 kB, estimate=541152 kB; lsn=1A/67442AA8, redo lsn=1A/611039F0
+[DNI] [DNI] 2026-03-08 20:27:03.404 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:27:22.311 CET LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=18.784 s, sync=0.024 s, total=18.907 s; sync files=2, longest=0.017 s, average=0.012 s; distance=540723 kB, estimate=541109 kB; lsn=1A/8800CCF0, redo lsn=1A/821107E8
+[DNI] [DNI] 2026-03-08 20:28:48.113 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:29:07.161 CET LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=18.920 s, sync=0.014 s, total=19.049 s; sync files=3, longest=0.009 s, average=0.005 s; distance=540520 kB, estimate=541050 kB; lsn=1A/A94A6310, redo lsn=1A/A30EAB40
+[DNI] [DNI] 2026-03-08 20:30:28.102 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:30:46.489 CET LOG:  checkpoint complete: wrote 3 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=18.281 s, sync=0.007 s, total=18.387 s; sync files=2, longest=0.006 s, average=0.004 s; distance=539888 kB, estimate=540934 kB; lsn=1A/C9999440, redo lsn=1A/C4026C68
+[DNI] [DNI] 2026-03-08 20:35:28.800 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-08 20:35:47.122 CET LOG:  checkpoint complete: wrote 167 buffers (1.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 11 recycled; write=18.250 s, sync=0.015 s, total=18.322 s; sync files=9, longest=0.004 s, average=0.002 s; distance=184047 kB, estimate=505245 kB; lsn=1A/CF3E2BD0, redo lsn=1A/CF3E2B40
+[DNI] [DNI] 2026-03-08 20:37:13.197 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:37:26.295 CET LOG:  checkpoint complete: wrote 58 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=12.610 s, sync=0.370 s, total=13.098 s; sync files=31, longest=0.197 s, average=0.012 s; distance=540787 kB, estimate=540787 kB; lsn=1B/F0A0558, redo lsn=1A/F03FF858
+[DNI] [DNI] 2026-03-08 20:37:26.997 CET LOG:  checkpoints are occurring too frequently (13 seconds apart)
+[DNI] [DNI] 2026-03-08 20:37:26.997 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:37:26.997 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:37:35.669 CET LOG:  checkpoint complete: wrote 29 buffers (0.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=8.348 s, sync=0.237 s, total=8.672 s; sync files=5, longest=0.164 s, average=0.048 s; distance=537812 kB, estimate=540489 kB; lsn=1B/30403900, redo lsn=1B/11134898
+[DNI] [DNI] 2026-03-08 20:37:35.869 CET LOG:  checkpoints are occurring too frequently (9 seconds apart)
+[DNI] [DNI] 2026-03-08 20:37:35.869 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:37:35.869 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:37:40.875 CET LOG:  checkpoint complete: wrote 395 buffers (2.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=4.504 s, sync=0.307 s, total=5.007 s; sync files=16, longest=0.289 s, average=0.020 s; distance=543546 kB, estimate=543546 kB; lsn=1B/51404D88, redo lsn=1B/324032D8
+[DNI] [DNI] 2026-03-08 20:37:41.254 CET LOG:  checkpoints are occurring too frequently (6 seconds apart)
+[DNI] [DNI] 2026-03-08 20:37:41.254 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:37:41.255 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:37:46.164 CET LOG:  checkpoint complete: wrote 2467 buffers (15.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=4.082 s, sync=0.291 s, total=4.910 s; sync files=2, longest=0.188 s, average=0.146 s; distance=540685 kB, estimate=543260 kB; lsn=1B/72CE1F70, redo lsn=1B/534067A8
+[DNI] [DNI] 2026-03-08 20:37:46.432 CET LOG:  checkpoints are occurring too frequently (5 seconds apart)
+[DNI] [DNI] 2026-03-08 20:37:46.432 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:37:46.435 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:37:52.933 CET LOG:  checkpoint complete: wrote 2948 buffers (18.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=5.519 s, sync=0.352 s, total=6.501 s; sync files=1, longest=0.352 s, average=0.352 s; distance=540757 kB, estimate=543010 kB; lsn=1B/92A33718, redo lsn=1B/7441BF50
+[DNI] [DNI] 2026-03-08 20:37:53.318 CET LOG:  checkpoints are occurring too frequently (7 seconds apart)
+[DNI] [DNI] 2026-03-08 20:37:53.318 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:37:53.319 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:38:18.810 CET LOG:  skipping vacuum of "estudiantes" --- lock not available
+[DNI] [DNI] 2026-03-08 20:38:25.387 CET LOG:  checkpoint complete: wrote 8722 buffers (53.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=31.465 s, sync=0.239 s, total=32.069 s; sync files=19, longest=0.198 s, average=0.013 s; distance=540580 kB, estimate=542767 kB; lsn=1B/B3F74EE8, redo lsn=1B/95405078
+[DNI] [DNI] 2026-03-08 20:38:25.742 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:38:33.330 CET LOG:  checkpoint complete: wrote 4716 buffers (28.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=7.373 s, sync=0.133 s, total=7.589 s; sync files=3, longest=0.132 s, average=0.045 s; distance=537460 kB, estimate=542236 kB; lsn=1B/D4302050, redo lsn=1B/B60E2100
+[DNI] [DNI] 2026-03-08 20:38:34.170 CET LOG:  checkpoints are occurring too frequently (9 seconds apart)
+[DNI] [DNI] 2026-03-08 20:38:34.170 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:38:34.171 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:38:43.650 CET LOG:  checkpoint complete: wrote 9 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=9.275 s, sync=0.142 s, total=9.481 s; sync files=1, longest=0.142 s, average=0.142 s; distance=543864 kB, estimate=543864 kB; lsn=1B/F5740698, redo lsn=1B/D7400170
+[DNI] [DNI] 2026-03-08 20:38:44.213 CET LOG:  checkpoints are occurring too frequently (10 seconds apart)
+[DNI] [DNI] 2026-03-08 20:38:44.213 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:38:44.213 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:38:51.995 CET LOG:  checkpoint complete: wrote 7025 buffers (42.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=7.520 s, sync=0.192 s, total=7.783 s; sync files=1, longest=0.192 s, average=0.192 s; distance=540194 kB, estimate=543497 kB; lsn=1C/16839DD0, redo lsn=1B/F8388BF8
+[DNI] [DNI] 2026-03-08 20:38:52.502 CET LOG:  checkpoints are occurring too frequently (8 seconds apart)
+[DNI] [DNI] 2026-03-08 20:38:52.502 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:38:52.503 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:39:14.217 CET LOG:  checkpoint complete: wrote 3942 buffers (24.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=21.593 s, sync=0.041 s, total=21.715 s; sync files=15, longest=0.034 s, average=0.003 s; distance=541149 kB, estimate=543262 kB; lsn=1C/37310670, redo lsn=1C/19400230
+[DNI] [DNI] 2026-03-08 20:39:15.098 CET LOG:  checkpoints are occurring too frequently (23 seconds apart)
+[DNI] [DNI] 2026-03-08 20:39:15.098 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:39:15.099 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:39:18.848 CET LOG:  skipping vacuum of "estudiantes" --- lock not available
+[DNI] [DNI] 2026-03-08 20:39:26.826 CET LOG:  checkpoint complete: wrote 492 buffers (3.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=11.501 s, sync=0.159 s, total=11.728 s; sync files=3, longest=0.157 s, average=0.053 s; distance=540672 kB, estimate=543003 kB; lsn=1C/58815E38, redo lsn=1C/3A400240
+[DNI] [DNI] 2026-03-08 20:39:27.593 CET LOG:  checkpoints are occurring too frequently (12 seconds apart)
+[DNI] [DNI] 2026-03-08 20:39:27.593 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:39:27.593 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:39:38.604 CET LOG:  checkpoint complete: wrote 1974 buffers (12.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.721 s, sync=0.229 s, total=11.011 s; sync files=2, longest=0.189 s, average=0.115 s; distance=537491 kB, estimate=542452 kB; lsn=1C/797BAF40, redo lsn=1C/5B0E5220
+[DNI] [DNI] 2026-03-08 20:39:39.394 CET LOG:  checkpoints are occurring too frequently (12 seconds apart)
+[DNI] [DNI] 2026-03-08 20:39:39.394 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:39:39.394 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:39:53.966 CET LOG:  checkpoint complete: wrote 1911 buffers (11.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=14.243 s, sync=0.248 s, total=14.573 s; sync files=2, longest=0.138 s, average=0.124 s; distance=543295 kB, estimate=543295 kB; lsn=1C/9AB94778, redo lsn=1C/7C374FE0
+[DNI] [DNI] 2026-03-08 20:39:54.722 CET LOG:  checkpoints are occurring too frequently (15 seconds apart)
+[DNI] [DNI] 2026-03-08 20:39:54.722 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:39:54.722 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:40:07.781 CET ERROR:  syntax error at or near "_user_indexes" at character 1
+[DNI] [DNI] 2026-03-08 20:40:07.781 CET STATEMENT:  _user_indexes 
+	WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:12.158 CET ERROR:  syntax error at or near "_user_indexes" at character 1
+[DNI] [DNI] 2026-03-08 20:40:12.158 CET STATEMENT:  _user_indexes 
+	WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:15.472 CET ERROR:  syntax error at or near "_user_indexes" at character 1
+[DNI] [DNI] 2026-03-08 20:40:15.472 CET STATEMENT:  _user_indexes 
+	WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:17.722 CET ERROR:  syntax error at or near "_user_indexes" at character 1
+[DNI] [DNI] 2026-03-08 20:40:17.722 CET STATEMENT:  _user_indexes 
+	WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:32.777 CET LOG:  checkpoint complete: wrote 1915 buffers (11.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=37.922 s, sync=0.058 s, total=38.056 s; sync files=6, longest=0.055 s, average=0.010 s; distance=538129 kB, estimate=542778 kB; lsn=1C/BAF40E88, redo lsn=1C/9D0F9588
+[DNI] [DNI] 2026-03-08 20:40:33.938 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:40:36.355 CET LOG:  checkpoint complete: wrote 17 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=2.274 s, sync=0.036 s, total=2.422 s; sync files=19, longest=0.017 s, average=0.002 s; distance=543892 kB, estimate=543892 kB; lsn=1C/C16C4EF8, redo lsn=1C/BE41E900
+[DNI] [DNI] 2026-03-08 20:40:38.132 CET ERROR:  syntax error at or near "ables" at character 1
+[DNI] [DNI] 2026-03-08 20:40:38.132 CET STATEMENT:  ables WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:39.522 CET ERROR:  syntax error at or near "ndexrelname" at character 1
+[DNI] [DNI] 2026-03-08 20:40:39.522 CET STATEMENT:  ndexrelname, idx_blks_read, idx_blks_hit 
+	FROM pg_statio_user_indexes WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:43.366 CET ERROR:  syntax error at or near "e" at character 1
+[DNI] [DNI] 2026-03-08 20:40:43.366 CET STATEMENT:  e = 'estudiantes';
+[DNI] [DNI] 2026-03-08 20:40:53.765 CET LOG:  checkpoints are occurring too frequently (20 seconds apart)
+[DNI] [DNI] 2026-03-08 20:40:53.765 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:40:53.765 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:41:03.715 CET LOG:  checkpoint complete: wrote 2995 buffers (18.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=9.360 s, sync=0.522 s, total=9.951 s; sync files=138, longest=0.044 s, average=0.004 s; distance=540550 kB, estimate=543558 kB; lsn=1C/FE653628, redo lsn=1C/DF4003D0
+[DNI] [DNI] 2026-03-08 20:41:04.246 CET LOG:  checkpoints are occurring too frequently (11 seconds apart)
+[DNI] [DNI] 2026-03-08 20:41:04.246 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:41:04.247 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:41:16.818 CET LOG:  checkpoint complete: wrote 2970 buffers (18.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=11.971 s, sync=0.518 s, total=12.573 s; sync files=46, longest=0.023 s, average=0.012 s; distance=540685 kB, estimate=543271 kB; lsn=1D/1F835058, redo lsn=1D/4039E0
+[DNI] [DNI] 2026-03-08 20:41:17.275 CET LOG:  checkpoints are occurring too frequently (13 seconds apart)
+[DNI] [DNI] 2026-03-08 20:41:17.275 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:41:17.276 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:41:28.378 CET LOG:  checkpoint complete: wrote 2971 buffers (18.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.810 s, sync=0.218 s, total=11.104 s; sync files=23, longest=0.015 s, average=0.010 s; distance=540682 kB, estimate=543012 kB; lsn=1D/3F998ED8, redo lsn=1D/214062C8
+[DNI] [DNI] 2026-03-08 20:41:29.131 CET LOG:  checkpoints are occurring too frequently (12 seconds apart)
+[DNI] [DNI] 2026-03-08 20:41:29.131 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:41:29.131 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:41:38.882 CET LOG:  checkpoint complete: wrote 2966 buffers (18.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=9.153 s, sync=0.507 s, total=9.752 s; sync files=46, longest=0.018 s, average=0.012 s; distance=539933 kB, estimate=542704 kB; lsn=1D/614000A0, redo lsn=1D/4234D7D0
+[DNI] [DNI] 2026-03-08 20:41:39.422 CET LOG:  checkpoints are occurring too frequently (10 seconds apart)
+[DNI] [DNI] 2026-03-08 20:41:39.422 CET HINT:  Consider increasing the configuration parameter "max_wal_size".
+[DNI] [DNI] 2026-03-08 20:41:39.422 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:42:30.629 CET ERROR:  syntax error at or near "_blks_read" at character 1
+[DNI] [DNI] 2026-03-08 20:42:30.629 CET STATEMENT:  _blks_read, heap_blks_hit 
+	FROM pg_statio_user_tables 
+	WHERE relname LIKE 'estudiantes3%' 
+	  AND (heap_blks_read > 0 OR heap_blks_hit > 0);
+[DNI] [DNI] 2026-03-08 20:42:31.780 CET LOG:  checkpoint complete: wrote 2969 buffers (18.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=52.215 s, sync=0.061 s, total=52.358 s; sync files=24, longest=0.024 s, average=0.003 s; distance=538472 kB, estimate=542281 kB; lsn=1D/8104F938, redo lsn=1D/63127820
+[DNI] [DNI] 2026-03-08 20:42:32.330 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-08 20:44:11.622 CET ERROR:  syntax error at or near "AND" at character 1
+[DNI] [DNI] 2026-03-08 20:44:11.622 CET STATEMENT:  AND (heap_blks_read > 0 OR heap_blks_hit > 0);
+[DNI] [DNI] 2026-03-08 20:47:02.128 CET LOG:  checkpoint complete: wrote 16 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=269.716 s, sync=0.024 s, total=269.798 s; sync files=7, longest=0.007 s, average=0.004 s; distance=540128 kB, estimate=542066 kB; lsn=1D/922E5F78, redo lsn=1D/8409FB00
+[DNI] [DNI] 2026-03-08 21:22:46.223 CET LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-03-10 08:26:44.089 CET LOG:  shutting down
+[DNI] [DNI] 2026-03-10 08:26:44.090 CET LOG:  checkpoint starting: shutdown immediate
+[DNI] [DNI] 2026-03-10 08:26:44.277 CET LOG:  checkpoint complete: wrote 5899 buffers (36.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 14 recycled; write=0.052 s, sync=0.057 s, total=0.189 s; sync files=3, longest=0.041 s, average=0.019 s; distance=231705 kB, estimate=511029 kB; lsn=1D/922E6040, redo lsn=1D/922E6040

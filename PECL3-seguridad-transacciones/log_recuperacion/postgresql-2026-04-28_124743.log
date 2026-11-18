@@ -1,0 +1,10 @@
+[DNI] [DNI] 2026-04-28 12:47:43.829 CEST LOG:  iniciando PostgreSQL 17.9 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+[DNI] [DNI] 2026-04-28 12:47:43.830 CEST LOG:  no se pudo enlazar a la dirección IPv6 «::»: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+	
+[DNI] [DNI] 2026-04-28 12:47:43.830 CEST HINT:  ¿Hay otro postmaster en ejecución en el puerto 5433? Si no, aguarde unos segundos y reintente.
+[DNI] [DNI] 2026-04-28 12:47:43.830 CEST LOG:  no se pudo enlazar a la dirección IPv4 «0.0.0.0»: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+	
+[DNI] [DNI] 2026-04-28 12:47:43.830 CEST HINT:  ¿Hay otro postmaster en ejecución en el puerto 5433? Si no, aguarde unos segundos y reintente.
+[DNI] [DNI] 2026-04-28 12:47:43.830 CEST WARNING:  no se pudo crear el socket de escucha para «*»
+[DNI] [DNI] 2026-04-28 12:47:43.830 CEST FATAL:  no se pudo crear ningún socket TCP/IP
+[DNI] [DNI] 2026-04-28 12:47:43.833 CEST LOG:  el sistema de bases de datos está apagado

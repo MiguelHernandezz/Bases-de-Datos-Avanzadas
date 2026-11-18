@@ -1,0 +1,8 @@
+[DNI] [DNI] 2026-04-21 09:32:47.782 CEST LOG:  el sistema de bases de datos fue apagado en 2026-04-21 09:32:45 CEST
+[DNI] [DNI] 2026-04-21 09:37:47.788 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-04-21 09:37:47.805 CEST LOG:  checkpoint completo: escritos 3 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.005 s, sync=0.002 s, total=0.020 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=0 kB, estimación=0 kB; lsn=0/15A4658, lsn de redo=0/15A45C8
+[DNI] [DNI] 2026-04-21 09:43:26.234 CEST FATAL:  no existe la base de datos «musicos1»
+[DNI] [DNI] 2026-04-21 09:47:47.835 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-04-21 09:49:34.284 CEST LOG:  checkpoint completo: escritos 972 búfers (5.9%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=106.084 s, sync=0.346 s, total=106.450 s; archivos sincronizados=300, más largo=0.004 s, promedio=0.002 s; distancia=4590 kB, estimación=4590 kB; lsn=0/1A1FF30, lsn de redo=0/1A1FEA0
+[DNI] [DNI] 2026-04-22 11:04:34.040 CEST LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	

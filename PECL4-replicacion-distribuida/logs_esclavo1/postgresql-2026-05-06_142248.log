@@ -1,0 +1,31 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:48.193 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:48.193 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:48.194 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:48.267 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-05-06 14:22:25 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:53.931 CEST LOG:  no se pudo abrir el archivo «./esclavo1.log»: infracción de uso compartido (sharing violation)
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:53.931 CEST DETALLE:  Reintentando durante 30 segundos.
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:53.931 CEST HINT:  Es posible que tenga antivirus, sistema de respaldos, o software similar interfiriendo con el sistema de bases de datos.
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:20.992 CEST LOG:  sincronizando el directorio de datos (fsync), transcurrido: 32.72 s, ruta actual: ./global/1213
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.035 CEST LOG:  iniciando recuperación de backup con LSN de redo 0/7000028, LSN de checkpoint 0/7000080, en timeline 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.035 CEST LOG:  entrando al modo standby
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.039 CEST LOG:  redo comienza en 0/7000028
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.050 CEST LOG:  se completó la recuperación de backup con LSN de redo 0/7000028 y LSN de término 0/7000120
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.050 CEST LOG:  el estado de recuperación consistente fue alcanzado en 0/7000120
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.050 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones de sólo lectura
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:23:21.108 CEST LOG:  iniciando el flujo de WAL desde el primario en 0/8000000 en el timeline 1
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:24:32.126 CEST LOG:  sentencia: 
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:24:32.126 CEST ERROR:  no se puede ejecutar CREATE SUBSCRIPTION en una transacciÃ³n de sÃ³lo lectura
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:24:32.126 CEST SENTENCIA:  
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.082 CEST LOG:  se recibió petición de apagado rápido
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.092 CEST LOG:  abortando transacciones activas
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.092 CEST FATAL:  terminando el proceso walreceiver debido a una orden del administrador
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.099 CEST LOG:  apagando
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.127 CEST LOG:  el sistema de bases de datos está apagado

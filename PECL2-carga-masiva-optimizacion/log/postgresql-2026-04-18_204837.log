@@ -1,0 +1,3 @@
+[DNI] [DNI] 2026-04-18 20:48:38.019 CEST LOG:  database system was shut down at 2026-04-18 20:48:01 CEST
+[DNI] [DNI] 2026-04-18 20:53:38.015 CEST LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-04-18 20:53:38.037 CEST LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.002 s, total=0.023 s; sync files=2, longest=0.002 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=24/95EC3EC8, redo lsn=24/95EC3E70

@@ -1,0 +1,4 @@
+[DNI] [DNI] 2026-03-12 19:31:01.471 CET LOG:  shutting down
+[DNI] [DNI] 2026-03-12 19:31:01.474 CET LOG:  checkpoint starting: shutdown immediate
+[DNI] [DNI] 2026-03-12 19:31:01.474 CET ERROR:  canceling statement due to user request
+[DNI] [DNI] 2026-03-12 19:31:01.518 CET LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.007 s, sync=0.001 s, total=0.047 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=358014 kB; lsn=20/BD5BA838, redo lsn=20/BD5BA838

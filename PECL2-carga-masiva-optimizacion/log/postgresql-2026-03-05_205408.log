@@ -1,0 +1,9 @@
+2026-03-05 20:54:09 CET LOG:  database system was shut down at 2026-03-05 20:52:55 CET
+2026-03-05 20:59:09 CET LOG:  checkpoint starting: time
+2026-03-05 20:59:09 CET LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.028 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1CC9F30, redo lsn=0/1CC9ED8
+2026-03-06 19:12:52 CET ERROR:  relation "estudiantes3" does not exist at character 22
+2026-03-06 19:12:52 CET STATEMENT:  SELECT count(*) FROM estudiantes3 WHERE indice = 500;
+2026-03-06 19:13:30 CET ERROR:  relation "estudiantes" does not exist
+2026-03-06 19:13:30 CET STATEMENT:  VACUUM FULL ANALYZE estudiantes;
+2026-03-06 19:14:49 CET LOG:  checkpoint starting: time
+2026-03-06 19:14:49 CET LOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.553 s, sync=0.003 s, total=0.615 s; sync files=1, longest=0.003 s, average=0.003 s; distance=40 kB, estimate=40 kB; lsn=0/1CD4100, redo lsn=0/1CD40A8

@@ -1,0 +1,7 @@
+[DNI] [DNI] 2026-03-21 12:14:44.672 CET LOG:  database system was interrupted; last known up at 2026-03-19 21:28:35 CET
+[DNI] [DNI] 2026-03-21 12:14:45.126 CET LOG:  database system was not properly shut down; automatic recovery in progress
+[DNI] [DNI] 2026-03-21 12:14:45.129 CET LOG:  redo starts at 22/D3DCCA60
+[DNI] [DNI] 2026-03-21 12:14:45.129 CET LOG:  invalid record length at 22/D3DCCB68: expected at least 24, got 0
+[DNI] [DNI] 2026-03-21 12:14:45.129 CET LOG:  redo done at 22/D3DCCB30 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+[DNI] [DNI] 2026-03-21 12:14:45.133 CET LOG:  checkpoint starting: end-of-recovery immediate wait
+[DNI] [DNI] 2026-03-21 12:14:45.140 CET LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.009 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=22/D3DCCB68, redo lsn=22/D3DCCB68

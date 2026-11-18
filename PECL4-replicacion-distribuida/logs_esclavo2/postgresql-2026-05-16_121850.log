@@ -1,0 +1,17 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv6 address "::", port 5434
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv4 address "0.0.0.0", port 5434
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was interrupted; last known up at 2026-05-15 16:51:50 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  could not open file "./esclavo2.log": sharing violation
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Continuing to retry for 30 seconds.
+DNI1=[DNI] DNI2=[DNI] host=:5432 HINT:  You might have antivirus, backup, or similar software interfering with the database system.
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  syncing data directory (fsync), elapsed time: 33.60 s, current path: ./global/1213
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting backup recovery with redo LSN 24/97000028, checkpoint LSN 24/97000080, on timeline ID 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  entering standby mode
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  recovered replication state of node 1 to 0/0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  recovered replication state of node 3 to 0/80036C8
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  redo starts at 24/97000028
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  completed backup recovery with redo LSN 24/97000028 and end LSN 24/97000158
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  consistent recovery state reached at 24/97000158
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is ready to accept read-only connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  started streaming WAL from primary at 24/98000000 on timeline 1

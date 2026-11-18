@@ -1,0 +1,6 @@
+2026-04-21 09:26:07 CEST LOG:  el sistema de bases de datos fue apagado en 2026-04-21 09:26:00 CEST
+2026-04-21 09:31:07 CEST LOG:  empezando checkpoint: time
+2026-04-21 09:31:11 CEST LOG:  checkpoint completo: escritos 38 búfers (0.2%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=3.870 s, sync=0.026 s, total=3.918 s; archivos sincronizados=11, más largo=0.005 s, promedio=0.003 s; distancia=197 kB, estimación=197 kB; lsn=0/15A4468, lsn de redo=0/15A4410
+2026-04-21 09:32:45 CEST LOG:  apagando
+2026-04-21 09:32:45 CEST LOG:  empezando checkpoint: shutdown immediate
+2026-04-21 09:32:45 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.001 s, sync=0.001 s, total=0.010 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=0 kB, estimación=177 kB; lsn=0/15A4518, lsn de redo=0/15A4518

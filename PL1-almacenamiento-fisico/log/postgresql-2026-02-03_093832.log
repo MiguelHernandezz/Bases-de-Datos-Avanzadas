@@ -1,0 +1,30 @@
+[DNI] [DNI] 2026-02-03 09:38:33.002 CETLOG:  el sistema de bases de datos fue apagado en 2026-02-03 09:38:31 CET
+[DNI] [DNI] 2026-02-03 09:43:33.002 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-03 09:43:33.020 CETLOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.021 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/8BB31568, redo lsn=0/8BB31510
+[DNI] [DNI] 2026-02-03 09:49:33.370 CETERROR:  error de sintaxis en o cerca de Â«,Â» en carÃ¡cter 63
+[DNI] [DNI] 2026-02-03 09:49:33.370 CETSENTENCIA:  CREATE TABLE estudiantes (
+		estudiante_id SERIAL, PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-03 09:50:01.752 CETFATAL:  la autentificación password falló para el usuario «postgres»
+[DNI] [DNI] 2026-02-03 09:50:01.752 CETDETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+[DNI] [DNI] 2026-02-03 09:50:10.146 CETERROR:  error de sintaxis en o cerca de Â«,Â» en carÃ¡cter 63
+[DNI] [DNI] 2026-02-03 09:50:10.146 CETSENTENCIA:  CREATE TABLE estudiantes (
+		estudiante_id SERIAL, PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-03 09:50:28.146 CETLOG:  sentencia: CREATE TABLE estudiantes (
+		estudiante_id SERIAL PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-03 09:53:32.034 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-03 09:53:36.901 CETLOG:  checkpoint complete: wrote 44 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.837 s, sync=0.025 s, total=4.867 s; sync files=39, longest=0.010 s, average=0.001 s; distance=157 kB, estimate=157 kB; lsn=0/8BB58C88, redo lsn=0/8BB58BF8

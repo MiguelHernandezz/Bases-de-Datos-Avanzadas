@@ -1,0 +1,59 @@
+[DNI] [DNI] 2026-02-17 08:10:58.309 CETLOG:  sentencia: CREATE TABLE estudiantes (
+		estudiante_id SERIAL PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-17 08:10:58.331 CETERROR:  la relaciÃ³n Â«estudiantesÂ» ya existe
+[DNI] [DNI] 2026-02-17 08:10:58.331 CETSENTENCIA:  CREATE TABLE estudiantes (
+		estudiante_id SERIAL PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-17 08:11:56.509 CETFATAL:  la autentificación password falló para el usuario «postgres»
+[DNI] [DNI] 2026-02-17 08:11:56.509 CETDETALLE:  La conexión coincidió con el archivo «C:/Program Files/PostgreSQL/18/data/pg_hba.conf» línea 117: «host    all             all             ::1/128                 scram-sha-256»
+[DNI] [DNI] 2026-02-17 08:12:02.962 CETLOG:  sentencia: CREATE TABLE estudiantes (
+		estudiante_id SERIAL PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-17 08:12:02.966 CETERROR:  la relaciÃ³n Â«estudiantesÂ» ya existe
+[DNI] [DNI] 2026-02-17 08:12:02.966 CETSENTENCIA:  CREATE TABLE estudiantes (
+		estudiante_id SERIAL PRIMARY KEY,
+		nombre VARCHAR(100),
+		codigo_carrera INTEGER,
+		edad INTEGER,
+		indice INTEGER
+	);
+[DNI] [DNI] 2026-02-17 08:13:42.918 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-17 08:13:45.335 CETLOG:  checkpoint complete: wrote 22 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=2.391 s, sync=0.009 s, total=2.418 s; sync files=19, longest=0.001 s, average=0.001 s; distance=110 kB, estimate=110 kB; lsn=0/8BB749B0, redo lsn=0/8BB74958
+[DNI] [DNI] 2026-02-17 08:17:42.174 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-17 08:17:42.200 CETERROR:  error de sintaxis en o cerca de Â«ASÂ» en carÃ¡cter 152
+[DNI] [DNI] 2026-02-17 08:17:42.200 CETSENTENCIA:  SELECT 
+	    relname AS tabla,
+	    relpages AS bloques_reales, 
+	    reltuples AS filas_totales,
+	    (reltuples / NULLIF(relpages, 0)::numeric(10,2) AS factor_bloque_real,
+	    pg_size_pretty(pg_relation_size('estudiantes')) AS tamano_total
+	FROM pg_class 
+	WHERE relname = 'estudiantes';
+[DNI] [DNI] 2026-02-17 08:18:42.337 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-17 08:18:42.913 CETLOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.546 s, sync=0.013 s, total=0.576 s; sync files=5, longest=0.011 s, average=0.003 s; distance=18 kB, estimate=100 kB; lsn=0/8BB79500, redo lsn=0/8BB794A8
+[DNI] [DNI] 2026-02-17 08:19:05.923 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);

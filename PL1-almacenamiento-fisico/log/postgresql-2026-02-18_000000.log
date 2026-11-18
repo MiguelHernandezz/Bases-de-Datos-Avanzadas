@@ -1,0 +1,866 @@
+[DNI] [DNI] 2026-02-24 09:18:40.657 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:18:40.670 CETLOG:  sentencia: COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice)
+	FROM 'C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv.txt' 
+	WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:18:40.679 CETERROR:  no se pudo abrir archivo Â«C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv.txtÂ» para lectura: No such file or directory
+[DNI] [DNI] 2026-02-24 09:18:40.679 CETHINT:  COPY FROM indica al proceso servidor de PostgreSQL leer un archivo. Puede desear usar una facilidad del lado del cliente como \copy de psql.
+[DNI] [DNI] 2026-02-24 09:18:40.679 CETSENTENCIA:  COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice)
+	FROM 'C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv.txt' 
+	WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:18:40.772 CETLOG:  sentencia: INSERT INTO estudiantes (nombre, codigo_carrera, edad, indice) 
+	VALUES ('Nuevo Estudiante', 99, 25, 5000);
+[DNI] [DNI] 2026-02-24 09:19:05.129 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:19:05.136 CETLOG:  sentencia: COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice)
+	FROM 'C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv.txt' 
+	WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:19:05.137 CETERROR:  no se pudo abrir archivo Â«C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv.txtÂ» para lectura: No such file or directory
+[DNI] [DNI] 2026-02-24 09:19:05.137 CETHINT:  COPY FROM indica al proceso servidor de PostgreSQL leer un archivo. Puede desear usar una facilidad del lado del cliente como \copy de psql.
+[DNI] [DNI] 2026-02-24 09:19:05.137 CETSENTENCIA:  COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice)
+	FROM 'C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv.txt' 
+	WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:19:05.209 CETLOG:  sentencia: INSERT INTO estudiantes (nombre, codigo_carrera, edad, indice) 
+	VALUES ('Nuevo Estudiante', 99, 25, 5000);
+[DNI] [DNI] 2026-02-24 09:19:17.372 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:19:17.382 CETLOG:  sentencia: COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice)
+	FROM 'C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv' 
+	WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:19:17.383 CETERROR:  no se pudo abrir archivo Â«C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csvÂ» para lectura: Permission denied
+[DNI] [DNI] 2026-02-24 09:19:17.383 CETHINT:  COPY FROM indica al proceso servidor de PostgreSQL leer un archivo. Puede desear usar una facilidad del lado del cliente como \copy de psql.
+[DNI] [DNI] 2026-02-24 09:19:17.383 CETSENTENCIA:  COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice)
+	FROM 'C:\Users\danid\Documents\Bases de Datos Av\datos_estudiantes.csv' 
+	WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:19:17.448 CETLOG:  sentencia: INSERT INTO estudiantes (nombre, codigo_carrera, edad, indice) 
+	VALUES ('Nuevo Estudiante', 99, 25, 5000);
+[DNI] [DNI] 2026-02-24 09:20:54.439 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-24 09:20:55.449 CETLOG:  checkpoint complete: wrote 9 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.984 s, sync=0.016 s, total=1.012 s; sync files=9, longest=0.012 s, average=0.002 s; distance=7 kB, estimate=7 kB; lsn=0/8BB7C0F0, redo lsn=0/8BB7C098
+[DNI] [DNI] 2026-02-24 09:29:58.488 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:29:58.498 CETLOG:  sentencia: COPY estudiantes FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:29:58.515 CETERROR:  llave duplicada viola restricciÃ³n de unicidad Â«estudiantes_pkeyÂ»
+[DNI] [DNI] 2026-02-24 09:29:58.515 CETDETALLE:  Ya existe la llave (estudiante_id)=(1).
+[DNI] [DNI] 2026-02-24 09:29:58.515 CETCONTEXTO:  COPY estudiantes, line 1
+[DNI] [DNI] 2026-02-24 09:29:58.515 CETSENTENCIA:  COPY estudiantes FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:29:58.571 CETLOG:  sentencia: DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 09:29:58.578 CETLOG:  sentencia: INSERT INTO estudiantes (nombre, codigo_carrera, edad, indice) 
+	VALUES ('Nuevo Estudiante', 99, 25, 5000);
+[DNI] [DNI] 2026-02-24 09:30:54.473 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-24 09:30:55.916 CETLOG:  checkpoint complete: wrote 13 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.422 s, sync=0.005 s, total=1.443 s; sync files=7, longest=0.002 s, average=0.001 s; distance=56 kB, estimate=56 kB; lsn=0/8BB8A228, redo lsn=0/8BB8A1D0
+[DNI] [DNI] 2026-02-24 09:31:20.307 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:31:20.315 CETLOG:  sentencia: COPY estudiantes FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:31:20.320 CETERROR:  llave duplicada viola restricciÃ³n de unicidad Â«estudiantes_pkeyÂ»
+[DNI] [DNI] 2026-02-24 09:31:20.320 CETDETALLE:  Ya existe la llave (estudiante_id)=(4).
+[DNI] [DNI] 2026-02-24 09:31:20.320 CETCONTEXTO:  COPY estudiantes, line 4
+[DNI] [DNI] 2026-02-24 09:31:20.320 CETSENTENCIA:  COPY estudiantes FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:31:20.382 CETLOG:  sentencia: DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 09:31:20.385 CETLOG:  sentencia: INSERT INTO estudiantes (nombre, codigo_carrera, edad, indice) 
+	VALUES ('Nuevo Estudiante', 99, 25, 5000);
+[DNI] [DNI] 2026-02-24 09:32:51.861 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:32:51.870 CETLOG:  sentencia: TRUNCATE TABLE estudiantes;
+[DNI] [DNI] 2026-02-24 09:32:51.880 CETLOG:  sentencia: COPY estudiantes FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:33:11.351 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:33:25.362 CETLOG:  checkpoint complete: wrote 12083 buffers (73.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.684 s, sync=0.234 s, total=14.046 s; sync files=21, longest=0.145 s, average=0.012 s; distance=532951 kB, estimate=532951 kB; lsn=0/CA954DB0, redo lsn=0/AC400190
+[DNI] [DNI] 2026-02-24 09:33:26.275 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:33:26.275 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:33:26.275 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:33:39.548 CETLOG:  checkpoint complete: wrote 12265 buffers (74.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=12.795 s, sync=0.366 s, total=13.273 s; sync files=3, longest=0.190 s, average=0.122 s; distance=537020 kB, estimate=537020 kB; lsn=0/EB657428, redo lsn=0/CD06F330
+[DNI] [DNI] 2026-02-24 09:33:40.726 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 09:33:40.726 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:33:40.726 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:33:55.109 CETLOG:  checkpoint complete: wrote 12686 buffers (77.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.869 s, sync=0.341 s, total=14.383 s; sync files=4, longest=0.175 s, average=0.085 s; distance=540657 kB, estimate=540657 kB; lsn=1/C567230, redo lsn=0/EE06B820
+[DNI] [DNI] 2026-02-24 09:33:56.191 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 16 segundos)
+[DNI] [DNI] 2026-02-24 09:33:56.191 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:33:56.191 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:34:11.043 CETLOG:  checkpoint complete: wrote 13497 buffers (82.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.991 s, sync=0.666 s, total=14.852 s; sync files=3, longest=0.401 s, average=0.222 s; distance=540660 kB, estimate=540660 kB; lsn=1/2DA87CD8, redo lsn=1/F068B88
+[DNI] [DNI] 2026-02-24 09:34:12.008 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 16 segundos)
+[DNI] [DNI] 2026-02-24 09:34:12.008 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:34:12.008 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:34:26.895 CETLOG:  checkpoint complete: wrote 13401 buffers (81.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=14.086 s, sync=0.605 s, total=14.888 s; sync files=3, longest=0.432 s, average=0.202 s; distance=540721 kB, estimate=540721 kB; lsn=1/4EF160C0, redo lsn=1/30074FC8
+[DNI] [DNI] 2026-02-24 09:34:27.698 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:34:27.698 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:34:27.698 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:34:30.712 CETLOG:  sentencia: DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 09:34:37.456 CETLOG:  checkpoint complete: wrote 13817 buffers (84.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=8.664 s, sync=0.900 s, total=9.758 s; sync files=4, longest=0.836 s, average=0.225 s; distance=540665 kB, estimate=540715 kB; lsn=1/70923290, redo lsn=1/510735F8
+[DNI] [DNI] 2026-02-24 09:34:37.830 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:34:37.830 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:34:37.830 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:34:51.200 CETLOG:  checkpoint complete: wrote 47 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=12.350 s, sync=0.810 s, total=13.371 s; sync files=5, longest=0.797 s, average=0.162 s; distance=542487 kB, estimate=542487 kB; lsn=1/91A20A60, redo lsn=1/72239538
+[DNI] [DNI] 2026-02-24 09:34:51.625 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 09:34:51.625 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:34:51.625 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:35:04.591 CETLOG:  checkpoint complete: wrote 49 buffers (0.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=12.123 s, sync=0.650 s, total=12.966 s; sync files=3, longest=0.411 s, average=0.217 s; distance=541322 kB, estimate=542371 kB; lsn=1/B24BCE88, redo lsn=1/932DC028
+[DNI] [DNI] 2026-02-24 09:35:05.150 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 09:35:05.150 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:35:05.151 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:35:17.649 CETLOG:  checkpoint complete: wrote 147 buffers (0.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=11.609 s, sync=0.706 s, total=12.500 s; sync files=3, longest=0.672 s, average=0.236 s; distance=541862 kB, estimate=542320 kB; lsn=1/D37593E8, redo lsn=1/B4405C20
+[DNI] [DNI] 2026-02-24 09:35:23.047 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 18 segundos)
+[DNI] [DNI] 2026-02-24 09:35:23.047 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:35:23.047 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:35:49.949 CETLOG:  checkpoint complete: wrote 100 buffers (0.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 32 recycled; write=25.789 s, sync=1.001 s, total=26.903 s; sync files=3, longest=0.743 s, average=0.334 s; distance=537467 kB, estimate=541835 kB; lsn=1/F4AB8528, redo lsn=1/D50E4B98
+[DNI] [DNI] 2026-02-24 09:35:50.489 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 27 segundos)
+[DNI] [DNI] 2026-02-24 09:35:50.489 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:35:50.489 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:02.351 CETLOG:  checkpoint complete: wrote 16 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 25 recycled; write=9.185 s, sync=2.511 s, total=11.862 s; sync files=3, longest=1.494 s, average=0.837 s; distance=540906 kB, estimate=541742 kB; lsn=2/1C3D2D88, redo lsn=1/F611F588
+[DNI] [DNI] 2026-02-24 09:36:02.351 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:36:02.351 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:02.351 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:13.555 CETLOG:  checkpoint complete: wrote 1402 buffers (8.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 16 removed, 22 recycled; write=7.337 s, sync=3.622 s, total=11.204 s; sync files=3, longest=2.041 s, average=1.208 s; distance=634043 kB, estimate=634043 kB; lsn=2/45C60D98, redo lsn=2/1CC4E1C8
+[DNI] [DNI] 2026-02-24 09:36:13.556 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:36:13.556 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:13.556 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:24.465 CETLOG:  checkpoint complete: wrote 2003 buffers (12.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 19 removed, 23 recycled; write=7.316 s, sync=3.349 s, total=10.909 s; sync files=3, longest=1.810 s, average=1.117 s; distance=686030 kB, estimate=686030 kB; lsn=2/6E55DC28, redo lsn=2/46A41A70
+[DNI] [DNI] 2026-02-24 09:36:24.465 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:36:24.465 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:24.465 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:34.127 CETLOG:  checkpoint complete: wrote 1194 buffers (7.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 16 removed, 25 recycled; write=6.571 s, sync=2.869 s, total=9.662 s; sync files=3, longest=1.762 s, average=0.957 s; distance=666921 kB, estimate=684119 kB; lsn=2/95D10448, redo lsn=2/6F58C180
+[DNI] [DNI] 2026-02-24 09:36:34.128 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:36:34.128 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:34.128 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:41.932 CETLOG:  checkpoint complete: wrote 1486 buffers (9.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 28 recycled; write=6.119 s, sync=1.466 s, total=7.805 s; sync files=3, longest=1.403 s, average=0.489 s; distance=647068 kB, estimate=680414 kB; lsn=2/B99AB758, redo lsn=2/96D733D8
+[DNI] [DNI] 2026-02-24 09:36:41.933 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 7 segundos)
+[DNI] [DNI] 2026-02-24 09:36:41.933 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:41.933 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:50.703 CETLOG:  checkpoint complete: wrote 1064 buffers (6.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 14 removed, 22 recycled; write=5.803 s, sync=2.763 s, total=8.770 s; sync files=3, longest=1.480 s, average=0.921 s; distance=586442 kB, estimate=671017 kB; lsn=2/E3330EC8, redo lsn=2/BAA25F48
+[DNI] [DNI] 2026-02-24 09:36:50.703 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:36:50.703 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:50.703 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:36:58.631 CETLOG:  checkpoint complete: wrote 1109 buffers (6.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 15 removed, 27 recycled; write=5.795 s, sync=1.900 s, total=7.928 s; sync files=3, longest=1.664 s, average=0.634 s; distance=680929 kB, estimate=680929 kB; lsn=3/840B010, redo lsn=2/E431E618
+[DNI] [DNI] 2026-02-24 09:36:58.631 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 09:36:58.631 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:36:58.631 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:37:07.500 CETLOG:  checkpoint complete: wrote 2353 buffers (14.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 14 removed, 23 recycled; write=5.467 s, sync=3.197 s, total=8.869 s; sync files=3, longest=2.027 s, average=1.066 s; distance=610573 kB, estimate=673894 kB; lsn=3/31EDC348, redo lsn=3/9761C78
+[DNI] [DNI] 2026-02-24 09:37:07.501 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:37:07.501 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:37:07.501 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:37:15.177 CETLOG:  checkpoint complete: wrote 1112 buffers (6.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 16 removed, 26 recycled; write=5.473 s, sync=1.976 s, total=7.676 s; sync files=3, longest=1.349 s, average=0.659 s; distance=681203 kB, estimate=681203 kB; lsn=3/58294E18, redo lsn=3/3309E968
+[DNI] [DNI] 2026-02-24 09:37:15.177 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 09:37:15.177 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:37:15.178 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:37:23.203 CETLOG:  checkpoint complete: wrote 1142 buffers (7.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 15 removed, 23 recycled; write=5.385 s, sync=2.437 s, total=8.026 s; sync files=3, longest=1.488 s, average=0.813 s; distance=627970 kB, estimate=675879 kB; lsn=3/81348770, redo lsn=3/595DF2E0
+[DNI] [DNI] 2026-02-24 09:37:23.203 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 09:37:23.203 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:37:23.206 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:37:31.122 CETLOG:  checkpoint complete: wrote 1090 buffers (6.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 30 recycled; write=6.106 s, sync=1.559 s, total=7.919 s; sync files=3, longest=1.555 s, average=0.520 s; distance=670385 kB, estimate=675330 kB; lsn=3/A3A11780, redo lsn=3/8248B788
+[DNI] [DNI] 2026-02-24 09:37:31.123 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 09:37:31.123 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:37:31.123 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:37:42.076 CETLOG:  checkpoint complete: wrote 1247 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 7 removed, 27 recycled; write=8.404 s, sync=2.294 s, total=10.954 s; sync files=5, longest=1.344 s, average=0.459 s; distance=560050 kB, estimate=663802 kB; lsn=3/C8400FE0, redo lsn=3/A4778078
+[DNI] [DNI] 2026-02-24 09:37:42.077 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:37:42.077 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:37:42.077 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:37:52.869 CETLOG:  checkpoint complete: wrote 2508 buffers (15.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.296 s, sync=2.273 s, total=10.793 s; sync files=3, longest=1.377 s, average=0.758 s; distance=598744 kB, estimate=657296 kB; lsn=3/ECD7E228, redo lsn=3/C902E260
+[DNI] [DNI] 2026-02-24 09:37:52.870 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:37:52.870 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:37:52.870 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:38:04.903 CETLOG:  checkpoint complete: wrote 813 buffers (5.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 26 recycled; write=8.402 s, sync=3.394 s, total=12.034 s; sync files=3, longest=2.229 s, average=1.132 s; distance=599311 kB, estimate=651498 kB; lsn=4/12447208, redo lsn=3/ED971F08
+[DNI] [DNI] 2026-02-24 09:38:04.904 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:38:04.904 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:38:04.904 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:38:16.801 CETLOG:  checkpoint complete: wrote 1246 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.946 s, sync=2.706 s, total=11.898 s; sync files=3, longest=1.381 s, average=0.902 s; distance=613697 kB, estimate=647718 kB; lsn=4/37969818, redo lsn=4/130C24E8
+[DNI] [DNI] 2026-02-24 09:38:16.802 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:38:16.802 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:38:16.802 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:38:28.236 CETLOG:  checkpoint complete: wrote 1188 buffers (7.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.488 s, sync=2.666 s, total=11.435 s; sync files=3, longest=1.416 s, average=0.889 s; distance=612800 kB, estimate=644226 kB; lsn=4/5D032318, redo lsn=4/387325E0
+[DNI] [DNI] 2026-02-24 09:38:28.237 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:38:28.237 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:38:28.237 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:38:39.404 CETLOG:  checkpoint complete: wrote 1222 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.508 s, sync=2.413 s, total=11.168 s; sync files=3, longest=1.444 s, average=0.805 s; distance=613169 kB, estimate=641120 kB; lsn=4/82503580, redo lsn=4/5DDFEB38
+[DNI] [DNI] 2026-02-24 09:38:39.405 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:38:39.405 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:38:39.405 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:38:50.830 CETLOG:  checkpoint complete: wrote 1215 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.618 s, sync=2.488 s, total=11.426 s; sync files=3, longest=1.750 s, average=0.830 s; distance=612357 kB, estimate=638244 kB; lsn=4/A7083620, redo lsn=4/83400328
+[DNI] [DNI] 2026-02-24 09:38:50.830 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:38:50.830 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:38:50.830 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:39:02.422 CETLOG:  checkpoint complete: wrote 3077 buffers (18.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.951 s, sync=2.419 s, total=11.592 s; sync files=3, longest=1.488 s, average=0.806 s; distance=599767 kB, estimate=634396 kB; lsn=4/CBC6A188, redo lsn=4/A7DB61B0
+[DNI] [DNI] 2026-02-24 09:39:02.423 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:39:02.423 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:39:02.423 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:39:14.489 CETLOG:  checkpoint complete: wrote 783 buffers (4.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.614 s, sync=3.196 s, total=12.067 s; sync files=3, longest=2.059 s, average=1.066 s; distance=601118 kB, estimate=631068 kB; lsn=4/F189D618, redo lsn=4/CC8BDC80
+[DNI] [DNI] 2026-02-24 09:39:14.489 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:39:14.489 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:39:14.489 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:39:26.046 CETLOG:  checkpoint complete: wrote 1251 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.616 s, sync=2.669 s, total=11.558 s; sync files=3, longest=1.433 s, average=0.890 s; distance=621181 kB, estimate=630080 kB; lsn=5/1698E5D8, redo lsn=4/F275D310
+[DNI] [DNI] 2026-02-24 09:39:26.047 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:39:26.047 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:39:26.047 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:39:37.607 CETLOG:  checkpoint complete: wrote 1263 buffers (7.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.722 s, sync=2.600 s, total=11.561 s; sync files=3, longest=1.613 s, average=0.867 s; distance=607725 kB, estimate=627844 kB; lsn=5/3B8E0338, redo lsn=5/178D8778
+[DNI] [DNI] 2026-02-24 09:39:37.607 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:39:37.607 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:39:37.607 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:39:48.992 CETLOG:  checkpoint complete: wrote 1200 buffers (7.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=9.074 s, sync=2.147 s, total=11.385 s; sync files=3, longest=1.356 s, average=0.716 s; distance=603745 kB, estimate=625434 kB; lsn=5/5F8BBF90, redo lsn=5/3C670F00
+[DNI] [DNI] 2026-02-24 09:39:48.993 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:39:48.993 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:39:48.993 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:39:59.900 CETLOG:  checkpoint complete: wrote 1129 buffers (6.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 28 recycled; write=8.422 s, sync=2.270 s, total=10.908 s; sync files=3, longest=1.226 s, average=0.757 s; distance=585201 kB, estimate=621411 kB; lsn=5/83E678E8, redo lsn=5/601ED670
+[DNI] [DNI] 2026-02-24 09:39:59.901 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:39:59.901 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:39:59.904 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:40:11.050 CETLOG:  checkpoint complete: wrote 1500 buffers (9.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.522 s, sync=2.361 s, total=11.149 s; sync files=3, longest=1.316 s, average=0.787 s; distance=597277 kB, estimate=618998 kB; lsn=5/A808B5C0, redo lsn=5/84934E30
+[DNI] [DNI] 2026-02-24 09:40:11.051 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:40:11.051 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:40:11.051 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:40:21.998 CETLOG:  checkpoint complete: wrote 2591 buffers (15.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 28 recycled; write=8.739 s, sync=1.981 s, total=10.948 s; sync files=3, longest=1.414 s, average=0.661 s; distance=593405 kB, estimate=616438 kB; lsn=5/CB71CD80, redo lsn=5/A8CB4528
+[DNI] [DNI] 2026-02-24 09:40:21.998 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:40:21.998 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:40:21.999 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:40:29.474 CETERROR:  cancelando la sentencia debido a una peticiÃ³n del usuario
+[DNI] [DNI] 2026-02-24 09:40:29.474 CETSENTENCIA:  DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 09:40:34.966 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:40:34.975 CETLOG:  sentencia: TRUNCATE TABLE estudiantes;
+[DNI] [DNI] 2026-02-24 09:40:35.685 CETLOG:  sentencia: COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice) 
+	FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:40:37.913 CETLOG:  checkpoint complete: wrote 460 buffers (2.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 3 removed, 33 recycled; write=15.626 s, sync=0.035 s, total=15.915 s; sync files=4, longest=0.022 s, average=0.009 s; distance=580734 kB, estimate=612868 kB; lsn=5/EA281C00, redo lsn=5/CC3D4100
+[DNI] [DNI] 2026-02-24 09:40:39.793 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 18 segundos)
+[DNI] [DNI] 2026-02-24 09:40:39.793 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:40:39.793 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:41:01.684 CETLOG:  checkpoint complete: wrote 2830 buffers (17.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=21.519 s, sync=0.188 s, total=21.891 s; sync files=9, longest=0.116 s, average=0.021 s; distance=540844 kB, estimate=605666 kB; lsn=6/B560A00, redo lsn=5/ED3FF400
+[DNI] [DNI] 2026-02-24 09:41:03.184 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 24 segundos)
+[DNI] [DNI] 2026-02-24 09:41:03.184 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:41:03.185 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:41:19.986 CETLOG:  checkpoint complete: wrote 8085 buffers (49.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=16.429 s, sync=0.214 s, total=16.803 s; sync files=3, longest=0.141 s, average=0.072 s; distance=540685 kB, estimate=599168 kB; lsn=6/2C52C348, redo lsn=6/E402960
+[DNI] [DNI] 2026-02-24 09:41:21.295 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 18 segundos)
+[DNI] [DNI] 2026-02-24 09:41:21.295 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:41:21.295 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:41:36.123 CETLOG:  checkpoint complete: wrote 12254 buffers (74.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=14.436 s, sync=0.231 s, total=14.829 s; sync files=3, longest=0.182 s, average=0.077 s; distance=538258 kB, estimate=593077 kB; lsn=6/4D5ABB80, redo lsn=6/2F1A7288
+[DNI] [DNI] 2026-02-24 09:41:37.201 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 16 segundos)
+[DNI] [DNI] 2026-02-24 09:41:37.201 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:41:37.202 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:41:51.151 CETLOG:  checkpoint complete: wrote 12607 buffers (76.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.629 s, sync=0.214 s, total=13.950 s; sync files=4, longest=0.149 s, average=0.054 s; distance=540623 kB, estimate=587831 kB; lsn=6/6E529948, redo lsn=6/5019B1F8
+[DNI] [DNI] 2026-02-24 09:41:52.369 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:41:52.369 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:41:52.369 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:42:06.233 CETLOG:  checkpoint complete: wrote 12742 buffers (77.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.562 s, sync=0.206 s, total=13.864 s; sync files=3, longest=0.104 s, average=0.069 s; distance=540657 kB, estimate=583114 kB; lsn=6/8F4DC9C0, redo lsn=6/71197898
+[DNI] [DNI] 2026-02-24 09:42:07.330 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:42:07.330 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:42:07.330 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:42:20.143 CETLOG:  checkpoint complete: wrote 12765 buffers (77.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 3 removed, 30 recycled; write=11.940 s, sync=0.761 s, total=12.813 s; sync files=4, longest=0.574 s, average=0.190 s; distance=539631 kB, estimate=578766 kB; lsn=6/B3781448, redo lsn=6/920936C8
+[DNI] [DNI] 2026-02-24 09:42:20.143 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 13 segundos)
+[DNI] [DNI] 2026-02-24 09:42:20.143 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:42:20.144 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:42:21.409 CETLOG:  sentencia: DROP TABLE IF EXISTS estudiantes2;
+[DNI] [DNI] 2026-02-24 09:42:21.417 CETLOG:  sentencia: CREATE TABLE estudiantes2 AS SELECT * FROM estudiantes ORDER BY indice ASC;
+[DNI] [DNI] 2026-02-24 09:42:27.428 CETLOG:  checkpoint complete: wrote 6266 buffers (38.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 4 removed, 30 recycled; write=6.156 s, sync=1.005 s, total=7.285 s; sync files=24, longest=0.665 s, average=0.042 s; distance=564279 kB, estimate=577317 kB; lsn=6/D5C37600, redo lsn=6/B47A15F0
+[DNI] [DNI] 2026-02-24 09:42:27.429 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 7 segundos)
+[DNI] [DNI] 2026-02-24 09:42:27.429 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:42:27.429 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:42:35.275 CETLOG:  checkpoint complete: wrote 118 buffers (0.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 3 removed, 31 recycled; write=6.797 s, sync=0.748 s, total=7.847 s; sync files=2, longest=0.746 s, average=0.374 s; distance=555311 kB, estimate=575116 kB; lsn=6/F6D97B90, redo lsn=6/D65ED210
+[DNI] [DNI] 2026-02-24 09:42:35.277 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 09:42:35.277 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:42:35.277 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:42:43.330 CETLOG:  checkpoint complete: wrote 603 buffers (3.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 3 removed, 30 recycled; write=6.798 s, sync=0.766 s, total=8.053 s; sync files=2, longest=0.660 s, average=0.383 s; distance=548344 kB, estimate=572439 kB; lsn=7/183C6DB8, redo lsn=6/F7D6B288
+[DNI] [DNI] 2026-02-24 09:42:43.330 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 09:42:43.330 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:42:43.331 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:42:57.808 CETLOG:  checkpoint complete: wrote 452 buffers (2.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 2 removed, 32 recycled; write=12.921 s, sync=1.083 s, total=14.478 s; sync files=2, longest=0.735 s, average=0.542 s; distance=545438 kB, estimate=569739 kB; lsn=7/38914C30, redo lsn=7/19212DF0
+[DNI] [DNI] 2026-02-24 09:42:58.162 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:42:58.162 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:42:58.163 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:43:10.818 CETLOG:  checkpoint complete: wrote 11315 buffers (69.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=11.804 s, sync=0.636 s, total=12.657 s; sync files=4, longest=0.392 s, average=0.159 s; distance=542182 kB, estimate=566983 kB; lsn=7/58E52028, redo lsn=7/3A38C740
+[DNI] [DNI] 2026-02-24 09:43:11.494 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 13 segundos)
+[DNI] [DNI] 2026-02-24 09:43:11.494 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:43:11.495 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:43:23.654 CETLOG:  checkpoint complete: wrote 6 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=11.729 s, sync=0.238 s, total=12.160 s; sync files=3, longest=0.202 s, average=0.080 s; distance=541139 kB, estimate=564399 kB; lsn=7/796408A8, redo lsn=7/5B401400
+[DNI] [DNI] 2026-02-24 09:43:24.459 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 13 segundos)
+[DNI] [DNI] 2026-02-24 09:43:24.459 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:43:24.459 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:43:35.821 CETLOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.928 s, sync=0.232 s, total=11.363 s; sync files=4, longest=0.134 s, average=0.058 s; distance=540667 kB, estimate=562026 kB; lsn=7/9A8DA598, redo lsn=7/7C4000A0
+[DNI] [DNI] 2026-02-24 09:43:36.608 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:43:36.608 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:43:36.609 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:43:47.866 CETLOG:  checkpoint complete: wrote 7 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.792 s, sync=0.240 s, total=11.258 s; sync files=3, longest=0.205 s, average=0.080 s; distance=540678 kB, estimate=559891 kB; lsn=7/BB6CAB00, redo lsn=7/9D401A00
+[DNI] [DNI] 2026-02-24 09:43:48.680 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:43:48.680 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:43:48.681 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:44:00.010 CETLOG:  checkpoint complete: wrote 7 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.810 s, sync=0.279 s, total=11.330 s; sync files=3, longest=0.249 s, average=0.093 s; distance=540688 kB, estimate=557971 kB; lsn=7/DC8B8BE8, redo lsn=7/BE405D58
+[DNI] [DNI] 2026-02-24 09:44:00.754 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:44:00.754 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:44:00.754 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:44:06.162 CETLOG:  sentencia: DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 09:44:29.400 CETLOG:  checkpoint complete: wrote 9 buffers (0.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=27.862 s, sync=0.631 s, total=28.646 s; sync files=4, longest=0.586 s, average=0.158 s; distance=540648 kB, estimate=556238 kB; lsn=7/FD249548, redo lsn=7/DF400028
+[DNI] [DNI] 2026-02-24 09:44:39.307 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:44:56.629 CETLOG:  checkpoint complete: wrote 173 buffers (1.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=16.726 s, sync=0.485 s, total=17.322 s; sync files=11, longest=0.449 s, average=0.045 s; distance=537330 kB, estimate=554348 kB; lsn=8/1ED40630, redo lsn=8/BCB60
+[DNI] [DNI] 2026-02-24 09:44:57.781 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 18 segundos)
+[DNI] [DNI] 2026-02-24 09:44:57.781 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:44:57.781 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:45:09.324 CETLOG:  checkpoint complete: wrote 82 buffers (0.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 6 removed, 27 recycled; write=9.179 s, sync=2.251 s, total=11.544 s; sync files=6, longest=1.392 s, average=0.376 s; distance=543144 kB, estimate=553227 kB; lsn=8/45D892D0, redo lsn=8/21326ED8
+[DNI] [DNI] 2026-02-24 09:45:09.325 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:45:09.325 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:45:09.325 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:45:20.474 CETLOG:  checkpoint complete: wrote 1357 buffers (8.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 25 recycled; write=8.205 s, sync=2.797 s, total=11.149 s; sync files=6, longest=1.410 s, average=0.467 s; distance=608908 kB, estimate=608908 kB; lsn=8/6C6A43A0, redo lsn=8/465C9F50
+[DNI] [DNI] 2026-02-24 09:45:20.474 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:45:20.474 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:45:20.474 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:45:30.545 CETLOG:  checkpoint complete: wrote 1207 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 28 recycled; write=8.089 s, sync=1.757 s, total=10.071 s; sync files=6, longest=1.409 s, average=0.293 s; distance=633333 kB, estimate=633333 kB; lsn=8/9084F3D0, redo lsn=8/6D0473B0
+[DNI] [DNI] 2026-02-24 09:45:30.546 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:45:30.546 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:45:30.549 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:45:40.584 CETLOG:  checkpoint complete: wrote 1850 buffers (11.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 26 recycled; write=7.372 s, sync=2.373 s, total=10.039 s; sync files=6, longest=1.348 s, average=0.396 s; distance=593870 kB, estimate=629386 kB; lsn=8/B676F8B0, redo lsn=8/9143ADF8
+[DNI] [DNI] 2026-02-24 09:45:40.585 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:45:40.585 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:45:40.585 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:45:50.529 CETLOG:  checkpoint complete: wrote 2980 buffers (18.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=7.322 s, sync=2.403 s, total=9.945 s; sync files=5, longest=1.427 s, average=0.481 s; distance=624206 kB, estimate=628868 kB; lsn=8/DCC60EC8, redo lsn=8/B75CE920
+[DNI] [DNI] 2026-02-24 09:45:50.529 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:45:50.529 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:45:50.529 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:45:59.534 CETLOG:  checkpoint complete: wrote 531 buffers (3.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 28 recycled; write=7.144 s, sync=1.612 s, total=9.005 s; sync files=6, longest=1.463 s, average=0.269 s; distance=628249 kB, estimate=628806 kB; lsn=9/4033A8, redo lsn=8/DDB54E78
+[DNI] [DNI] 2026-02-24 09:45:59.535 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:45:59.535 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:45:59.535 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:46:09.529 CETLOG:  checkpoint complete: wrote 653 buffers (4.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 25 recycled; write=6.927 s, sync=2.843 s, total=9.994 s; sync files=6, longest=1.677 s, average=0.474 s; distance=583061 kB, estimate=624232 kB; lsn=9/27664210, redo lsn=9/14BA328
+[DNI] [DNI] 2026-02-24 09:46:09.529 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:46:09.529 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:46:09.533 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:46:19.890 CETLOG:  checkpoint complete: wrote 1241 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 15 removed, 24 recycled; write=7.175 s, sync=2.967 s, total=10.361 s; sync files=6, longest=1.844 s, average=0.495 s; distance=638553 kB, estimate=638553 kB; lsn=9/4F220310, redo lsn=9/284507F8
+[DNI] [DNI] 2026-02-24 09:46:19.890 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:46:19.890 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:46:19.890 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:46:29.256 CETLOG:  checkpoint complete: wrote 1187 buffers (7.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 15 removed, 25 recycled; write=6.364 s, sync=2.759 s, total=9.366 s; sync files=6, longest=1.593 s, average=0.460 s; distance=651802 kB, estimate=651802 kB; lsn=9/7669C138, redo lsn=9/500D7398
+[DNI] [DNI] 2026-02-24 09:46:29.256 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:46:29.256 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:46:29.256 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:46:38.231 CETLOG:  checkpoint complete: wrote 1218 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 26 recycled; write=6.505 s, sync=2.235 s, total=8.976 s; sync files=6, longest=1.197 s, average=0.373 s; distance=643753 kB, estimate=650997 kB; lsn=9/9CC2CB48, redo lsn=9/77581880
+[DNI] [DNI] 2026-02-24 09:46:38.232 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:46:38.232 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:46:38.232 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:46:47.364 CETLOG:  checkpoint complete: wrote 1075 buffers (6.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=6.559 s, sync=2.352 s, total=9.133 s; sync files=6, longest=1.295 s, average=0.392 s; distance=629231 kB, estimate=648821 kB; lsn=9/C2F717C0, redo lsn=9/9DBFD5E0
+[DNI] [DNI] 2026-02-24 09:46:47.364 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:46:47.364 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:46:47.364 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:46:56.666 CETLOG:  checkpoint complete: wrote 3791 buffers (23.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=6.685 s, sync=2.400 s, total=9.302 s; sync files=6, longest=1.417 s, average=0.400 s; distance=624350 kB, estimate=646374 kB; lsn=9/E8EAA340, redo lsn=9/C3DB50B0
+[DNI] [DNI] 2026-02-24 09:46:56.666 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:46:56.666 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:46:56.667 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:47:06.418 CETLOG:  checkpoint complete: wrote 454 buffers (2.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 25 recycled; write=6.994 s, sync=2.534 s, total=9.752 s; sync files=6, longest=1.619 s, average=0.423 s; distance=621780 kB, estimate=643914 kB; lsn=A/F5A70A8, redo lsn=9/E9CEA1E8
+[DNI] [DNI] 2026-02-24 09:47:06.418 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:47:06.418 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:47:06.421 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:47:16.810 CETLOG:  checkpoint complete: wrote 1091 buffers (6.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 27 recycled; write=7.801 s, sync=2.313 s, total=10.392 s; sync files=7, longest=1.275 s, average=0.331 s; distance=628979 kB, estimate=642421 kB; lsn=A/3440AE70, redo lsn=A/10326FD8
+[DNI] [DNI] 2026-02-24 09:47:16.811 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:47:16.811 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:47:16.811 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:47:28.287 CETLOG:  checkpoint complete: wrote 1262 buffers (7.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.650 s, sync=2.594 s, total=11.476 s; sync files=7, longest=1.324 s, average=0.371 s; distance=608282 kB, estimate=639007 kB; lsn=A/5A7E00E8, redo lsn=A/3552DB80
+[DNI] [DNI] 2026-02-24 09:47:28.287 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:47:28.287 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:47:28.288 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:47:39.590 CETLOG:  checkpoint complete: wrote 1288 buffers (7.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.351 s, sync=2.703 s, total=11.303 s; sync files=6, longest=1.400 s, average=0.451 s; distance=621919 kB, estimate=637298 kB; lsn=A/80C61D98, redo lsn=A/5B4858B8
+[DNI] [DNI] 2026-02-24 09:47:39.590 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:47:39.590 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:47:39.590 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:47:50.783 CETLOG:  checkpoint complete: wrote 1221 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.523 s, sync=2.404 s, total=11.193 s; sync files=6, longest=1.492 s, average=0.401 s; distance=629433 kB, estimate=636512 kB; lsn=A/A6C6F330, redo lsn=A/81B33DA8
+[DNI] [DNI] 2026-02-24 09:47:50.783 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:47:50.783 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:47:50.784 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:48:02.370 CETLOG:  checkpoint complete: wrote 1339 buffers (8.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 25 recycled; write=8.734 s, sync=2.552 s, total=11.587 s; sync files=6, longest=1.436 s, average=0.426 s; distance=624209 kB, estimate=635281 kB; lsn=A/CD07B2C0, redo lsn=A/A7CC81C8
+[DNI] [DNI] 2026-02-24 09:48:02.370 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:48:02.370 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:48:02.371 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:48:13.308 CETLOG:  checkpoint complete: wrote 1329 buffers (8.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.313 s, sync=2.359 s, total=10.938 s; sync files=6, longest=1.284 s, average=0.394 s; distance=622919 kB, estimate=634045 kB; lsn=A/F270F6E0, redo lsn=A/CDD19DF0
+[DNI] [DNI] 2026-02-24 09:48:13.309 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:48:13.309 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:48:13.309 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:48:24.045 CETLOG:  checkpoint complete: wrote 1343 buffers (8.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.101 s, sync=2.367 s, total=10.737 s; sync files=6, longest=1.346 s, average=0.395 s; distance=613827 kB, estimate=632023 kB; lsn=B/18047878, redo lsn=A/F348AC98
+[DNI] [DNI] 2026-02-24 09:48:24.045 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:48:24.045 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:48:24.046 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:48:34.837 CETLOG:  checkpoint complete: wrote 1283 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.190 s, sync=2.367 s, total=10.792 s; sync files=6, longest=1.437 s, average=0.395 s; distance=616861 kB, estimate=630507 kB; lsn=B/3D80A830, redo lsn=B/18EF2218
+[DNI] [DNI] 2026-02-24 09:48:34.838 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:48:34.838 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:48:34.838 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:48:45.805 CETLOG:  checkpoint complete: wrote 1368 buffers (8.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.333 s, sync=2.382 s, total=10.968 s; sync files=6, longest=1.464 s, average=0.397 s; distance=611982 kB, estimate=628654 kB; lsn=B/634054F8, redo lsn=B/3E495B38
+[DNI] [DNI] 2026-02-24 09:48:45.806 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:48:45.806 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:48:45.806 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:48:56.915 CETLOG:  checkpoint complete: wrote 1309 buffers (8.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.624 s, sync=2.261 s, total=11.110 s; sync files=6, longest=1.455 s, average=0.377 s; distance=617698 kB, estimate=627559 kB; lsn=B/885D1C78, redo lsn=B/63FCE4A0
+[DNI] [DNI] 2026-02-24 09:48:56.916 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:48:56.916 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:48:56.916 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:49:07.805 CETLOG:  checkpoint complete: wrote 1274 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.569 s, sync=2.084 s, total=10.889 s; sync files=6, longest=1.177 s, average=0.348 s; distance=609443 kB, estimate=625747 kB; lsn=B/AD48AEC0, redo lsn=B/892F7160
+[DNI] [DNI] 2026-02-24 09:49:07.806 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:49:07.806 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:49:07.806 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:49:08.014 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:49:08.024 CETLOG:  sentencia: TRUNCATE TABLE estudiantes;
+[DNI] [DNI] 2026-02-24 09:49:18.575 CETLOG:  checkpoint complete: wrote 1272 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.462 s, sync=2.078 s, total=10.769 s; sync files=6, longest=1.283 s, average=0.347 s; distance=605600 kB, estimate=623733 kB; lsn=B/D26AB7E0, redo lsn=B/AE25F458
+[DNI] [DNI] 2026-02-24 09:49:18.576 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:49:18.576 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:49:18.577 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:49:29.444 CETLOG:  checkpoint complete: wrote 1282 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.333 s, sync=2.294 s, total=10.868 s; sync files=6, longest=1.324 s, average=0.383 s; distance=607019 kB, estimate=622061 kB; lsn=B/F741A500, redo lsn=B/D332A0A8
+[DNI] [DNI] 2026-02-24 09:49:29.445 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:49:29.445 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:49:29.446 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:49:41.016 CETLOG:  checkpoint complete: wrote 1211 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.779 s, sync=2.529 s, total=11.571 s; sync files=6, longest=1.294 s, average=0.422 s; distance=603533 kB, estimate=620208 kB; lsn=C/1CE52148, redo lsn=B/F808D668
+[DNI] [DNI] 2026-02-24 09:49:41.016 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:49:41.016 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:49:41.016 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:49:51.854 CETLOG:  checkpoint complete: wrote 3974 buffers (24.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.528 s, sync=2.055 s, total=10.838 s; sync files=6, longest=1.395 s, average=0.343 s; distance=617361 kB, estimate=619924 kB; lsn=C/41438750, redo lsn=C/1DB71DC8
+[DNI] [DNI] 2026-02-24 09:49:51.854 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:49:51.854 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:49:51.854 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:50:02.819 CETLOG:  checkpoint complete: wrote 4196 buffers (25.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.417 s, sync=2.297 s, total=10.965 s; sync files=7, longest=1.322 s, average=0.329 s; distance=599142 kB, estimate=617845 kB; lsn=C/66CB86D8, redo lsn=C/4248B7A0
+[DNI] [DNI] 2026-02-24 09:50:02.820 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:50:02.820 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:50:02.820 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:50:13.161 CETLOG:  checkpoint complete: wrote 3512 buffers (21.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 29 recycled; write=8.531 s, sync=1.583 s, total=10.341 s; sync files=6, longest=1.558 s, average=0.264 s; distance=613837 kB, estimate=617445 kB; lsn=C/89854D00, redo lsn=C/67BFECD0
+[DNI] [DNI] 2026-02-24 09:50:13.162 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:50:13.162 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:50:13.162 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:50:23.662 CETLOG:  checkpoint complete: wrote 4259 buffers (26.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 27 recycled; write=8.209 s, sync=2.080 s, total=10.501 s; sync files=6, longest=1.410 s, average=0.347 s; distance=568847 kB, estimate=612585 kB; lsn=C/AE876F10, redo lsn=C/8A782A28
+[DNI] [DNI] 2026-02-24 09:50:23.663 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:50:23.663 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:50:23.663 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:50:34.583 CETLOG:  checkpoint complete: wrote 3746 buffers (22.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.539 s, sync=2.229 s, total=10.920 s; sync files=6, longest=1.515 s, average=0.372 s; distance=603102 kB, estimate=611636 kB; lsn=C/D36F3370, redo lsn=C/AF47A318
+[DNI] [DNI] 2026-02-24 09:50:34.584 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:50:34.584 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:50:34.584 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:50:45.245 CETLOG:  checkpoint complete: wrote 3212 buffers (19.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.301 s, sync=2.136 s, total=10.661 s; sync files=6, longest=1.332 s, average=0.356 s; distance=601149 kB, estimate=610588 kB; lsn=C/F78960A0, redo lsn=C/D3F89AC8
+[DNI] [DNI] 2026-02-24 09:50:45.246 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:50:45.246 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:50:45.246 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:50:56.092 CETLOG:  checkpoint complete: wrote 3122 buffers (19.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.509 s, sync=2.062 s, total=10.846 s; sync files=6, longest=1.503 s, average=0.344 s; distance=595922 kB, estimate=609121 kB; lsn=D/1C042780, redo lsn=C/F857E630
+[DNI] [DNI] 2026-02-24 09:50:56.093 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:50:56.093 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:50:56.093 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:51:07.136 CETLOG:  checkpoint complete: wrote 2777 buffers (16.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 26 recycled; write=8.422 s, sync=2.399 s, total=11.044 s; sync files=5, longest=1.519 s, average=0.480 s; distance=598459 kB, estimate=608055 kB; lsn=D/4161FCE8, redo lsn=D/1CDED2D8
+[DNI] [DNI] 2026-02-24 09:51:07.137 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:51:07.137 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:51:07.137 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:51:17.679 CETLOG:  checkpoint complete: wrote 1651 buffers (10.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 29 recycled; write=8.529 s, sync=1.765 s, total=10.543 s; sync files=6, longest=1.500 s, average=0.295 s; distance=610340 kB, estimate=610340 kB; lsn=D/64840FB0, redo lsn=D/421F6540
+[DNI] [DNI] 2026-02-24 09:51:17.680 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:51:17.680 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:51:17.681 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:51:28.663 CETLOG:  checkpoint complete: wrote 2268 buffers (13.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 27 recycled; write=8.442 s, sync=2.311 s, total=10.983 s; sync files=6, longest=1.533 s, average=0.386 s; distance=579747 kB, estimate=607281 kB; lsn=D/89B51DA0, redo lsn=D/6581F2B0
+[DNI] [DNI] 2026-02-24 09:51:28.664 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:51:28.664 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:51:28.664 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:51:39.691 CETLOG:  checkpoint complete: wrote 1360 buffers (8.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.551 s, sync=2.249 s, total=11.028 s; sync files=5, longest=1.352 s, average=0.450 s; distance=604285 kB, estimate=606981 kB; lsn=D/AE8A1888, redo lsn=D/8A63EA38
+[DNI] [DNI] 2026-02-24 09:51:39.692 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:51:39.692 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:51:39.695 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:51:50.769 CETLOG:  checkpoint complete: wrote 749 buffers (4.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.555 s, sync=2.286 s, total=11.077 s; sync files=5, longest=1.142 s, average=0.458 s; distance=605403 kB, estimate=606823 kB; lsn=D/D3CE00A8, redo lsn=D/AF5759F0
+[DNI] [DNI] 2026-02-24 09:51:50.769 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:51:50.769 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:51:50.769 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:52:01.932 CETLOG:  checkpoint complete: wrote 723 buffers (4.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.636 s, sync=2.240 s, total=11.163 s; sync files=5, longest=1.432 s, average=0.448 s; distance=610811 kB, estimate=610811 kB; lsn=D/F9094380, redo lsn=D/D49F4890
+[DNI] [DNI] 2026-02-24 09:52:01.933 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:52:01.933 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:52:01.933 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:52:02.655 CETLOG:  sentencia: CREATE TABLE IF NOT EXISTS estudiantes (
+	    estudiante_id SERIAL PRIMARY KEY,
+	    nombre TEXT,
+	    codigo_carrera INTEGER,
+	    edad INTEGER,
+	    indice INTEGER
+	);
+[DNI] [DNI] 2026-02-24 09:52:02.665 CETLOG:  sentencia: TRUNCATE TABLE estudiantes;
+[DNI] [DNI] 2026-02-24 09:52:13.009 CETLOG:  checkpoint complete: wrote 1006 buffers (6.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.527 s, sync=2.274 s, total=11.077 s; sync files=5, longest=1.472 s, average=0.455 s; distance=610837 kB, estimate=610837 kB; lsn=E/1E0A54C0, redo lsn=D/F9E79DC0
+[DNI] [DNI] 2026-02-24 09:52:13.010 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:52:13.010 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:52:13.011 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:52:24.158 CETLOG:  checkpoint complete: wrote 1184 buffers (7.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.523 s, sync=2.330 s, total=11.148 s; sync files=5, longest=1.244 s, average=0.466 s; distance=604265 kB, estimate=610180 kB; lsn=E/43127D20, redo lsn=E/1EC943E0
+[DNI] [DNI] 2026-02-24 09:52:24.159 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:52:24.159 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:52:24.159 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:52:35.482 CETLOG:  checkpoint complete: wrote 1330 buffers (8.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.534 s, sync=2.566 s, total=11.323 s; sync files=5, longest=1.369 s, average=0.513 s; distance=607507 kB, estimate=609912 kB; lsn=E/6872F810, redo lsn=E/43DD9098
+[DNI] [DNI] 2026-02-24 09:52:35.482 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:52:35.482 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:52:35.482 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:52:46.627 CETLOG:  checkpoint complete: wrote 1306 buffers (8.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.460 s, sync=2.403 s, total=11.145 s; sync files=5, longest=1.338 s, average=0.481 s; distance=612727 kB, estimate=612727 kB; lsn=E/8E0F2B88, redo lsn=E/69436DE8
+[DNI] [DNI] 2026-02-24 09:52:46.628 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:52:46.628 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:52:46.628 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:52:57.321 CETLOG:  checkpoint complete: wrote 1201 buffers (7.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.204 s, sync=2.185 s, total=10.694 s; sync files=5, longest=1.253 s, average=0.437 s; distance=619241 kB, estimate=619241 kB; lsn=E/B3075FD8, redo lsn=E/8F0F13E8
+[DNI] [DNI] 2026-02-24 09:52:57.322 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:52:57.322 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:52:57.323 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:53:08.736 CETLOG:  checkpoint complete: wrote 1249 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=8.351 s, sync=2.825 s, total=11.414 s; sync files=5, longest=1.581 s, average=0.565 s; distance=609345 kB, estimate=618251 kB; lsn=E/D986B6E8, redo lsn=E/B4401B78
+[DNI] [DNI] 2026-02-24 09:53:08.737 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:53:08.737 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:53:08.737 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:53:20.289 CETLOG:  checkpoint complete: wrote 1298 buffers (7.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.868 s, sync=2.435 s, total=11.553 s; sync files=5, longest=1.412 s, average=0.487 s; distance=624113 kB, estimate=624113 kB; lsn=E/FECBAEB8, redo lsn=E/DA57E268
+[DNI] [DNI] 2026-02-24 09:53:20.290 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:53:20.290 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:53:20.290 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:53:31.408 CETLOG:  checkpoint complete: wrote 1292 buffers (7.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=8.624 s, sync=2.232 s, total=11.118 s; sync files=6, longest=1.294 s, average=0.372 s; distance=611052 kB, estimate=622807 kB; lsn=F/2304A8A8, redo lsn=E/FFA393E0
+[DNI] [DNI] 2026-02-24 09:53:31.409 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:53:31.409 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:53:31.409 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:53:42.476 CETLOG:  checkpoint complete: wrote 1274 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.513 s, sync=2.333 s, total=11.068 s; sync files=3, longest=1.250 s, average=0.778 s; distance=591091 kB, estimate=619635 kB; lsn=F/47553C98, redo lsn=F/23B76068
+[DNI] [DNI] 2026-02-24 09:53:42.477 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:53:42.477 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:53:42.477 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:53:53.232 CETLOG:  checkpoint complete: wrote 1213 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.420 s, sync=2.184 s, total=10.755 s; sync files=2, longest=1.310 s, average=1.092 s; distance=596293 kB, estimate=617301 kB; lsn=F/6B40A610, redo lsn=F/481C74C8
+[DNI] [DNI] 2026-02-24 09:53:53.233 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:53:53.233 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:53:53.233 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:54:04.378 CETLOG:  checkpoint complete: wrote 1143 buffers (7.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 27 recycled; write=8.638 s, sync=2.280 s, total=11.146 s; sync files=2, longest=1.375 s, average=1.140 s; distance=584937 kB, estimate=614065 kB; lsn=F/8F4011F8, redo lsn=F/6BD01C40
+[DNI] [DNI] 2026-02-24 09:54:04.379 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:54:04.379 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:54:04.379 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:54:15.662 CETLOG:  checkpoint complete: wrote 1256 buffers (7.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.857 s, sync=2.153 s, total=11.284 s; sync files=2, longest=1.288 s, average=1.077 s; distance=592918 kB, estimate=611950 kB; lsn=F/B30DFCA0, redo lsn=F/90007770
+[DNI] [DNI] 2026-02-24 09:54:15.663 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:54:15.663 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:54:15.664 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:54:27.150 CETLOG:  checkpoint complete: wrote 3827 buffers (23.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 27 recycled; write=8.737 s, sync=2.524 s, total=11.487 s; sync files=2, longest=1.362 s, average=1.262 s; distance=585967 kB, estimate=609352 kB; lsn=F/D7A43588, redo lsn=F/B3C434D0
+[DNI] [DNI] 2026-02-24 09:54:27.151 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:54:27.151 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:54:27.154 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:54:38.740 CETLOG:  checkpoint complete: wrote 432 buffers (2.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.640 s, sync=2.707 s, total=11.590 s; sync files=2, longest=1.597 s, average=1.354 s; distance=598327 kB, estimate=608249 kB; lsn=F/FBE72DE8, redo lsn=F/D8491180
+[DNI] [DNI] 2026-02-24 09:54:38.741 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:54:38.741 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:54:38.742 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:54:50.387 CETLOG:  checkpoint complete: wrote 1220 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.628 s, sync=2.803 s, total=11.646 s; sync files=2, longest=1.785 s, average=1.402 s; distance=597830 kB, estimate=607207 kB; lsn=10/20CB2DA0, redo lsn=F/FCC62C30
+[DNI] [DNI] 2026-02-24 09:54:50.388 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:54:50.388 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:54:50.388 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:55:02.531 CETLOG:  checkpoint complete: wrote 1244 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=9.511 s, sync=2.388 s, total=12.144 s; sync files=2, longest=1.241 s, average=1.194 s; distance=603607 kB, estimate=606847 kB; lsn=10/45501108, redo lsn=10/219D88A0
+[DNI] [DNI] 2026-02-24 09:55:02.532 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:55:02.532 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:55:02.533 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:55:13.711 CETLOG:  checkpoint complete: wrote 1211 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.641 s, sync=2.325 s, total=11.179 s; sync files=2, longest=1.293 s, average=1.163 s; distance=600605 kB, estimate=606223 kB; lsn=10/69DC5440, redo lsn=10/4645FCA0
+[DNI] [DNI] 2026-02-24 09:55:13.711 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:55:13.711 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:55:13.711 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:55:24.866 CETLOG:  checkpoint complete: wrote 1224 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.636 s, sync=2.280 s, total=11.156 s; sync files=2, longest=1.395 s, average=1.140 s; distance=594999 kB, estimate=605101 kB; lsn=10/8E5E8178, redo lsn=10/6A96DB48
+[DNI] [DNI] 2026-02-24 09:55:24.867 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 09:55:24.867 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:55:24.867 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:55:36.020 CETLOG:  no se pudo enviar datos al cliente: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-02-24 09:55:36.020 CETFATAL:  se ha perdido la conexiÃ³n al cliente
+[DNI] [DNI] 2026-02-24 09:55:36.033 CETLOG:  sentencia: COPY estudiantes(estudiante_id, nombre, codigo_carrera, edad, indice) 
+	FROM 'C:/temp/datos_estudiantes.csv' WITH (FORMAT csv, DELIMITER ',');
+[DNI] [DNI] 2026-02-24 09:55:36.305 CETLOG:  checkpoint complete: wrote 1292 buffers (7.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.856 s, sync=2.369 s, total=11.439 s; sync files=2, longest=1.303 s, average=1.184 s; distance=599115 kB, estimate=604502 kB; lsn=10/B22E48A8, redo lsn=10/8F280840
+[DNI] [DNI] 2026-02-24 09:55:36.592 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:55:36.592 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:55:36.592 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:55:36.874 CETLOG:  no se pudo enviar datos al cliente: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-02-24 09:55:36.874 CETFATAL:  se ha perdido la conexiÃ³n al cliente
+[DNI] [DNI] 2026-02-24 09:55:57.562 CETLOG:  checkpoint complete: wrote 407 buffers (2.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 2 removed, 33 recycled; write=20.556 s, sync=0.224 s, total=20.971 s; sync files=11, longest=0.177 s, average=0.021 s; distance=586395 kB, estimate=602691 kB; lsn=10/D0F05CE8, redo lsn=10/B2F27480
+[DNI] [DNI] 2026-02-24 09:55:58.846 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 22 segundos)
+[DNI] [DNI] 2026-02-24 09:55:58.846 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:55:58.846 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:56:16.265 CETLOG:  checkpoint complete: wrote 7962 buffers (48.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=17.038 s, sync=0.198 s, total=17.419 s; sync files=3, longest=0.106 s, average=0.066 s; distance=527828 kB, estimate=595205 kB; lsn=10/F18066C8, redo lsn=10/D329C6A8
+[DNI] [DNI] 2026-02-24 09:56:17.399 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 19 segundos)
+[DNI] [DNI] 2026-02-24 09:56:17.399 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:56:17.399 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:56:31.262 CETLOG:  checkpoint complete: wrote 12527 buffers (76.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.580 s, sync=0.167 s, total=13.863 s; sync files=4, longest=0.086 s, average=0.042 s; distance=538508 kB, estimate=589535 kB; lsn=11/12383BF0, redo lsn=10/F407F810
+[DNI] [DNI] 2026-02-24 09:56:32.570 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:56:32.570 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:56:32.570 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:56:47.615 CETLOG:  checkpoint complete: wrote 12962 buffers (79.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=14.748 s, sync=0.178 s, total=15.045 s; sync files=4, longest=0.101 s, average=0.045 s; distance=542292 kB, estimate=584811 kB; lsn=11/3340CD18, redo lsn=11/15214BC0
+[DNI] [DNI] 2026-02-24 09:56:48.825 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 16 segundos)
+[DNI] [DNI] 2026-02-24 09:56:48.825 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:56:48.825 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:57:03.523 CETLOG:  checkpoint complete: wrote 13158 buffers (80.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=14.404 s, sync=0.197 s, total=14.699 s; sync files=3, longest=0.139 s, average=0.066 s; distance=539020 kB, estimate=580232 kB; lsn=11/542D31D8, redo lsn=11/36077E70
+[DNI] [DNI] 2026-02-24 09:57:04.814 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 16 segundos)
+[DNI] [DNI] 2026-02-24 09:57:04.814 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:57:04.815 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:57:18.772 CETLOG:  checkpoint complete: wrote 12946 buffers (79.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=13.688 s, sync=0.181 s, total=13.958 s; sync files=3, longest=0.147 s, average=0.061 s; distance=540730 kB, estimate=576282 kB; lsn=11/7524CA58, redo lsn=11/570868F0
+[DNI] [DNI] 2026-02-24 09:57:19.976 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 09:57:19.976 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:57:19.976 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:57:31.195 CETLOG:  checkpoint complete: wrote 191 buffers (1.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=10.949 s, sync=0.172 s, total=11.220 s; sync files=4, longest=0.146 s, average=0.043 s; distance=540667 kB, estimate=572720 kB; lsn=11/9637EBC8, redo lsn=11/78085750
+[DNI] [DNI] 2026-02-24 09:57:31.910 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 09:57:31.910 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:57:31.910 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:57:40.585 CETLOG:  checkpoint complete: wrote 106 buffers (0.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=8.186 s, sync=0.249 s, total=8.676 s; sync files=2, longest=0.246 s, average=0.125 s; distance=544239 kB, estimate=569872 kB; lsn=11/B7C67F00, redo lsn=11/99401498
+[DNI] [DNI] 2026-02-24 09:57:41.024 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 09:57:41.024 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:57:41.024 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:57:49.669 CETLOG:  checkpoint complete: wrote 63 buffers (0.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=8.204 s, sync=0.244 s, total=8.646 s; sync files=2, longest=0.201 s, average=0.122 s; distance=538627 kB, estimate=566748 kB; lsn=11/D863D6B0, redo lsn=11/BA202188
+[DNI] [DNI] 2026-02-24 09:57:50.279 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 09:57:50.279 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:57:50.279 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:57:58.337 CETERROR:  cancelando tarea de autovacuum
+[DNI] [DNI] 2026-02-24 09:57:58.337 CETCONTEXTO:  recorriendo el bloque 909 de la relaciÃ³n Â«public.estudiantesÂ»
+	vacuum automÃ¡tico de la tabla Â«PL1.public.estudiantesÂ»
+[DNI] [DNI] 2026-02-24 09:57:59.075 CETLOG:  sentencia: DROP TABLE IF EXISTS estudiantes2;
+[DNI] [DNI] 2026-02-24 09:57:59.631 CETLOG:  sentencia: CREATE TABLE estudiantes2 AS SELECT * FROM estudiantes ORDER BY indice ASC;
+[DNI] [DNI] 2026-02-24 09:58:11.096 CETLOG:  checkpoint complete: wrote 79 buffers (0.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=20.333 s, sync=0.236 s, total=20.817 s; sync files=4, longest=0.194 s, average=0.059 s; distance=542718 kB, estimate=564345 kB; lsn=11/F9951E70, redo lsn=11/DB401D58
+[DNI] [DNI] 2026-02-24 09:58:11.945 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 21 segundos)
+[DNI] [DNI] 2026-02-24 09:58:11.945 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:58:11.945 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:58:24.793 CETLOG:  checkpoint complete: wrote 11246 buffers (68.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=12.368 s, sync=0.282 s, total=12.848 s; sync files=22, longest=0.194 s, average=0.013 s; distance=539149 kB, estimate=561825 kB; lsn=12/1A82C2A0, redo lsn=11/FC2854C0
+[DNI] [DNI] 2026-02-24 09:58:25.655 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 09:58:25.655 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:58:25.655 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:58:38.399 CETLOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=12.350 s, sync=0.205 s, total=12.745 s; sync files=1, longest=0.205 s, average=0.205 s; distance=540388 kB, estimate=559681 kB; lsn=12/3B4905B0, redo lsn=12/1D23E730
+[DNI] [DNI] 2026-02-24 09:58:39.423 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 09:58:39.423 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:58:39.424 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:58:52.252 CETLOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=12.437 s, sync=0.193 s, total=12.829 s; sync files=2, longest=0.110 s, average=0.097 s; distance=542470 kB, estimate=557960 kB; lsn=12/5C702278, redo lsn=12/3E400070
+[DNI] [DNI] 2026-02-24 09:58:53.134 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 09:58:53.134 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:58:53.134 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:59:05.450 CETLOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=11.902 s, sync=0.219 s, total=12.316 s; sync files=2, longest=0.194 s, average=0.109 s; distance=539232 kB, estimate=556087 kB; lsn=12/7D71E908, redo lsn=12/5F298440
+[DNI] [DNI] 2026-02-24 09:59:06.309 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 13 segundos)
+[DNI] [DNI] 2026-02-24 09:59:06.309 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:59:06.309 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:59:18.399 CETLOG:  checkpoint complete: wrote 82 buffers (0.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=11.720 s, sync=0.177 s, total=12.090 s; sync files=3, longest=0.149 s, average=0.059 s; distance=540316 kB, estimate=554510 kB; lsn=12/9E653058, redo lsn=12/8023F7D8
+[DNI] [DNI] 2026-02-24 09:59:19.232 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 13 segundos)
+[DNI] [DNI] 2026-02-24 09:59:19.232 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 09:59:19.232 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 09:59:24.097 CETLOG:  sentencia: DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 09:59:53.394 CETLOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=33.907 s, sync=0.047 s, total=34.163 s; sync files=4, longest=0.045 s, average=0.012 s; distance=542398 kB, estimate=553299 kB; lsn=12/BEF9D4B0, redo lsn=12/A13EF2C0
+[DNI] [DNI] 2026-02-24 10:00:00.979 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 10:00:17.323 CETLOG:  checkpoint complete: wrote 421 buffers (2.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 2 removed, 31 recycled; write=14.800 s, sync=1.333 s, total=16.345 s; sync files=12, longest=0.682 s, average=0.112 s; distance=540693 kB, estimate=552039 kB; lsn=12/E27FED10, redo lsn=12/C23F48E0
+[DNI] [DNI] 2026-02-24 10:00:17.334 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 17 segundos)
+[DNI] [DNI] 2026-02-24 10:00:17.334 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 10:00:17.334 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 10:00:29.203 CETLOG:  checkpoint complete: wrote 73 buffers (0.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 7 removed, 26 recycled; write=9.082 s, sync=2.658 s, total=11.870 s; sync files=6, longest=1.412 s, average=0.443 s; distance=537761 kB, estimate=550611 kB; lsn=13/86BA270, redo lsn=12/E311CFC8
+[DNI] [DNI] 2026-02-24 10:00:29.203 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 10:00:29.203 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 10:00:29.203 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 10:00:40.344 CETLOG:  checkpoint complete: wrote 1433 buffers (8.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 24 recycled; write=7.818 s, sync=3.092 s, total=11.141 s; sync files=5, longest=1.541 s, average=0.619 s; distance=620414 kB, estimate=620414 kB; lsn=13/2F58C718, redo lsn=13/8EFC7F8
+[DNI] [DNI] 2026-02-24 10:00:40.344 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 10:00:40.344 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 10:00:40.344 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 10:00:50.602 CETLOG:  checkpoint complete: wrote 3979 buffers (24.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 28 recycled; write=8.133 s, sync=1.854 s, total=10.258 s; sync files=6, longest=1.739 s, average=0.309 s; distance=643299 kB, estimate=643299 kB; lsn=13/536E9B18, redo lsn=13/30335620
+[DNI] [DNI] 2026-02-24 10:00:50.603 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 10:00:50.603 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 10:00:50.603 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 10:00:59.795 CETLOG:  checkpoint complete: wrote 3903 buffers (23.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 28 recycled; write=7.441 s, sync=1.512 s, total=9.192 s; sync files=6, longest=1.389 s, average=0.252 s; distance=592701 kB, estimate=638239 kB; lsn=13/77DFEB70, redo lsn=13/54604DF8
+[DNI] [DNI] 2026-02-24 10:00:59.796 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 10:00:59.796 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 10:00:59.796 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 10:01:09.359 CETLOG:  checkpoint complete: wrote 2909 buffers (17.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 6 removed, 30 recycled; write=8.184 s, sync=0.893 s, total=9.563 s; sync files=6, longest=0.752 s, average=0.149 s; distance=597420 kB, estimate=634157 kB; lsn=13/9916DE88, redo lsn=13/78D6FEE0
+[DNI] [DNI] 2026-02-24 10:01:09.359 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 10:01:09.359 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 10:01:09.362 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:13:27.587 CETLOG:  checkpoint complete: wrote 3555 buffers (21.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 34 recycled; write=7937.393 s, sync=0.713 s, total=7938.228 s; sync files=5, longest=0.705 s, average=0.143 s; distance=557643 kB, estimate=626506 kB; lsn=13/AD4B9B70, redo lsn=13/9AE02C50
+[DNI] [DNI] 2026-02-24 12:13:27.587 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-24 12:13:42.860 CETLOG:  checkpoint complete: wrote 1533 buffers (9.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 19 recycled; write=13.110 s, sync=2.093 s, total=15.273 s; sync files=6, longest=1.407 s, average=0.349 s; distance=304773 kB, estimate=594333 kB; lsn=13/D06AB588, redo lsn=13/AD7A42A8
+[DNI] [DNI] 2026-02-24 12:13:42.861 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 12:13:42.861 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:13:42.861 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:13:56.857 CETLOG:  checkpoint complete: wrote 1257 buffers (7.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 26 recycled; write=10.607 s, sync=3.244 s, total=13.996 s; sync files=6, longest=1.701 s, average=0.541 s; distance=575832 kB, estimate=592482 kB; lsn=13/F5F2DB28, redo lsn=13/D09FA2B8
+[DNI] [DNI] 2026-02-24 12:13:56.857 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 14 segundos)
+[DNI] [DNI] 2026-02-24 12:13:56.857 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:13:56.860 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:14:08.090 CETLOG:  checkpoint complete: wrote 1245 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.646 s, sync=2.363 s, total=11.233 s; sync files=6, longest=1.321 s, average=0.394 s; distance=617741 kB, estimate=617741 kB; lsn=14/1A45E698, redo lsn=13/F653DAA8
+[DNI] [DNI] 2026-02-24 12:14:08.091 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:14:08.091 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:14:08.091 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:14:17.787 CETLOG:  checkpoint complete: wrote 1223 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 28 recycled; write=7.947 s, sync=1.475 s, total=9.697 s; sync files=6, longest=1.455 s, average=0.246 s; distance=599013 kB, estimate=615869 kB; lsn=14/3D059C68, redo lsn=14/1AE36EE8
+[DNI] [DNI] 2026-02-24 12:14:17.788 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 12:14:17.788 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:14:17.792 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:14:27.703 CETLOG:  checkpoint complete: wrote 1183 buffers (7.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 25 recycled; write=7.091 s, sync=2.622 s, total=9.915 s; sync files=6, longest=1.548 s, average=0.437 s; distance=572340 kB, estimate=611516 kB; lsn=14/63BC96D0, redo lsn=14/3DD241D0
+[DNI] [DNI] 2026-02-24 12:14:27.704 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:14:27.704 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:14:27.704 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:14:37.455 CETLOG:  checkpoint complete: wrote 1156 buffers (7.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 14 removed, 25 recycled; write=6.661 s, sync=2.849 s, total=9.751 s; sync files=6, longest=1.751 s, average=0.475 s; distance=633985 kB, estimate=633985 kB; lsn=14/8A92ABD8, redo lsn=14/648446C0
+[DNI] [DNI] 2026-02-24 12:14:37.456 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:14:37.456 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:14:37.456 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:14:46.646 CETLOG:  checkpoint complete: wrote 1791 buffers (10.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 27 recycled; write=6.589 s, sync=2.363 s, total=9.191 s; sync files=6, longest=1.447 s, average=0.394 s; distance=634914 kB, estimate=634914 kB; lsn=14/AFF22E90, redo lsn=14/8B44D050
+[DNI] [DNI] 2026-02-24 12:14:46.647 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 12:14:46.647 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:14:46.647 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:14:55.730 CETLOG:  checkpoint complete: wrote 2194 buffers (13.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 25 recycled; write=6.547 s, sync=2.319 s, total=9.084 s; sync files=5, longest=1.193 s, average=0.464 s; distance=615766 kB, estimate=632999 kB; lsn=14/D6659D98, redo lsn=14/B0DA2908
+[DNI] [DNI] 2026-02-24 12:14:55.730 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 12:14:55.730 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:14:55.733 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:15:00.516 CETLOG:  vacuum automÃ¡tico de la tabla Â«PL1.public.estudiantesÂ»: recorridos de Ã­ndice: 0
+	pages: 0 removed, 250048 remain, 249138 scanned (99.64% of total), 0 eagerly scanned
+	tuples: 0 removed, 29998783 remain, 0 are dead but not yet removable
+	punto de corte de eliminaciÃ³n: 1379, que era 3 XIDs de antiguo cuando la operaciÃ³n terminÃ³
+	frozen: 0 pages from table (0.00% of total) had 0 tuples frozen
+	visibility map: 60861 pages set all-visible, 0 pages set all-frozen (0 were all-visible)
+	recorrido de Ã­ndice no necesario: 0 pages from table (0.00% of total) had 0 dead item identifiers removed
+	tasa lectura promedio: 0.224 MB/s, tasa escritura promedio: 0.058 MB/s
+	buffer usage: 263862 hits, 234541 reads, 60883 dirtied
+	WAL usage: 60863 records, 60889 full page images, 502200486 bytes, 18993 buffers full
+	uso de sistema: CPU: usuario: 3.89 s, sistema: 10.17 s, transcurrido: 8163.73 s
+[DNI] [DNI] 2026-02-24 12:15:03.720 CETLOG:  checkpoint complete: wrote 1088 buffers (6.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 26 recycled; write=5.632 s, sync=2.122 s, total=7.990 s; sync files=6, longest=1.120 s, average=0.354 s; distance=630682 kB, estimate=632767 kB; lsn=14/FCA578D8, redo lsn=14/D7589388
+[DNI] [DNI] 2026-02-24 12:15:03.720 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 8 segundos)
+[DNI] [DNI] 2026-02-24 12:15:03.720 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:15:03.720 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:15:14.343 CETLOG:  checkpoint complete: wrote 1227 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 14 removed, 24 recycled; write=6.881 s, sync=3.365 s, total=10.624 s; sync files=8, longest=2.235 s, average=0.421 s; distance=630607 kB, estimate=632551 kB; lsn=15/24251B10, redo lsn=14/FDD5D078
+[DNI] [DNI] 2026-02-24 12:15:14.344 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:15:14.344 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:15:14.344 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:15:26.857 CETLOG:  checkpoint complete: wrote 1277 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 27 recycled; write=9.875 s, sync=2.307 s, total=12.513 s; sync files=6, longest=1.508 s, average=0.385 s; distance=645508 kB, estimate=645508 kB; lsn=15/49404ED8, redo lsn=15/253BE1C0
+[DNI] [DNI] 2026-02-24 12:15:26.858 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:15:26.858 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:15:26.858 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:15:37.729 CETLOG:  checkpoint complete: wrote 1249 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=9.036 s, sync=1.550 s, total=10.871 s; sync files=6, longest=1.395 s, average=0.259 s; distance=607875 kB, estimate=641745 kB; lsn=15/6D0AC640, redo lsn=15/4A55F0C8
+[DNI] [DNI] 2026-02-24 12:15:37.729 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:15:37.729 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:15:37.730 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:15:50.202 CETLOG:  checkpoint complete: wrote 1253 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 26 recycled; write=10.019 s, sync=2.183 s, total=12.473 s; sync files=6, longest=1.580 s, average=0.364 s; distance=584229 kB, estimate=635993 kB; lsn=15/92403500, redo lsn=15/6DFE8540
+[DNI] [DNI] 2026-02-24 12:15:50.203 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 13 segundos)
+[DNI] [DNI] 2026-02-24 12:15:50.203 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:15:50.203 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:15:59.989 CETLOG:  checkpoint complete: wrote 1214 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 28 recycled; write=8.026 s, sync=1.476 s, total=9.786 s; sync files=6, longest=1.428 s, average=0.246 s; distance=610670 kB, estimate=633461 kB; lsn=15/B60ED738, redo lsn=15/934440A0
+[DNI] [DNI] 2026-02-24 12:15:59.989 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 9 segundos)
+[DNI] [DNI] 2026-02-24 12:15:59.989 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:15:59.990 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:16:10.155 CETLOG:  checkpoint complete: wrote 1187 buffers (7.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 7 removed, 29 recycled; write=7.973 s, sync=1.958 s, total=10.166 s; sync files=6, longest=1.941 s, average=0.327 s; distance=585535 kB, estimate=628668 kB; lsn=15/D99ED030, redo lsn=15/B7014050
+[DNI] [DNI] 2026-02-24 12:16:10.156 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:16:10.156 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:16:10.156 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:16:21.129 CETLOG:  checkpoint complete: wrote 1211 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 26 recycled; write=8.316 s, sync=2.448 s, total=10.974 s; sync files=6, longest=1.451 s, average=0.408 s; distance=584518 kB, estimate=624253 kB; lsn=15/FFCA35F8, redo lsn=15/DAAE5918
+[DNI] [DNI] 2026-02-24 12:16:21.130 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:16:21.130 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:16:21.130 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:16:31.577 CETLOG:  checkpoint complete: wrote 1307 buffers (8.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 27 recycled; write=8.082 s, sync=2.130 s, total=10.448 s; sync files=6, longest=1.565 s, average=0.355 s; distance=621612 kB, estimate=623989 kB; lsn=16/24EE1408, redo lsn=16/9F0CC0
+[DNI] [DNI] 2026-02-24 12:16:31.578 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:16:31.578 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:16:31.578 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:16:41.845 CETLOG:  checkpoint complete: wrote 1278 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=7.768 s, sync=2.238 s, total=10.267 s; sync files=6, longest=1.328 s, average=0.373 s; distance=608983 kB, estimate=622488 kB; lsn=16/4A3DD0F0, redo lsn=16/25CA6918
+[DNI] [DNI] 2026-02-24 12:16:41.845 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:16:41.845 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:16:41.845 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:16:51.443 CETLOG:  checkpoint complete: wrote 1269 buffers (7.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 28 recycled; write=7.598 s, sync=1.748 s, total=9.599 s; sync files=6, longest=1.443 s, average=0.292 s; distance=613612 kB, estimate=621601 kB; lsn=16/6E7992A8, redo lsn=16/4B3E1C50
+[DNI] [DNI] 2026-02-24 12:16:51.444 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:16:51.444 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:16:51.444 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:17:02.023 CETLOG:  checkpoint complete: wrote 1283 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 26 recycled; write=7.758 s, sync=2.611 s, total=10.579 s; sync files=6, longest=1.339 s, average=0.436 s; distance=594051 kB, estimate=618846 kB; lsn=16/94C46A18, redo lsn=16/6F802BC0
+[DNI] [DNI] 2026-02-24 12:17:02.023 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:17:02.023 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:17:02.023 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:17:12.900 CETLOG:  checkpoint complete: wrote 1221 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 14 removed, 24 recycled; write=7.663 s, sync=2.994 s, total=10.878 s; sync files=6, longest=1.774 s, average=0.499 s; distance=624600 kB, estimate=624600 kB; lsn=16/BC591390, redo lsn=16/959F8EB8
+[DNI] [DNI] 2026-02-24 12:17:12.901 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:17:12.901 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:17:12.901 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:17:24.948 CETLOG:  checkpoint complete: wrote 1146 buffers (7.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 16 removed, 24 recycled; write=7.774 s, sync=3.965 s, total=12.047 s; sync files=6, longest=2.142 s, average=0.661 s; distance=645785 kB, estimate=645785 kB; lsn=16/E417DEF0, redo lsn=16/BD09F520
+[DNI] [DNI] 2026-02-24 12:17:24.948 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:17:24.948 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:17:24.948 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:17:36.550 CETLOG:  checkpoint complete: wrote 2077 buffers (12.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 27 recycled; write=8.963 s, sync=2.387 s, total=11.603 s; sync files=7, longest=1.360 s, average=0.341 s; distance=655710 kB, estimate=655710 kB; lsn=17/9C9DBF0, redo lsn=16/E50F6D38
+[DNI] [DNI] 2026-02-24 12:17:36.551 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:17:36.551 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:17:36.551 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:17:51.363 CETLOG:  checkpoint complete: wrote 560 buffers (3.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=9.548 s, sync=5.029 s, total=14.813 s; sync files=6, longest=4.834 s, average=0.839 s; distance=620843 kB, estimate=652223 kB; lsn=17/2EFF8A40, redo lsn=17/AF41D00
+[DNI] [DNI] 2026-02-24 12:17:51.364 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 15 segundos)
+[DNI] [DNI] 2026-02-24 12:17:51.364 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:17:51.364 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:18:03.470 CETLOG:  checkpoint complete: wrote 613 buffers (3.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 11 removed, 26 recycled; write=9.396 s, sync=2.495 s, total=12.106 s; sync files=6, longest=1.317 s, average=0.416 s; distance=603991 kB, estimate=647400 kB; lsn=17/5468C400, redo lsn=17/2FD17AF0
+[DNI] [DNI] 2026-02-24 12:18:03.471 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:18:03.471 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:18:03.471 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:18:15.265 CETLOG:  checkpoint complete: wrote 708 buffers (4.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.835 s, sync=2.696 s, total=11.795 s; sync files=6, longest=1.450 s, average=0.450 s; distance=613008 kB, estimate=643961 kB; lsn=17/7AEE7CE0, redo lsn=17/553BBE90
+[DNI] [DNI] 2026-02-24 12:18:15.265 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:18:15.265 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:18:15.267 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:18:26.146 CETLOG:  checkpoint complete: wrote 1306 buffers (8.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 25 recycled; write=8.192 s, sync=2.444 s, total=10.881 s; sync files=5, longest=1.557 s, average=0.489 s; distance=632318 kB, estimate=642796 kB; lsn=17/A162A330, redo lsn=17/7BD3BA30
+[DNI] [DNI] 2026-02-24 12:18:26.147 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:18:26.147 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:18:26.147 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:18:36.954 CETLOG:  checkpoint complete: wrote 1279 buffers (7.8%), wrote 0 SLRU buffers; 0 WAL file(s) added, 14 removed, 25 recycled; write=7.643 s, sync=2.927 s, total=10.808 s; sync files=6, longest=2.042 s, average=0.488 s; distance=630727 kB, estimate=641589 kB; lsn=17/C8C23370, redo lsn=17/A252D838
+[DNI] [DNI] 2026-02-24 12:18:36.955 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:18:36.955 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:18:36.955 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:18:48.135 CETLOG:  checkpoint complete: wrote 1233 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 13 removed, 26 recycled; write=8.443 s, sync=2.509 s, total=11.180 s; sync files=6, longest=1.366 s, average=0.419 s; distance=643390 kB, estimate=643390 kB; lsn=17/EE887B58, redo lsn=17/C997D0D8
+[DNI] [DNI] 2026-02-24 12:18:48.135 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 12 segundos)
+[DNI] [DNI] 2026-02-24 12:18:48.135 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:18:48.135 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:18:58.669 CETLOG:  checkpoint complete: wrote 1288 buffers (7.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 12 removed, 26 recycled; write=8.012 s, sync=2.249 s, total=10.535 s; sync files=6, longest=1.487 s, average=0.375 s; distance=619619 kB, estimate=641013 kB; lsn=18/1431CE48, redo lsn=17/EF695E20
+[DNI] [DNI] 2026-02-24 12:18:58.669 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:18:58.669 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:18:58.669 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:19:08.395 CETLOG:  checkpoint complete: wrote 1268 buffers (7.7%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 30 recycled; write=7.584 s, sync=1.885 s, total=9.726 s; sync files=5, longest=1.772 s, average=0.377 s; distance=617948 kB, estimate=638706 kB; lsn=18/3689E488, redo lsn=18/1520D000
+[DNI] [DNI] 2026-02-24 12:19:08.395 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:19:08.395 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:19:08.396 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:19:19.090 CETLOG:  checkpoint complete: wrote 1231 buffers (7.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 8 removed, 26 recycled; write=8.205 s, sync=2.268 s, total=10.695 s; sync files=5, longest=1.352 s, average=0.454 s; distance=563520 kB, estimate=631187 kB; lsn=18/5C1CEAA0, redo lsn=18/3785D018
+[DNI] [DNI] 2026-02-24 12:19:19.091 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:19:19.091 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:19:19.091 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:19:29.278 CETLOG:  checkpoint complete: wrote 1241 buffers (7.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 10 removed, 27 recycled; write=7.976 s, sync=1.994 s, total=10.188 s; sync files=5, longest=1.288 s, average=0.399 s; distance=612722 kB, estimate=629341 kB; lsn=18/80C00B00, redo lsn=18/5CEB9A50
+[DNI] [DNI] 2026-02-24 12:19:29.279 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:19:29.279 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:19:29.279 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:19:39.721 CETLOG:  checkpoint complete: wrote 1301 buffers (7.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 28 recycled; write=8.361 s, sync=1.741 s, total=10.443 s; sync files=5, longest=1.519 s, average=0.349 s; distance=598330 kB, estimate=626240 kB; lsn=18/A4402560, redo lsn=18/81708300
+[DNI] [DNI] 2026-02-24 12:19:39.722 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 10 segundos)
+[DNI] [DNI] 2026-02-24 12:19:39.722 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:19:39.722 CETLOG:  empezando checkpoint: wal
+[DNI] [DNI] 2026-02-24 12:19:50.497 CETLOG:  checkpoint complete: wrote 1211 buffers (7.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 9 removed, 27 recycled; write=8.324 s, sync=2.212 s, total=10.776 s; sync files=5, longest=1.322 s, average=0.443 s; distance=585941 kB, estimate=622210 kB; lsn=18/C998F4B0, redo lsn=18/A533DA50
+[DNI] [DNI] 2026-02-24 12:19:50.498 CETLOG:  los puntos de control están ocurriendo con demasiada frecuencia (cada 11 segundos)
+[DNI] [DNI] 2026-02-24 12:19:50.498 CETHINT:  Considere incrementar el parámetro de configuración «max_wal_size».
+[DNI] [DNI] 2026-02-24 12:19:50.498 CETLOG:  empezando checkpoint: wal

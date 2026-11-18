@@ -1,0 +1,12 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.397 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.398 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.398 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.469 CEST LOG:  el sistema de bases de datos fue apagado en 2026-05-06 14:31:56 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:31:56.493 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:32:04.784 CEST LOG:  sentencia: CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:32:04.814 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  password authentication failed for user "postgres"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:32:04.814 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:32:04.814 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:32:04.814 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (slot_name = 'sub_musicos', create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:36:56.472 CEST LOG:  empezando checkpoint: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:36:57.155 CEST LOG:  checkpoint completo: escritos 6 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.652 s, sync=0.014 s, total=0.684 s; archivos sincronizados=8, más largo=0.010 s, promedio=0.002 s; distancia=4 kB, estimación=4 kB; lsn=0/8003570, lsn de redo=0/8003518

@@ -1,0 +1,13 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.587 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.587 CEST LOG:  escuchando en la dirección IPv6 «::», port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.587 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:21.666 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-05-06 14:19:55 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.074 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.077 CEST LOG:  redo comienza en 0/60013B0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.077 CEST LOG:  largo de registro no válido en 0/60013E8: se esperaba al menos 24, se obtuvo 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.077 CEST LOG:  redo listo en 0/60013B0 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.092 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.104 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.003 s, sync=0.002 s, total=0.024 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=0 kB, estimación=0 kB; lsn=0/60013E8, lsn de redo=0/60013E8
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:22.119 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:25.189 CEST LOG:  empezando checkpoint: force wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:22:25.199 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.001 s, sync=0.001 s, total=0.010 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=16379 kB, estimación=16379 kB; lsn=0/7000080, lsn de redo=0/7000028

@@ -1,0 +1,3 @@
+# Generated data (re-create with the Python generators)
+*.csv
+__pycache__/

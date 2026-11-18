@@ -1,0 +1,93 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was interrupted; last known up at 2026-05-06 15:10:45 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was not properly shut down; automatic recovery in progress
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  recovered replication state of node 1 to 0/0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  recovered replication state of node 3 to 0/80036C8
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  redo starts at 24/96D99098
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  invalid record length at 24/96D991A0: expected at least 24, got 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  redo done at 24/96D99168 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.002 s, total=0.010 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=24/96D991A0, redo lsn=24/96D991A0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11100) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 1132) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8452) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2368) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10508) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11860) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8596) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11420) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14608) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 7320) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9940) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16332) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  received SIGHUP, reloading configuration files
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6840) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13712) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9028) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2092) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9312) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: force wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 1 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.008 s; sync files=0, longest=0.000 s, average=0.000 s; distance=2459 kB, estimate=2459 kB; lsn=24/97000080, redo lsn=24/97000028
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 15716) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11860) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started

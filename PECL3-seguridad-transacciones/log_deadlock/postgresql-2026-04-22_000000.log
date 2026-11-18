@@ -1,0 +1,18 @@
+[DNI] [DNI] 2026-04-28 08:20:23.750 CEST ERROR:  no existe la relaciÃ³n Â«gruposÂ» en carÃ¡cter 13
+[DNI] [DNI] 2026-04-28 08:20:23.750 CEST SENTENCIA:  INSERT INTO Grupos (cod_grupo, nombre, genero) 
+	VALUES (2000, 'Estopa', 'Rumba Rock');
+[DNI] [DNI] 2026-04-28 08:20:23.776 CEST ERROR:  transacciÃ³n abortada, las Ã³rdenes serÃ¡n ignoradas hasta el fin de bloque de transacciÃ³n
+[DNI] [DNI] 2026-04-28 08:20:23.776 CEST SENTENCIA:  INSERT INTO Musicos (dni, nombre, ciudad, provincia, telefono, cod_grupo) 
+	VALUES ('11223344Z', 'David MuÂ¤oz', 'Cornellâ€¦ de Llobregat', 'Barcelona', '933001122', 2000);
+[DNI] [DNI] 2026-04-28 08:23:47.388 CEST LOG:  no se pudo recibir datos del cliente: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-04-28 08:27:50.464 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-04-28 08:27:58.313 CEST LOG:  checkpoint completo: escritos 72 búfers (0.4%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=7.783 s, sync=0.044 s, total=7.850 s; archivos sincronizados=63, más largo=0.004 s, promedio=0.001 s; distancia=300 kB, estimación=4161 kB; lsn=0/1A6B0D0, lsn de redo=0/1A6B040
+[DNI] [DNI] 2026-04-28 09:40:02.794 CEST LOG:  empezando checkpoint: force wait
+[DNI] [DNI] 2026-04-28 09:40:03.209 CEST LOG:  checkpoint completo: escritos 2 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.223 s, sync=0.006 s, total=0.416 s; archivos sincronizados=2, más largo=0.004 s, promedio=0.003 s; distancia=5715 kB, estimación=5715 kB; lsn=0/2000080, lsn de redo=0/2000028
+[DNI] [DNI] 2026-04-28 09:45:02.213 CEST LOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-04-28 09:45:02.235 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.002 s, sync=0.001 s, total=0.022 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=16384 kB, estimación=16384 kB; lsn=0/30000B8, lsn de redo=0/3000060
+[DNI] [DNI] 2026-04-28 09:50:22.797 CEST FATAL:  terminando la conexiÃ³n debido a una orden del administrador
+[DNI] [DNI] 2026-04-28 09:50:22.855 CEST LOG:  apagando
+[DNI] [DNI] 2026-04-28 09:50:22.857 CEST LOG:  empezando checkpoint: shutdown immediate
+[DNI] [DNI] 2026-04-28 09:50:22.871 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.002 s, sync=0.001 s, total=0.016 s; archivos sincronizados=0, más largo=0.000 s, promedio=0.000 s; distancia=0 kB, estimación=14745 kB; lsn=0/3000168, lsn de redo=0/3000168

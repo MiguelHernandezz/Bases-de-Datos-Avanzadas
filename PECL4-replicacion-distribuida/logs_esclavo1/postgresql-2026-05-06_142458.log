@@ -1,0 +1,53 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.472 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.473 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.473 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.534 CEST LOG:  el sistema de bases de datos fue apagado durante la recuperación en 2026-05-06 14:24:58 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.534 CEST LOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.539 CEST LOG:  redo comienza en 0/7000028
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.540 CEST LOG:  largo de registro no válido en 0/8000150: se esperaba al menos 24, se obtuvo 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.540 CEST LOG:  redo listo en 0/8000118 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.556 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.575 CEST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.002 s, sync=0.005 s, total=0.033 s; archivos sincronizados=3, más largo=0.002 s, promedio=0.002 s; distancia=16384 kB, estimación=16384 kB; lsn=0/8000150, lsn de redo=0/8000150
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:24:58.595 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:25:39.651 CEST LOG:  sentencia: 
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:25:39.685 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:25:39.685 CEST SENTENCIA:  
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:25:39.685 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:25:39.685 CEST SENTENCIA:  
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:08.871 CEST LOG:  sentencia: SET client_encoding = 'UTF8'; CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres client_encoding=UTF8' PUBLICATION pub_musicos;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:08.871 CEST ERROR:  CREATE SUBSCRIPTION ... WITH (create_slot = true) no puede ser ejecutado dentro de un bloque de transacciÃ³n
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:08.871 CEST SENTENCIA:  SET client_encoding = 'UTF8'; CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres client_encoding=UTF8' PUBLICATION pub_musicos;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:50.185 CEST LOG:  sentencia: CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres options=''-c client_encoding=UTF8''' PUBLICATION pub_musicos;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:50.217 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:50.217 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres options=''-c client_encoding=UTF8''' PUBLICATION pub_musicos;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:50.217 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:26:50.217 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres options=''-c client_encoding=UTF8''' PUBLICATION pub_musicos;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:38.313 CEST LOG:  sentencia: CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:38.345 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:38.345 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:38.345 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:38.345 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:54.775 CEST LOG:  sentencia: CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:54.809 CEST ERROR:  subscription "sub_musicos" could not connect to the publisher: falló la conexión al servidor en «127.0.0.1», puerto 5432: FATAL:  la autentificación password falló para el usuario «postgres»
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:54.809 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:54.809 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:28:54.809 CEST SENTENCIA:  CREATE SUBSCRIPTION sub_musicos CONNECTION 'host=127.0.0.1 port=5432 dbname=musicos1 user=postgres password=postgres' PUBLICATION pub_musicos WITH (create_slot = false);
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.527 CEST LOG:  se recibió petición de apagado rápido
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.529 CEST LOG:  abortando transacciones activas
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.535 CEST LOG:  proceso ayudante «logical replication launcher» (PID 30272) terminó con código de salida 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.535 CEST LOG:  apagando
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.536 CEST LOG:  empezando checkpoint: shutdown immediate
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.551 CEST LOG:  checkpoint completo: escritos 10 búfers (0.1%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.003 s, sync=0.003 s, total=0.016 s; archivos sincronizados=7, más largo=0.001 s, promedio=0.001 s; distancia=4 kB, estimación=14746 kB; lsn=0/8001360, lsn de redo=0/8001360
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:29:23.569 CEST LOG:  el sistema de bases de datos está apagado

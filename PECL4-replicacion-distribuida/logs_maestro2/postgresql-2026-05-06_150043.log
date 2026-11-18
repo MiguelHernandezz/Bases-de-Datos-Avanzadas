@@ -1,0 +1,1292 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was interrupted; last known up at 2026-05-06 14:57:06 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was not properly shut down; automatic recovery in progress
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  recovered replication state of node 1 to 0/0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  recovered replication state of node 3 to 0/8001C30
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  redo starts at 24/96D63CE0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  invalid record length at 24/96D73320: expected at least 24, got 0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  redo done at 24/96D732E8 system usage: CPU: user: 0.00 s, system: 0.01 s, elapsed: 0.00 s
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: end-of-recovery immediate wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 11 buffers (0.1%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.003 s, sync=0.005 s, total=0.013 s; sync files=11, longest=0.002 s, average=0.001 s; distance=61 kB, estimate=61 kB; lsn=24/96D73320, redo lsn=24/96D73320
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8708) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 18272) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 16040) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 7844) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1116) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8840) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12792) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21076) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 2556) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17076) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8396) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19320) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12408) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12388) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 23388) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 20180) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9492) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13624) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 6712) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 10052) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 2600) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19724) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 14184) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1840) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13684) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19200) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13096) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12372) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 20660) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9060) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17472) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19232) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 5500) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 14728) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 23216) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 15116) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 2144) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13452) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 18680) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 16460) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 4164) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12844) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 6760) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19344) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19116) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 15112) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 15500) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8956) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19660) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1584) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13436) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 10496) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 18740) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21764) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 22468) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 23092) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 10820) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.422 s, sync=0.017 s, total=0.460 s; sync files=7, longest=0.005 s, average=0.003 s; distance=44 kB, estimate=59 kB; lsn=24/96D943A8, redo lsn=24/96D7E570
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9484) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 20176) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19832) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17208) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 14860) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8016) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13188) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 3776) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 11920) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 3088) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 20808) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21176) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 6776) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8872) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8832) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 15444) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 14888) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 22344) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21524) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13824) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 10656) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21600) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 18164) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17068) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17100) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 11800) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 3976) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13020) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19924) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17632) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21972) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9512) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 7724) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17760) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9148) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13684) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  table synchronization worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9772) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  table synchronization worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 10424) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  table synchronization worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 11368) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  could not receive data from WAL stream: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17516) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11860) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10888) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 15884) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18672) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19656) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10816) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4548) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11880) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 5484) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9296) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6548) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13876) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12668) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22600) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11804) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13720) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17584) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 16 buffers (0.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=1.743 s, sync=0.016 s, total=1.782 s; sync files=12, longest=0.004 s, average=0.002 s; distance=106 kB, estimate=106 kB; lsn=24/96D990F0, redo lsn=24/96D99098
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6640) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9940) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11092) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2400) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11960) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4272) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16924) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 23476) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8232) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13212) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 3776) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11648) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11696) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6368) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18952) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 5668) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20988) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11980) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12988) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22156) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12892) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10524) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20704) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21284) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22484) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16528) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22096) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8280) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16704) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22092) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 5220) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18396) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20968) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11220) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14872) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2920) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13952) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20028) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12636) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14840) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17224) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13652) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16868) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11064) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21492) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17464) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16296) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16628) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20640) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18820) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19984) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19020) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12592) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17488) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14956) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12068) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6524) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22812) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11336) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20644) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21336) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17136) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14132) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 3076) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19132) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10080) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14356) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22124) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 1392) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16820) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21284) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9648) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12132) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 7064) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 7872) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 12568) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19540) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16828) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14592) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22708) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8720) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 23028) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16556) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14396) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17768) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4948) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8952) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8204) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14436) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21940) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14888) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21752) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6640) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19196) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9024) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2268) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11920) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22804) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21348) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21672) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20284) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 856) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19540) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4452) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22636) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18208) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16160) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11464) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 15112) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11368) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18292) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4500) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22036) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6108) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10336) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14860) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20704) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22016) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11176) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 1272) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22652) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 7124) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 1808) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13596) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6580) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10980) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19224) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17004) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 23144) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18536) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13228) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20236) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11576) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10616) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2800) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 10072) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4152) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4164) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 19760) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8080) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8356) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9220) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2744) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18584) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11988) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11696) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 23016) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 1492) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 23468) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22592) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 14088) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17332) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13620) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 7104) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20824) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20660) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22164) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 5252) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21164) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18900) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 15608) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 17784) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 4152) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 18768) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11104) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 15004) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9272) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9516) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 21868) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22032) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13636) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 3064) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9648) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 8232) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Network is unreachable (0x00002743/10051)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11632) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: No route to host (0x00002751/10065)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 9520) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Network is unreachable (0x00002743/10051)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 7056) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Network is unreachable (0x00002743/10051)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 15256) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16708) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 23424) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 6148) was terminated by exception 0xC000013A
+DNI1=[DNI] DNI2=[DNI] host=:5432 HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  terminating any other active server processes
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  all server processes terminated; reinitializing

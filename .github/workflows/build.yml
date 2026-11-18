@@ -1,0 +1,57 @@
+name: build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      PGHOST: localhost
+      PGUSER: postgres
+      PGPASSWORD: postgres
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install psql client
+        run: sudo apt-get install -y -qq postgresql-client
+
+      - name: PL1 · generate 100k students and bulk-load them
+        working-directory: PL1-almacenamiento-fisico
+        run: |
+          python "Int. Datos.py" 100000
+          psql -v ON_ERROR_STOP=1 -f Consulta1.sql
+          test "$(psql -tAc 'SELECT count(*) FROM estudiantes')" -eq 100000
+
+      - name: PECL2/PECL3 · create the MUSICOS schema
+        run: |
+          createdb musicos
+          # schema = everything in PECL3.sql before the first exercise
+          sed -n '/^-- object: public.Musicos/,/^-- cuesti/p' PECL3-seguridad-transacciones/PECL3.sql | sed '$d' > /tmp/schema.sql
+          psql -d musicos -v ON_ERROR_STOP=1 -f /tmp/schema.sql
+
+      - name: PECL2 · generate a 0.1% sample and load it into the schema
+        working-directory: PECL2-carga-masiva-optimizacion
+        run: |
+          python CSVMusicos.py 0.001
+          psql -d musicos -v ON_ERROR_STOP=1 -f ../ci/load_musicos.sql
+
+      - name: PECL3 · run the transactions script end to end
+        run: |
+          createdb pecl3
+          psql -d pecl3 -f PECL3-seguridad-transacciones/PECL3.sql > /tmp/pecl3.out 2> /tmp/pecl3.err || true
+          cat /tmp/pecl3.err
+          # Question 12 forces a primary-key violation on purpose; anything else is a failure
+          ! grep ERROR /tmp/pecl3.err | grep -vE 'duplicate key|current transaction is aborted'

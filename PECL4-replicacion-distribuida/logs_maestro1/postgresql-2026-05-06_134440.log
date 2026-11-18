@@ -1,0 +1,112 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:40.156 CEST LOG:  iniciando PostgreSQL 18.3 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:40.156 CEST LOG:  escuchando en la dirección IPv6 «::», port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:40.156 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:40.232 CEST LOG:  el sistema de bases de datos fue apagado en 2026-05-05 08:49:11 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:44:40.255 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:47:08.710 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:47:08.710 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:47:08.710 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:47:08.711 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:47:08.711 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:47:42.034 CEST LOG:  empezando checkpoint: force wait
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:47:42.044 CEST LOG:  checkpoint completo: escritos 0 búfers (0.0%); escritos 3 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.003 s, sync=0.002 s, total=0.012 s; archivos sincronizados=2, más largo=0.001 s, promedio=0.001 s; distancia=16097 kB, estimación=16097 kB; lsn=0/5000080, lsn de redo=0/5000028
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:51:38.173 CEST LOG:  sentencia: ALTER SERVER maestro2 OPTIONS (ADD options '-c client_encoding=UTF8');
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:52:21.201 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:52:21.201 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:52:21.201 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:52:21.201 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:52:21.201 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:52:42.047 CEST LOG:  empezando checkpoint: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 13:52:42.186 CEST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 1 reciclados; write=0.103 s, sync=0.007 s, total=0.139 s; archivos sincronizados=2, más largo=0.006 s, promedio=0.004 s; distancia=16385 kB, estimación=16385 kB; lsn=0/6000580, lsn de redo=0/6000528
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:58:51.827 CEST LOG:  sentencia: ALTER SERVER maestro2 OPTIONS (DROP options);
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:06.888 CEST LOG:  sentencia: ALTER USER MAPPING FOR postgres SERVER maestro2 OPTIONS (ADD options '-c client_encoding=UTF8');
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:06.892 CEST ERROR:  el nombre de opciÃ³n Â«optionsÂ» no es vÃ¡lido
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:06.892 CEST SENTENCIA:  ALTER USER MAPPING FOR postgres SERVER maestro2 OPTIONS (ADD options '-c client_encoding=UTF8');
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:37.092 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:37.092 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:37.092 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:37.092 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 13:59:37.092 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:18.352 CEST LOG:  sentencia: ALTER SERVER maestro2 OPTIONS (ADD client_encoding 'UTF8');
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:18.355 CEST ERROR:  el nombre de opciÃ³n Â«client_encodingÂ» no es vÃ¡lido
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:18.355 CEST SENTENCIA:  ALTER SERVER maestro2 OPTIONS (ADD client_encoding 'UTF8');
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:02:42.193 CEST LOG:  empezando checkpoint: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:02:42.325 CEST LOG:  checkpoint completo: escritos 1 búfers (0.0%); escritos 1 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.111 s, sync=0.006 s, total=0.133 s; archivos sincronizados=2, más largo=0.005 s, promedio=0.003 s; distancia=1 kB, estimación=14746 kB; lsn=0/6000C08, lsn de redo=0/6000BB0
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:48.958 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:48.958 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:48.958 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:48.958 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:02:48.958 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:04:21.562 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:04:21.562 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:04:21.562 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:04:21.562 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:04:21.562 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:06:32.565 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:06:32.565 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:06:32.565 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:06:32.565 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:06:32.565 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:09:07.372 CEST LOG:  sentencia: 
+	CREATE EXTENSION IF NOT EXISTS postgres_fdw;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:10:05.837 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:10:05.837 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:10:05.837 CEST SENTENCIA:  
+	SELECT
+	    g.nombre                         AS grupo,
+	    COUNT(DISTINCT ca.id_cancion)    AS total_canciones,
+	    COUNT(DISTINCT co.id_concierto)  AS total_conciertos
+	FROM grupos g
+	LEFT JOIN canciones  ca ON ca.id_grupo = g.id_grupo
+	LEFT JOIN conciertos co ON co.id_grupo = g.id_grupo
+	GROUP BY g.id_grupo, g.nombre
+	ORDER BY g.nombre;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:10:05.837 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:10:05.837 CEST SENTENCIA:  
+	SELECT
+	    g.nombre                         AS grupo,
+	    COUNT(DISTINCT ca.id_cancion)    AS total_canciones,
+	    COUNT(DISTINCT co.id_concierto)  AS total_conciertos
+	FROM grupos g
+	LEFT JOIN canciones  ca ON ca.id_grupo = g.id_grupo
+	LEFT JOIN conciertos co ON co.id_grupo = g.id_grupo
+	GROUP BY g.id_grupo, g.nombre
+	ORDER BY g.nombre;
+	
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:11:23.833 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:11:23.833 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:11:23.833 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 1;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:11:23.834 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:11:23.834 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 1;
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:12:42.344 CEST LOG:  empezando checkpoint: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:12:42.589 CEST LOG:  checkpoint completo: escritos 2 búfers (0.0%); escritos 0 búfers SLRU; 0 archivos WAL añadidos, 0 eliminados, 0 reciclados; write=0.217 s, sync=0.013 s, total=0.246 s; archivos sincronizados=2, más largo=0.012 s, promedio=0.007 s; distancia=1 kB, estimación=13272 kB; lsn=0/6001288, lsn de redo=0/6001230
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:14:04.624 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:14:04.624 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:14:04.624 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:14:04.624 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:14:04.624 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:15:22.210 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:15:22.210 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:15:22.210 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:15:22.210 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:15:22.210 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 3;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:17:24.877 CEST ERROR:  could not connect to server "maestro2"
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:17:24.877 CEST DETALLE:  falló la conexión al servidor en «10.142.24.65», puerto 5432: Connection timed out (0x0000274C/10060)
+		¿Está el servidor en ejecución en ese host y aceptando conexiones TCP/IP?
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:17:24.877 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 1;
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:17:24.877 CEST ERROR:  secuencia de bytes no vÃ¡lida para codificaciÃ³n Â«UTF8Â»: 0xf3 0x20 0x6c 0x61
+DNI1=[DNI] DNI2=[DNI] host=::1:5432 2026-05-06 14:17:24.877 CEST SENTENCIA:  SELECT * FROM conciertos LIMIT 1;
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:19:22.206 CEST LOG:  se recibió petición de apagado inmediato
+DNI1=[DNI] DNI2=[DNI] host=:5432 2026-05-06 14:19:22.224 CEST LOG:  el sistema de bases de datos está apagado

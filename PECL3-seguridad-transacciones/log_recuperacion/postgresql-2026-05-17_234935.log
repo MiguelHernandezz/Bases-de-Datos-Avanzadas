@@ -1,0 +1,22 @@
+[DNI] [DNI] 2026-05-17 23:49:35.493 CEST LOG:  iniciando PostgreSQL 17.9 on x86_64-windows, compiled by msvc-19.44.35225, 64-bit
+[DNI] [DNI] 2026-05-17 23:49:35.494 CEST LOG:  escuchando en la dirección IPv6 «::», port 5433
+[DNI] [DNI] 2026-05-17 23:49:35.494 CEST LOG:  escuchando en la dirección IPv4 «0.0.0.0», port 5433
+[DNI] [DNI] 2026-05-17 23:49:35.519 CEST LOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-05-17 23:36:57 CEST
+[DNI] [DNI] 2026-05-17 23:49:35.519 CEST LOG:  creando el directorio WAL faltante «pg_wal/archive_status»
+[DNI] [DNI] 2026-05-17 23:49:35.520 CEST LOG:  creando el directorio WAL faltante «pg_wal/summaries»
+[DNI] [DNI] 2026-05-17 23:49:35.660 CEST LOG:  iniciando recuperación de backup con LSN de redo 0/E000028, LSN de checkpoint 0/E000080, en timeline 2
+[DNI] [DNI] 2026-05-17 23:49:35.699 CEST LOG:  se ha restaurado el archivo «00000002000000000000000E» desde el área de archivado
+[DNI] [DNI] 2026-05-17 23:49:35.709 CEST LOG:  comenzando proceso de recuperación
+[DNI] [DNI] 2026-05-17 23:49:35.712 CEST LOG:  redo comienza en 0/E000028
+[DNI] [DNI] 2026-05-17 23:49:35.712 CEST LOG:  se completó la recuperación de backup con LSN de redo 0/E000028 y LSN de término 0/E000120
+[DNI] [DNI] 2026-05-17 23:49:35.712 CEST LOG:  el estado de recuperación consistente fue alcanzado en 0/E000120
+[DNI] [DNI] 2026-05-17 23:49:35.712 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones de sólo lectura
+[DNI] [DNI] 2026-05-17 23:49:35.733 CEST LOG:  se ha restaurado el archivo «00000002000000000000000F» desde el área de archivado
+[DNI] [DNI] 2026-05-17 23:49:35.756 CEST LOG:  redo listo en 0/F00C690 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.04 s
+[DNI] [DNI] 2026-05-17 23:49:35.756 CEST LOG:  última transacción completada al tiempo de registro 2026-05-17 23:45:13.534006+02
+[DNI] [DNI] 2026-05-17 23:49:35.771 CEST LOG:  se ha restaurado el archivo «00000002000000000000000F» desde el área de archivado
+[DNI] [DNI] 2026-05-17 23:49:35.792 CEST LOG:  seleccionado nuevo ID de timeline: 3
+[DNI] [DNI] 2026-05-17 23:49:35.827 CEST LOG:  recuperación completa
+[DNI] [DNI] 2026-05-17 23:49:35.829 CEST LOG:  empezando checkpoint: end-of-recovery immediate wait
+[DNI] [DNI] 2026-05-17 23:49:35.839 CEST LOG:  checkpoint completo: escritos 20 búfers (0.1%); 0 archivos WAL añadidos, 0 eliminados, 2 reciclados; write=0.002 s, sync=0.005 s, total=0.012 s; archivos sincronizados=17, más largo=0.001 s, promedio=0.001 s; distancia=32768 kB, estimación=32768 kB; lsn=0/10000028, lsn de redo=0/10000028
+[DNI] [DNI] 2026-05-17 23:49:35.854 CEST LOG:  el sistema de bases de datos está listo para aceptar conexiones

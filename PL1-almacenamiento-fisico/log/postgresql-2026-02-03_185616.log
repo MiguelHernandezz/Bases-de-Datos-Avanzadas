@@ -1,0 +1,7 @@
+[DNI] [DNI] 2026-02-03 18:56:17.124 CETLOG:  el sistema de bases de datos fue interrumpido; última vez en funcionamiento en 2026-02-03 09:53:36 CET
+[DNI] [DNI] 2026-02-03 18:56:18.006 CETLOG:  el sistema de bases de datos no fue apagado apropiadamente; se está efectuando la recuperación automática
+[DNI] [DNI] 2026-02-03 18:56:18.013 CETLOG:  redo comienza en 0/8BB58BF8
+[DNI] [DNI] 2026-02-03 18:56:18.013 CETLOG:  largo de registro no válido en 0/8BB58D38: se esperaba al menos 24, se obtuvo 0
+[DNI] [DNI] 2026-02-03 18:56:18.013 CETLOG:  redo listo en 0/8BB58D00 utilización del sistema: CPU: usuario: 0.00 s, sistema: 0.00 s, transcurrido: 0.00 s
+[DNI] [DNI] 2026-02-03 18:56:18.021 CETLOG:  empezando checkpoint: end-of-recovery immediate wait
+[DNI] [DNI] 2026-02-03 18:56:18.028 CETLOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.011 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/8BB58D38, redo lsn=0/8BB58D38

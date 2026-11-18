@@ -1,0 +1,340 @@
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  starting PostgreSQL 18.2 on x86_64-windows, compiled by msvc-19.44.35222, 64-bit
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv6 address "::", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  listening on IPv4 address "0.0.0.0", port 5432
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system was shut down at 2026-05-06 14:17:00 CEST
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is ready to accept connections
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.005 s, total=0.040 s; sync files=2, longest=0.003 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=24/96CC3D50, redo lsn=24/96CC3CF8
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  could not connect to server "maestro1"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  connection to server at "10.142.24.119", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	CREATE EXTENSION IF NOT EXISTS postgres_fdw;
+	
+	CREATE SERVER maestro1
+	    FOREIGN DATA WRAPPER postgres_fdw
+	    OPTIONS (host '10.142.24.119', port '5432', dbname 'musicos1');
+	
+	CREATE USER MAPPING FOR postgres
+	    SERVER maestro1
+	    OPTIONS (user 'postgres', password 'postgres');
+	
+	IMPORT FOREIGN SCHEMA public
+	    LIMIT TO (canciones)
+	    FROM SERVER maestro1
+	    INTO public;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  could not connect to server "maestro1"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  connection to server at "10.142.24.119", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	CREATE EXTENSION IF NOT EXISTS postgres_fdw;
+	
+	CREATE SERVER maestro1
+	    FOREIGN DATA WRAPPER postgres_fdw
+	    OPTIONS (host '10.142.24.119', port '5432', dbname 'musicos1');
+	
+	CREATE USER MAPPING FOR postgres
+	    SERVER maestro1
+	    OPTIONS (user 'postgres', password 'postgres');
+	
+	IMPORT FOREIGN SCHEMA public
+	    LIMIT TO (canciones)
+	    FROM SERVER maestro1
+	    INTO public;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  could not connect to server "maestro1"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  connection to server at "10.142.24.119", port 5432 failed: Connection timed out (0x0000274C/10060)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	CREATE EXTENSION IF NOT EXISTS postgres_fdw;
+	
+	CREATE SERVER maestro1
+	    FOREIGN DATA WRAPPER postgres_fdw
+	    OPTIONS (host '10.142.24.119', port '5432', dbname 'musicos1');
+	
+	CREATE USER MAPPING FOR postgres
+	    SERVER maestro1
+	    OPTIONS (user 'postgres', password 'postgres');
+	
+	IMPORT FOREIGN SCHEMA public
+	    LIMIT TO (canciones)
+	    FROM SERVER maestro1
+	    INTO public;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 46 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=5.008 s, sync=0.026 s, total=5.048 s; sync files=25, longest=0.004 s, average=0.002 s; distance=179 kB, estimate=179 kB; lsn=24/96CF0BF8, redo lsn=24/96CF0B68
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  foreign-data wrapper "postgres_fdw" does not exist
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	DROP SERVER IF EXISTS maestro1 CASCADE;
+	CREATE SERVER maestro1
+	    FOREIGN DATA WRAPPER postgres_fdw
+	    OPTIONS (host '192.168.1.167', port '5432', dbname 'musicos1');
+	CREATE USER MAPPING FOR postgres
+	    SERVER maestro1
+	    OPTIONS (user 'postgres', password 'postgres');
+	IMPORT FOREIGN SCHEMA public
+	    LIMIT TO (canciones)
+	    FROM SERVER maestro1
+	    INTO public;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  relation "canciones" already exists
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  importing foreign table "canciones"
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	DROP SERVER IF EXISTS maestro1 CASCADE;
+	CREATE SERVER maestro1
+	    FOREIGN DATA WRAPPER postgres_fdw
+	    OPTIONS (host '192.168.1.167', port '5432', dbname 'musicos1');
+	CREATE USER MAPPING FOR postgres
+	    SERVER maestro1
+	    OPTIONS (user 'postgres', password 'postgres');
+	IMPORT FOREIGN SCHEMA public
+	    LIMIT TO (canciones)
+	    FROM SERVER maestro1
+	    INTO public;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 30 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=3.224 s, sync=0.015 s, total=3.259 s; sync files=23, longest=0.003 s, average=0.001 s; distance=123 kB, estimate=174 kB; lsn=24/96D0FB58, redo lsn=24/96D0FAC8
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  server "maestro1" does not exist
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  IMPORT FOREIGN SCHEMA public LIMIT TO (canciones) FROM SERVER maestro1 INTO public;
+DNI1=[DNI] DNI2=[DNI] host=:5432 FATAL:  no pg_hba.conf entry for host "192.168.1.167", user "postgres", database "musicos2", no encryption
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  received SIGHUP, reloading configuration files
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 40 buffers (0.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=4.263 s, sync=0.043 s, total=4.333 s; sync files=34, longest=0.004 s, average=0.002 s; distance=154 kB, estimate=172 kB; lsn=24/96D36580, redo lsn=24/96D364F0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  cannot use relation "public.canciones" as logical replication target
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  This operation is not supported for foreign tables.
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=192.168.1.167 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  could not create replication slot "sub_musicos": ERROR:  replication slot "sub_musicos" already exists
+DNI1=[DNI] DNI2=[DNI] host=:5432 STATEMENT:  
+	CREATE SUBSCRIPTION sub_musicos
+	    CONNECTION 'host=192.168.1.167 port=5432 dbname=musicos1 user=postgres password=postgres'
+	    PUBLICATION pub_musicos;
+	
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "canciones" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "canciones" has finished
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 22652) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8396) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 23416) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13220) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 14560) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 2800) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 18100) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 4912) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12340) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint starting: time
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 16664) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  checkpoint complete: wrote 58 buffers (0.4%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=6.296 s, sync=0.049 s, total=6.369 s; sync files=47, longest=0.005 s, average=0.002 s; distance=181 kB, estimate=181 kB; lsn=24/96D64D18, redo lsn=24/96D63CE0
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 3380) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 19224) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 10144) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 23080) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 18936) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 17704) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 11984) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1748) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 14120) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 23128) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1100) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 13876) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1908) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 20192) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 22124) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  could not receive data from WAL stream: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 1624) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20888) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 13924) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 22660) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 16160) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 20268) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 11288) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2744) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2820) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  apply worker for subscription "sub_musicos" could not connect to the publisher: connection to server at "192.168.1.167", port 5432 failed: Connection refused (0x0000274D/10061)
+		Is the server running on that host and accepting TCP/IP connections?
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication apply worker" (PID 2876) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication apply worker for subscription "sub_musicos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 12116) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 8448) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 21132) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 16392) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 22592) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 6368) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 1764) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 9804) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  logical replication table synchronization worker for subscription "sub_musicos", table "grupos" has started
+DNI1=[DNI] DNI2=[DNI] host=:5432 ERROR:  duplicate key value violates unique constraint "grupos_pkey"
+DNI1=[DNI] DNI2=[DNI] host=:5432 DETAIL:  Key (id_grupo)=(1) already exists.
+DNI1=[DNI] DNI2=[DNI] host=:5432 CONTEXT:  COPY grupos, line 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  background worker "logical replication tablesync worker" (PID 20524) exited with exit code 1
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  received immediate shutdown request
+DNI1=[DNI] DNI2=[DNI] host=:5432 LOG:  database system is shut down

@@ -1,0 +1,24 @@
+[DNI] [DNI] 2026-02-24 12:19:51.213 CETFATAL:  terminando la conexión debido a una orden del administrador
+[DNI] [DNI] 2026-02-24 12:19:51.213 CETSENTENCIA:  DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 12:19:51.214 CETERROR:  cancelando la sentencia debido a una petici�n del usuario
+[DNI] [DNI] 2026-02-24 12:19:51.214 CETLOG:  could not send data to client: An existing connection was forcibly closed by the remote host.
+	
+[DNI] [DNI] 2026-02-24 12:19:51.214 CETSTATEMENT:  DELETE FROM estudiantes 
+	WHERE estudiante_id IN (
+	    SELECT estudiante_id 
+	    FROM estudiantes 
+	    ORDER BY random() 
+	    LIMIT 5000000
+	);
+[DNI] [DNI] 2026-02-24 12:19:51.216 CETFATAL:  terminando el proceso autovacuum debido a una orden del administrador
+[DNI] [DNI] 2026-02-24 12:19:51.216 CETCONTEXTO:  recorriendo el bloque 209714 de la relación «public.estudiantes2»
+[DNI] [DNI] 2026-02-24 12:19:52.712 CETLOG:  checkpoint complete: wrote 12048 buffers (73.5%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 37 recycled; write=0.938 s, sync=1.047 s, total=2.214 s; sync files=5, longest=0.569 s, average=0.210 s; distance=611124 kB, estimate=621101 kB; lsn=18/CCFA27F0, redo lsn=18/CA80AD10
+[DNI] [DNI] 2026-02-24 12:19:52.712 CETLOG:  apagando
+[DNI] [DNI] 2026-02-24 12:19:52.715 CETLOG:  empezando checkpoint: shutdown immediate
+[DNI] [DNI] 2026-02-24 12:19:53.025 CETLOG:  checkpoint complete: wrote 4703 buffers (28.7%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 2 recycled; write=0.069 s, sync=0.212 s, total=0.313 s; sync files=3, longest=0.183 s, average=0.071 s; distance=40542 kB, estimate=563045 kB; lsn=18/CCFA2868, redo lsn=18/CCFA2868

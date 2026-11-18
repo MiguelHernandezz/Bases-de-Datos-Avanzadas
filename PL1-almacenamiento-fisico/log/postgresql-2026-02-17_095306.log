@@ -1,0 +1,8 @@
+[DNI] [DNI] 2026-02-17 09:53:06.668 CETLOG:  el sistema de bases de datos fue apagado en 2026-02-17 09:45:54 CET
+[DNI] [DNI] 2026-02-17 10:04:00.367 CETLOG:  empezando checkpoint: time
+[DNI] [DNI] 2026-02-17 10:04:00.508 CETLOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.106 s, sync=0.006 s, total=0.306 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/8BB7A0C8, redo lsn=0/8BB7A070
+[DNI] [DNI] 2026-02-17 20:34:44.930 CETLOG:  apagando
+[DNI] [DNI] 2026-02-17 20:34:44.933 CETLOG:  empezando checkpoint: shutdown immediate
+[DNI] [DNI] 2026-02-17 20:34:44.941 CETERROR:  cancelando la sentencia debido a una petición del usuario
+[DNI] [DNI] 2026-02-17 20:34:44.941 CETERROR:  cancelando la sentencia debido a una petición del usuario
+[DNI] [DNI] 2026-02-17 20:34:44.951 CETLOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.021 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/8BB7A178, redo lsn=0/8BB7A178

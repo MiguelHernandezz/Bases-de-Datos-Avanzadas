@@ -1,0 +1,94 @@
+[DNI] [DNI] 2026-03-17 08:07:03.542 CET LOG:  database system was shut down at 2026-03-12 19:35:07 CET
+[DNI] [DNI] 2026-03-17 08:12:03.501 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-17 08:12:03.519 CET LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.002 s, total=0.020 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=20/BD5BCAC0, redo lsn=20/BD5BCA68
+[DNI] [DNI] 2026-03-17 09:27:03.604 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-17 09:28:49.808 CET LOG:  checkpoint complete: wrote 992 buffers (6.1%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=106.097 s, sync=0.074 s, total=106.205 s; sync files=302, longest=0.003 s, average=0.001 s; distance=4711 kB, estimate=4711 kB; lsn=20/BDA56E58, redo lsn=20/BDA567E0
+[DNI] [DNI] 2026-03-17 09:29:46.895 CET ERROR:  relation "public.Grupo" does not exist
+[DNI] [DNI] 2026-03-17 09:29:46.895 CET STATEMENT:  COPY  public."Grupo" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:29:46.897 CET ERROR:  relation "public.Conciertos" does not exist
+[DNI] [DNI] 2026-03-17 09:29:46.897 CET STATEMENT:  COPY  public."Conciertos" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:29:46.899 CET ERROR:  relation "public.Musicos" does not exist
+[DNI] [DNI] 2026-03-17 09:29:46.899 CET STATEMENT:  COPY  public."Musicos" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:29:46.900 CET ERROR:  relation "public.Discos" does not exist
+[DNI] [DNI] 2026-03-17 09:29:46.900 CET STATEMENT:  COPY  public."Discos" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:29:46.902 CET ERROR:  relation "public.Canciones" does not exist
+[DNI] [DNI] 2026-03-17 09:29:46.902 CET STATEMENT:  COPY  public."Canciones" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:29:46.904 CET ERROR:  relation "public.Entradas" does not exist
+[DNI] [DNI] 2026-03-17 09:29:46.904 CET STATEMENT:  COPY  public."Entradas" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:40:20.686 CET ERROR:  relation "public.Grupos_Tocan_Conciertos" does not exist
+[DNI] [DNI] 2026-03-17 09:40:20.686 CET STATEMENT:  COPY  public."Grupos_Tocan_Conciertos" FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:40:22.899 CET ERROR:  syntax error at or near "-" at character 1
+[DNI] [DNI] 2026-03-17 09:40:22.899 CET STATEMENT:  - pgModeler version: 0.9.4
+	-- PostgreSQL version: 13.0
+	-- Project Site: pgmodeler.io
+	-- Model Author: ---
+	-- Database creation must be performed outside a multi lined SQL file. 
+	-- These commands were put in this file only as a convenience.
+	-- 
+	-- object: new_database | type: DATABASE --
+	-- DROP DATABASE IF EXISTS new_database;
+	-- ddl-end --
+	-- object: public.Musicos | type: TABLE --
+	-- DROP TABLE IF EXISTS public.Musicos CASCADE;
+	CREATE TABLE public.Musicos (
+		codigo_musico integer NOT NULL,
+		DNI char(10) NOT NULL,
+		Nombre text NOT NULL,
+		Direccion text NOT NULL,
+		Codigo_Postal integer NOT NULL,
+		Ciudad text NOT NULL,
+		Provincia text NOT NULL,
+		telefono integer NOT NULL,
+		Instrumentos text NOT NULL,
+		Codigo_grupo_Grupo integer NOT NULL,
+		CONSTRAINT Musicos_pk PRIMARY KEY (codigo_musico),
+		CONSTRAINT Unique_DNI UNIQUE (DNI)
+	);
+[DNI] [DNI] 2026-03-17 09:40:22.901 CET ERROR:  relation "public.musicos" does not exist
+[DNI] [DNI] 2026-03-17 09:40:22.901 CET STATEMENT:  ALTER TABLE public.Musicos OWNER TO postgres;
+[DNI] [DNI] 2026-03-17 09:40:22.959 CET ERROR:  relation "public.musicos" does not exist
+[DNI] [DNI] 2026-03-17 09:40:22.959 CET STATEMENT:  ALTER TABLE public.Musicos ADD CONSTRAINT Grupo_fk FOREIGN KEY (Codigo_grupo_Grupo)
+	REFERENCES public.Grupo (Codigo_grupo) MATCH FULL
+	ON DELETE RESTRICT ON UPDATE RESTRICT;
+[DNI] [DNI] 2026-03-17 09:40:22.974 CET ERROR:  database "musicos" already exists
+[DNI] [DNI] 2026-03-17 09:40:22.974 CET STATEMENT:  CREATE DATABASE musicos;
+[DNI] [DNI] 2026-03-17 09:40:23.552 CET ERROR:  relation "musicos" does not exist
+[DNI] [DNI] 2026-03-17 09:40:23.552 CET STATEMENT:  COPY  Musicos FROM STDIN WITH (FORMAT csv);
+[DNI] [DNI] 2026-03-17 09:41:23.887 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:42:05.530 CET LOG:  checkpoint complete: wrote 14003 buffers (85.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=40.621 s, sync=0.576 s, total=41.644 s; sync files=70, longest=0.378 s, average=0.009 s; distance=531787 kB, estimate=531787 kB; lsn=20/FC0AC3C0, redo lsn=20/DE1A9710
+[DNI] [DNI] 2026-03-17 09:42:10.323 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:42:58.933 CET LOG:  checkpoint complete: wrote 10775 buffers (65.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=47.808 s, sync=0.366 s, total=48.611 s; sync files=9, longest=0.307 s, average=0.041 s; distance=539463 kB, estimate=539463 kB; lsn=21/1CE8F9E0, redo lsn=20/FF07B370
+[DNI] [DNI] 2026-03-17 09:43:03.965 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:47:33.347 CET LOG:  checkpoint complete: wrote 3304 buffers (20.2%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=269.069 s, sync=0.032 s, total=269.383 s; sync files=6, longest=0.024 s, average=0.006 s; distance=541825 kB, estimate=541825 kB; lsn=21/2EF800B8, redo lsn=21/2019BA98
+[DNI] [DNI] 2026-03-17 09:48:03.355 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-17 09:49:53.786 CET LOG:  checkpoint complete: wrote 5 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 15 recycled; write=110.115 s, sync=0.037 s, total=110.432 s; sync files=2, longest=0.036 s, average=0.019 s; distance=253193 kB, estimate=512962 kB; lsn=21/319CBF58, redo lsn=21/2F8DDED0
+[DNI] [DNI] 2026-03-17 09:50:30.783 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:51:01.015 CET LOG:  checkpoint complete: wrote 9926 buffers (60.6%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=29.692 s, sync=0.408 s, total=30.232 s; sync files=10, longest=0.192 s, average=0.041 s; distance=533276 kB, estimate=533276 kB; lsn=21/6E75DD78, redo lsn=21/501A4F18
+[DNI] [DNI] 2026-03-17 09:51:02.805 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:51:33.474 CET LOG:  checkpoint complete: wrote 8506 buffers (51.9%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=29.946 s, sync=0.553 s, total=30.669 s; sync files=5, longest=0.246 s, average=0.111 s; distance=539923 kB, estimate=539923 kB; lsn=21/8F5D8078, redo lsn=21/710E9C58
+[DNI] [DNI] 2026-03-17 09:51:35.876 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:52:03.632 CET LOG:  checkpoint complete: wrote 8730 buffers (53.3%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=27.294 s, sync=0.277 s, total=27.757 s; sync files=5, longest=0.125 s, average=0.056 s; distance=539996 kB, estimate=539996 kB; lsn=21/B02ECF10, redo lsn=21/92040D30
+[DNI] [DNI] 2026-03-17 09:52:05.871 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:52:35.437 CET LOG:  checkpoint complete: wrote 8857 buffers (54.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=29.317 s, sync=0.173 s, total=29.567 s; sync files=6, longest=0.079 s, average=0.029 s; distance=541072 kB, estimate=541072 kB; lsn=21/D12219B8, redo lsn=21/B30A4FD0
+[DNI] [DNI] 2026-03-17 09:52:37.488 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:53:08.125 CET LOG:  checkpoint complete: wrote 8612 buffers (52.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=29.911 s, sync=0.612 s, total=30.638 s; sync files=5, longest=0.354 s, average=0.123 s; distance=541127 kB, estimate=541127 kB; lsn=21/F280B110, redo lsn=21/D4116C38
+[DNI] [DNI] 2026-03-17 09:53:10.134 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:53:39.740 CET LOG:  checkpoint complete: wrote 8516 buffers (52.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=28.863 s, sync=0.641 s, total=29.606 s; sync files=5, longest=0.369 s, average=0.129 s; distance=541379 kB, estimate=541379 kB; lsn=22/1387A558, redo lsn=21/F51C7B90
+[DNI] [DNI] 2026-03-17 09:53:41.544 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 09:58:19.750 CET LOG:  checkpoint complete: wrote 7540 buffers (46.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=277.980 s, sync=0.050 s, total=278.207 s; sync files=7, longest=0.021 s, average=0.008 s; distance=539549 kB, estimate=541196 kB; lsn=22/31213B18, redo lsn=22/160AF138
+[DNI] [DNI] 2026-03-17 13:41:04.276 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 13:42:59.728 CET LOG:  checkpoint complete: wrote 4349 buffers (26.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=114.739 s, sync=0.398 s, total=115.453 s; sync files=15, longest=0.285 s, average=0.027 s; distance=542929 kB, estimate=542929 kB; lsn=22/5501F2C8, redo lsn=22/372E38E0
+[DNI] [DNI] 2026-03-17 13:43:09.678 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 13:44:49.396 CET LOG:  checkpoint complete: wrote 3620 buffers (22.1%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=99.442 s, sync=0.061 s, total=99.719 s; sync files=8, longest=0.045 s, average=0.008 s; distance=538571 kB, estimate=542494 kB; lsn=22/75CD0328, redo lsn=22/580D6790
+[DNI] [DNI] 2026-03-17 13:44:59.235 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 13:46:31.291 CET LOG:  checkpoint complete: wrote 6430 buffers (39.2%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=91.837 s, sync=0.053 s, total=92.056 s; sync files=7, longest=0.045 s, average=0.008 s; distance=541042 kB, estimate=542348 kB; lsn=22/96CC5408, redo lsn=22/791332E8
+[DNI] [DNI] 2026-03-17 13:46:41.133 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 13:48:15.356 CET LOG:  checkpoint complete: wrote 2917 buffers (17.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=93.966 s, sync=0.053 s, total=94.223 s; sync files=8, longest=0.033 s, average=0.007 s; distance=540675 kB, estimate=542181 kB; lsn=22/B7D07820, redo lsn=22/9A134048
+[DNI] [DNI] 2026-03-17 13:48:25.806 CET LOG:  checkpoint starting: wal
+[DNI] [DNI] 2026-03-17 13:48:45.837 CET LOG:  checkpoint complete: wrote 4 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 33 recycled; write=19.897 s, sync=0.025 s, total=20.031 s; sync files=2, longest=0.020 s, average=0.013 s; distance=540317 kB, estimate=541995 kB; lsn=22/C0A2CF08, redo lsn=22/BB0DB4C8
+[DNI] [DNI] 2026-03-17 13:53:25.841 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-17 13:53:26.588 CET LOG:  checkpoint complete: wrote 6 buffers (0.0%), wrote 1 SLRU buffers; 0 WAL file(s) added, 0 removed, 5 recycled; write=0.659 s, sync=0.008 s, total=0.748 s; sync files=6, longest=0.004 s, average=0.002 s; distance=91482 kB, estimate=496943 kB; lsn=22/C0A32098, redo lsn=22/C0A32040
+[DNI] [DNI] 2026-03-19 10:12:31.679 CET LOG:  checkpoint starting: time
+[DNI] [DNI] 2026-03-19 10:17:01.089 CET LOG:  checkpoint complete: wrote 4548 buffers (27.8%), wrote 1 SLRU buffers; 0 WAL file(s) added, 3 removed, 7 recycled; write=269.324 s, sync=0.014 s, total=269.411 s; sync files=31, longest=0.003 s, average=0.001 s; distance=159616 kB, estimate=463211 kB; lsn=22/D3DC2AA0, redo lsn=22/CA612378
+[DNI] [DNI] 2026-03-19 10:34:19.448 CET LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
